@@ -14,7 +14,7 @@
 
 ## News and updates
 
-### deepTS released on Dec XXX, 2019
+### deepTS released on Dec 25, 2019
 
 - deepTS source codes, web server and Docker image were released for the first time.
 
