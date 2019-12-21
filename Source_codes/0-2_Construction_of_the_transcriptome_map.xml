@@ -1,0 +1,319 @@
+<tool id="Construction_of_the_transcriptome_map" name="Construction of the transcriptome map" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		
+		#if $DataType.ngs_or_hs == "hs"
+			
+			mkdir -p /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Transcriptome_map/HQ_NGS_data ;
+			cat $DataType.HQ_ngs_fq > /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Transcriptome_map/HQ_RNA-Seq.tar.gz ;
+			
+			bash /home/malab5/DataMap/csy/deepTS/galaxy/tools/deepTS/0-2_Construction_of_the_transcriptome_map_HBS.sh 
+
+				## Output files
+				-m $trans_map_hs -b $mapping_result_hs
+				
+				## Input files
+				-G $genome_sequence -A $genome_annotation -f $DataType.HQ_PB_fa
+				
+				## Common parameters
+				-p $thread
+				
+				## RNA-Seq data alignment parameters
+				-i $DataType.ngs_parameters.minIntron -I $DataType.ngs_parameters.maxIntron
+				
+				## Assembled transcript filteration parameters
+				--assembly-expression $DataType.asm_parameters.expression_level.min_exp_num --assembly-expression-number $DataType.asm_parameters.expression_level.min_sample_num
+				
+				#for $op in $DataType.asm_parameters.protein_level.operations
+					#if $op.operation.name == "cpc2"
+						--assembly-CPC2 $op.operation.name
+						--assembly-CPC2-score $op.operation.cpc_score --assembly-CPC2-orf $op.operation.orf_complete --assembly-CPC-aal $op.operation.aa_length
+					#end if
+					#if $op.operation.name == "blast"
+						--assembly-blast $op.operation.name
+						--nr-address $op.operation.nrAddress
+						--assembly-blast-coverage $op.operation.coverage --assembly-blast-identity $op.operation.identity --assembly-blast-eValue $op.operation.e_value
+					#end if
+				#end for
+				
+				--assembly-diffIntron $DataType.asm_parameters.splicing_level.diff_intron_len
+				
+				--assembly-junction-read $DataType.asm_parameters.splicing_level.min_read_number --assembly-junction-number $DataType.asm_parameters.splicing_level.min_sample_num
+				
+
+				## PacBio read filteration parameters
+				--PacBio-coverage $DataType.PB_parameters.coverage_and_identity.coverage --PacBio-identity $DataType.PB_parameters.coverage_and_identity.identity
+				
+				#for $op in $DataType.PB_parameters.coding_or_noncoding.operations
+					#if $op.operation.name == "cpc2"
+						--PacBio-CPC2 $op.operation.name
+						--PacBio-CPC2-score $op.operation.cpc_score --PacBio-CPC2-orf $op.operation.orf_complete --PacBio-CPC2-aal $op.operation.aa_length
+					#end if
+					#if $op.operation.name == "blast"
+						--PacBio-blast $op.operation.name
+						--PacBio-blast-coverage $op.operation.coverage --PacBio-blast-identity $op.operation.identity --PacBio-blast-eValue $op.operation.e_value
+					#end if
+				#end for
+				
+				--PacBio-diffIntron $DataType.PB_parameters.novel_junction_supports.diff_intron_len
+				
+				--PacBio-junction-read $DataType.PB_parameters.novel_junction_supports.min_read_number --PacBio-junction-numbern $DataType.PB_parameters.novel_junction_supports.min_sample_num
+				;
+				
+		#elif $DataType.ngs_or_hs == "ngs"
+		
+			mkdir -p /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Transcriptome_map/HQ_NGS_data ;
+			cat $DataType.HQ_ngs_fq > /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Transcriptome_map/HQ_RNA-Seq.tar.gz ;
+			
+			bash /home/malab5/DataMap/csy/deepTS/galaxy/tools/deepTS/0-2_Construction_of_the_transcriptome_map_NGS.sh
+				
+				## Output files
+				-m $trans_map_ngs -b $mapping_result_ngs
+				
+				## Input files
+				-G $genome_sequence -A $genome_annotation
+				
+				## Common parameters
+				-p $thread
+				
+				## RNA-Seq data alignment parameters
+				-i $DataType.ngs_parameters.minIntron -I $DataType.ngs_parameters.maxIntron
+				
+				## Assembled transcript filteration parameters
+				-e $DataType.asm_parameters.expression_level.min_exp_num -n $DataType.asm_parameters.expression_level.min_sample_num
+				
+				#for $op in $DataType.asm_parameters.protein_level.operations
+					#if $op.operation.name == "cpc2"
+						-C $op.operation.name
+						-s $op.operation.cpc_score -o $op.operation.orf_complete -a $op.operation.aa_length
+					#end if
+					#if $op.operation.name == "blast"
+						-B $op.operation.name
+						-D --nr-address $op.operation.nrAddress -c $op.operation.coverage -t $op.operation.identity -e $op.operation.e_value
+					#end if
+				#end for
+				
+				-d $DataType.asm_parameters.splicing_level.diff_intron_len -r $DataType.asm_parameters.splicing_level.min_read_number -N $DataType.asm_parameters.splicing_level.min_sample_num ;
+		
+		#end if
+		
+	</command>
+	
+	<inputs>
+		<param name="genome_sequence" type="data" label="Reference genome sequence" />
+		<param name="genome_annotation" type="data" label="Reference genome annotation" />
+		<conditional name="DataType">
+			<param name="ngs_or_hs" type="select" label="Next generation sequencing data or Hybrid sequencing data">
+				<option value="hs" selected="true">Hybrid sequencing data</option>
+				<option value="ngs">Next generation sequencing data</option>
+			</param>
+			
+			<when value="hs">
+				<param name="HQ_ngs_fq" type="data" label="High-quality RNA-Seq data" />
+				<param name="HQ_PB_fa" type="data" label="PacBio sequencing reads"/>
+				
+				<section name="ngs_parameters" title="RNA-Seq data alignment parameters" expanded="False">
+					<param name="minIntron" type="integer" value="20" label="Minimum intron length for RNA-Seq alignment"/>
+					<param name="maxIntron" type="integer" value="10000" label="Maximum intron length for RNA-Seq alignment"/>
+				</section>
+				
+				<section name="asm_parameters" title="Assembled transcript filteration parameters" expanded="False">
+					<section name="expression_level" title="Filter transcripts according to expression abundance" expanded="True">
+						<param name="min_exp_num" type="integer" label="Expression value of expressed genes/transcripts" value="1" />
+						<param name="min_sample_num" type="integer" label="Minimum sample number" value="3" />
+					</section>
+					<section name="protein_level" title="Filter transcripts according to protein-coding potential" expanded="True">
+						<repeat name="operations" title="Estimate protein-coding potential" min="1">
+							<conditional name="operation">
+								<param name="name" type="select" label="Select methods to estimate">
+									<option value="cpc2">Estimate using CPC2</option>
+									<option value="blast">Estimate through searching against NCBI's nr database</option>
+								</param>
+								<when value="cpc2">
+									<param name="cpc_score" type="float" label="Coding potential score" value="0.5" />
+									<param name="orf_complete" type="select" label="Whether contain a complete open reading frame (ORF)">
+										<option value="require">Require to contain a complete open reading frame (ORF)</option>
+										<option value="not_require">Not require to contain a complete open reading frame (ORF)</option>
+									</param>
+										<when value="require">
+										</when>
+										<when value="not_require">
+										</when>
+									<param name="aa_length" type="integer" label="Minimum length of amino acids" value="60" />
+								</when>
+								<when value="blast">
+									<param name="nrAddress" type="text" label="FTP address of NCBI’s non-redundant (nr) protein database" value="ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz"/>
+									<param name="coverage" type="float" label="Alignment coverage threshold of a transcript" value="0.7" />
+									<param name="identity" type="float" label="Alignment identity threshold of a transcript" value="0.7" />
+									<param name="e_value" type="float" label="Expect value" value="1e-5" />
+								</when>
+							</conditional>			
+						</repeat>
+					</section>
+					<section name="splicing_level" title="Filter transcripts according to status of junction supported" expanded="True">
+						<param name="diff_intron_len" type="integer" label="Difference of intron when compare assembled and reference transcripts" value="10" />
+						<param name="min_read_number" type="integer" label="Number of reads spanning junctions" value="5" />
+						<param name="min_sample_num" type="integer" label="Minimum sample number" value="3" />
+					</section>
+				</section>
+				
+				<section name="PB_parameters" title="PacBio reads processing parameters" expanded="False">
+					<section name="coverage_and_identity" title="Filter transcripts according to expression abundance" expanded="True">
+						<param name="coverage" type="float" label="Alignment coverage threshold of a transcript" value="95" />
+						<param name="identity" type="float" label="Alignment identity threshold of a transcript" value="95" />
+					</section>
+					<section name="coding_or_noncoding" title="Filter transcripts according to expression abundance" expanded="True">
+						<repeat name="operations" title="Estimate protein-coding potential" min="1">
+							<conditional name="operation">
+								<param name="name" type="select" label="Select methods to estimate">
+									<option value="cpc2">Estimate using CPC2</option>
+									<option value="blast">Estimate through searching against NCBI's nr database</option>
+								</param>
+								<when value="cpc2">
+									<param name="cpc_score" type="float" label="Coding potential score" value="0.5" />
+									<param name="orf_complete" type="select" label="Whether contain a complete open reading frame (ORF)">
+										<option value="require">Require to contain a complete open reading frame (ORF)</option>
+										<option value="not_require">Not require to contain a complete open reading frame (ORF)</option>
+									</param>
+										<when value="require">
+										</when>
+										<when value="not_require">
+										</when>
+									<param name="aa_length" type="integer" label="Minimum length of amino acids" value="60" />
+								</when>
+								<when value="blast">
+									<param name="coverage" type="float" label="Alignment coverage threshold of a transcript" value="0.7" />
+									<param name="identity" type="float" label="Alignment identity threshold of a transcript" value="0.7" />
+									<param name="e_value" type="float" label="Expect value" value="1e-5" />
+								</when>
+							</conditional>			
+						</repeat>
+					</section>
+					<section name="novel_junction_supports" title="Filter transcripts according to status of junction supported" expanded="True">
+						<param name="diff_intron_len" type="integer" label="Difference of intron when compare PacBio and reference transcripts" value="10" />
+						<param name="min_read_number" type="integer" label="Number of reads spanning junctions" value="5" />
+						<param name="min_sample_num" type="integer" label="Minimum sample number" value="3" />
+					</section>
+				</section>
+			</when>
+			
+			<when value="ngs">
+				<param name="HQ_ngs_fq" type="data" label="High-quality RNA-Seq data" />
+				
+				<section name="ngs_parameters" title="RNA-Seq data alignment parameters" expanded="False">
+					<param name="minIntron" type="integer" value="20" label="Minimum intron length for RNA-Seq alignment"/>
+					<param name="maxIntron" type="integer" value="10000" label="Maximum intron length for RNA-Seq alignment"/>
+				</section>
+				
+				<section name="asm_parameters" title="Assembled transcript filteration parameters" expanded="False">
+					<section name="expression_level" title="Filter transcripts according to expression abundance" expanded="True">
+						<param name="min_exp_num" type="integer" label="Expression value of expressed genes/transcripts" value="1" />
+						<param name="min_sample_num" type="integer" label="Minimum sample number" value="3" />
+					</section>
+					<section name="protein_level" title="Filter transcripts according to protein-coding potential" expanded="True">
+						<repeat name="operations" title="Estimate protein-coding potential" min="1">
+							<conditional name="operation">
+								<param name="name" type="select" label="Select methods to estimate">
+									<option value="cpc2">Estimate using CPC2</option>
+									<option value="blast">Estimate through searching against NCBI's nr database</option>
+								</param>
+								<when value="cpc2">
+									<param name="cpc_score" type="float" label="Coding potential score" value="0.5" />
+									<param name="orf_complete" type="select" label="Whether contain a complete open reading frame (ORF)">
+										<option value="require">Require to contain a complete open reading frame (ORF)</option>
+										<option value="not_require">Not require to contain a complete open reading frame (ORF)</option>
+									</param>
+										<when value="require">
+										</when>
+										<when value="not_require">
+										</when>
+									<param name="aa_length" type="integer" label="Minimum length of amino acids" value="60" />
+								</when>
+								<when value="blast">
+									<param name="nrAddress" type="text" label="FTP address of NCBI’s non-redundant (nr) protein database" value="ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nr.gz"/>
+									<param name="coverage" type="float" label="Alignment coverage threshold of a transcript" value="0.7" />
+									<param name="identity" type="float" label="Alignment identity threshold of a transcript" value="0.7" />
+									<param name="e_value" type="float" label="Expect value" value="1e-5" />
+								</when>
+							</conditional>			
+						</repeat>
+					</section>
+					<section name="splicing_level" title="Filter transcripts according to status of junction supported" expanded="True">
+						<param name="diff_intron_len" type="integer" label="Difference of intron when compare assembled and reference transcripts" value="10" />
+						<param name="min_read_number" type="integer" label="Number of reads spanning junctions" value="5" />
+						<param name="min_sample_num" type="integer" label="Minimum sample number" value="3" />
+					</section>
+				</section>
+				
+			</when>
+		</conditional>
+		<param name="thread" type="integer" label="Threads" value="1" />
+	</inputs>
+
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Construction of the transcriptome map" />
+	</stdio>
+	
+	<outputs>
+		<data name="mapping_result_hs" label="Mapping result (BAM file) compressed package" format="tar.gz" >
+			<filter>DataType['ngs_or_hs'] == "hs"</filter>
+		</data>
+		<data name="trans_map_hs" label="Transcriptome map" >
+			<filter>DataType['ngs_or_hs'] == "hs"</filter>
+		</data>
+		
+		<data name="mapping_result_ngs" label="Mapping result (BAM file) compressed package" format="tar.gz" >
+			<filter>DataType['ngs_or_hs'] == "ngs"</filter>
+		</data>
+		<data name="trans_map_ngs" label="Transcriptome map" >
+			<filter>DataType['ngs_or_hs'] == "ngs"</filter>
+		</data>
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to optionally construct transcriptome map by combining reference, assembled, and PacBio transcriptome for species where the reference genome or the annotation is incomplete.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **Reference genome sequence**: Reference genome sequence as *fasta* format.
+
+	* **Reference genome annotation**: Reference genome annotation as *GTF* format.
+
+	If users contruct transcriptome map throught combining reference and assembled transcriptome,
+
+	* **High-quality RNA-Seq data**: A compressed file containing high-quality RNA-Seq data generated from function **Preparation of high-quality RNA-Seq data**.
+
+	If full-length non-chimeric (FLNC) PacBio reads at hand, users can also utilize these FLNC reads in transcriptome reconstruction,
+
+	* **High-quality RNA-Seq data**: A compressed file containing high-quality RNA-Seq data generated from function **Preparation of high-quality RNA-Seq data**.
+
+	* **PacBio sequencing reads**: FLNC PacBio reads as *fasta* format
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Mapping result (BAM file) compressed package**: A compressed file containing RNA-Seq mapping results (This file would be used in function **Generation of expression matrix** to estimate expression abundance of transcripts).
+
+	* **Transcriptome map**: The transcriptome map file as *GTF* format.
+    </help>
+    <citations>
+        <citation type="doi">10.1038/nmeth.3317</citation>
+		<citation type="doi">10.1093/bioinformatics/btp352</citation>
+		<citation type="doi">10.1038/nbt.3122</citation>
+		<citation type="doi">10.1038/nbt.1621</citation>
+		<citation type="doi">10.1093/nar/gkx428</citation>
+		<citation type="doi">10.1186/1471-2105-10-421</citation>
+		<citation type="doi">10.1093/bioinformatics/btt656</citation>
+		<citation type="doi">10.1093/bioinformatics/bti310</citation>
+    </citations>
+</tool>
+

@@ -1,0 +1,85 @@
+<tool id="Generation_of_expression_matrix" name="Generation of expression matrix" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		
+		mkdir -p /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Expression ;
+		cat $mapping_result > /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Expression/mapping_results.tar.gz ;
+		
+		bash /home/malab5/DataMap/csy/deepTS/galaxy/tools/deepTS/0-3_Generation_of_expression_matrix.sh -E $expMat -A $genome_annotation -p $thread
+		
+			#for $op in $operations
+				#if $op.operation.name == "noise"
+					-n $op.operation.name -e $op.operation.minExp -N $op.operation.minExpNum
+				#end if
+				#if $op.operation.name == "batchEffects"
+					-b $op.operation.name -s $op.operation.sampleInfo
+				#end if
+			#end for 
+			;
+
+	</command>
+	
+	<inputs>
+		<param name="genome_annotation" type="data" label="Transcriptome map" />
+		<param name="mapping_result" type="data" label="Mapping result (BAM file) compressed package" />
+		<repeat name="operations" title="Expression matrix correction" min="0">
+			<conditional name="operation">
+				<param name="name" type="select" label="Select correction type to perform">
+					<option value="noise">Reduce noise (e.g. removal of lowly expressed genes and transcripts)</option>
+					<option value="batchEffects">Remove batch effects</option>
+				</param>
+				<when value="noise">
+					<param name="minExp" type="integer" label="Expression value of expressed genes/transcripts" value="1" />
+					<param name="minExpNum" type="integer" label="Minimum sample number" value="3" />
+				</when>
+				<when value="batchEffects">
+					<param name="sampleInfo" type="data" label="Sample information" />
+				</when>
+			</conditional>
+		
+		</repeat>
+		<param name="thread" type="integer" label="Threads" value="1" />
+		
+		
+	</inputs>
+	
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Generation of expression matrix" />
+	</stdio>
+	
+	<outputs>
+		<data name="expMat" format="txt" label="Transcript expression matrix" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to estimate the expression abundance of genes and transcripts in terms of TPM using uniquely mapped reads from each sample.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **Mapping result (BAM file) compressed package**: A compressed file containing RNA-Seq mapping results (This file would be used in function **Generation of expression matrix** to estimate expression abundance of transcripts).
+
+	* **Transcriptome map**: The transcriptome map file as *GTF* format.
+
+	If users choose remove batch effects,
+
+	* **Sample information**: RNA-Seq sample information.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Transcript expression matrix**: Transcript expression abundance matrix.
+    </help>
+    <citations>
+		<citation type="doi">10.1038/nbt.3122</citation>
+		<citation type="doi">10.1093/bioinformatics/bts034</citation>
+    </citations>
+</tool>

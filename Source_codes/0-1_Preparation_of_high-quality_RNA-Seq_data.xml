@@ -1,0 +1,114 @@
+<tool id="Preparation_of_high-quality_RNA-Seq_data" name="Preparation of high-quality RNA-Seq data" version="19.09">
+	<description>
+	</description>
+	
+	<command>		
+		mkdir -p /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Preparation/Raw_data;
+
+		#if $obtainData.upload_or_retrieve == "upload"
+			#for t in $obtainData.input_fq:
+				cat $t > /home/malab5/DataMap/csy/deepTS/galaxy/database/files/Preparation/Raw_data/${t.name} ;
+			#end for
+			
+			bash /home/malab5/DataMap/csy/deepTS/galaxy/tools/deepTS/0-1_Preparation_upload.sh $HQ_fq_upload $HQ_fq_report_upload $thread ;
+		#elif $obtainData.upload_or_retrieve == "retrieve"
+			bash /home/malab5/DataMap/csy/deepTS/galaxy/tools/deepTS/0-1_Preparation_retrieve.sh $HQ_fq_retrieve $HQ_fq_report_retrieve $thread
+				
+				#if $obtainData.fetchType.sratoolkit_or_wget == "sratoolkit"
+				
+					$obtainData.fetchType.sratoolkit_or_wget $obtainData.fetchType.data_access ;
+				
+				#elif $obtainData.fetchType.sratoolkit_or_wget == "wget"
+		
+					$obtainData.fetchType.sratoolkit_or_wget $obtainData.fetchType.data_address ;
+				
+				#end if
+		#end if
+	</command>
+	
+	<inputs>
+		<conditional name="obtainData">
+			<param name="upload_or_retrieve" type="select" label="Upload own data or retrieve from public database?">
+				<option value="upload" selected="true">Upload own data</option>
+				<option value="retrieve">GEOQuery</option>
+			</param>
+			<when value="upload">
+				<param name="input_fq" type="data_collection" label="Input raw RNA-Seq data" />
+			</when>
+			<when value="retrieve">
+				
+				<conditional name="fetchType">
+					<param name="sratoolkit_or_wget" type="select" label="fetch data using SRAToolKit or wget">
+						<option value="sratoolkit" selected="true">Fetch data using SRAToolKit</option>
+						<option value="wget">Fetch data using wget</option>
+					</param>
+					<when value="sratoolkit">
+						<param name="data_access" type="data" label="RNA-Seq accession list" />
+					</when>
+					<when value="wget">
+						<param name="data_address" type="data" label="RNA-Seq FTP address" />
+					</when>				
+				</conditional>				
+				
+			</when>
+		</conditional>
+		<param name="thread" type="integer" label="Threads" value="1" />
+	</inputs>
+
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Preparation of high-quality RNA-Seq data" />
+	</stdio>
+
+	<outputs>
+		<data name="HQ_fq_upload" label="High-quality RNA-Seq data" format="tar.gz">
+			<filter>obtainData['upload_or_retrieve'] == "upload"</filter>
+		</data>
+		<data name="HQ_fq_report_upload" label="Quality control report" format="tar.gz">
+			<filter>obtainData['upload_or_retrieve'] == "upload"</filter>
+		</data>
+		
+		<data name="HQ_fq_retrieve" label="High-quality RNA-Seq data" format="tar.gz">
+			<filter>obtainData['upload_or_retrieve'] == "retrieve"</filter>
+		</data>
+		<data name="HQ_fq_report_retrieve" label="Quality control report" format="tar.gz">
+			<filter>obtainData['upload_or_retrieve'] == "retrieve"</filter>
+		</data>
+	</outputs>
+	
+	<help>
+    .. class:: infomark
+
+    **What it does**
+
+    This function can be used to upload users' own RNA-Seq data or retrieve RNA-Seq data from public databases. The preprocess of raw RNA-Seq data is accomplished using fastp (version 0.20.0) (Chen *et al*., 2018) for quality control, including sequencing adapter trimming and low-quality reads filtering.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	For **Upload own data**
+
+	* **Input raw RNA-Seq data**: Raw RNA-Seq data with FASTQ format.
+
+	For **GEOQuery**
+
+	DeepTS provides two method to automatically fetch RNA-Seq data from NCBI’s GEO (Gene Expression Omnibus) or SRA (Short Read Archive) databases using NCBI’s tool sratoolkit (version 2.3.5-2) for accession IDs or using wget for HTTP/FTP addresses.
+
+	* **RNA-Seq accession list**: A list of accession ID of RNA-Seq data .
+
+	* **RNA-Seq FTP address**: A list of HTTP/FTP addresses of RNA-Seq.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **High-quality RNA-Seq data**: A compressed file containing high-quality RNA-Seq data.
+
+	* **Quality control report**: A compressed file containing fastp reports.
+
+    </help>
+    <citations>
+        <citation type="doi">10.1093/bioinformatics/bty560</citation>
+    </citations>
+</tool>
+
