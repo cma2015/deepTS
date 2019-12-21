@@ -25,12 +25,25 @@
      <tr>
       <td>SAMTools (version 1.10)(<https://academic.oup.com/bioinformatics/article/25/16/2078/204688>)</td>
      </tr>
+     <tr>
       <td>BEDTools (version 2.29.0)(<https://academic.oup.com/bioinformatics/article/26/6/841/244688>)</td>
+     </tr>
+     <tr>     
       <td>StringTie (version 1.3.4)(<https://www.nature.com/articles/nbt.3122>)</td>
+     </tr>
+     <tr>  
       <td>Cufflinks (version 2.2.1)(<https://www.nature.com/articles/nbt.1621>)</td>
+     </tr>
+     <tr>  
       <td>CPC2 (version 0.1)(<https://academic.oup.com/nar/article/45/W1/W12/3831091>)</td>
+     </tr>
+     <tr>  
       <td>DIAMOND (version 0.9.29)(<https://www.nature.com/articles/nmeth.3176>)</td>
+     </tr>
+     <tr>  
       <td>featureCounts (version 2.0.0)(<https://academic.oup.com/bioinformatics/article/30/7/923/232889>)</td>
+     </tr>
+     <tr>  
       <td>GMAP (version  2015-09-29)(<https://academic.oup.com/bioinformatics/article/21/9/1859/409207>)</td>
      </tr>
      <tr>
@@ -39,6 +52,8 @@
       <td rowspan="2">Transcriptome map; mapping results (BAM files)</td>
       <td rowspan="2">Expression matrix</td>
       <td>StringTie (version 1.3.4)(<https://www.nature.com/articles/nbt.3122>)</td>
+     </tr>
+     <tr>  
       <td>sva (version 3.34.0)(<https://academic.oup.com/bioinformatics/article/28/6/882/311263>)</td>
      </tr>
     </table>
