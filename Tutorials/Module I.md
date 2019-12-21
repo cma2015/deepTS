@@ -21,7 +21,10 @@
       <td rowspan="9">Reference genome sequence; reference genome annotation; high-quality RNA-Seq data (FLNC PacBio reads)</td>
       <td rowspan="9">Transcriptome map; mapping results (BAM files)</td>
       <td>HISAT (version 2.1.0)(<https://www.nature.com/articles/nmeth.3317>)</td>
+     </tr>
+     <tr>
       <td>SAMTools (version 1.10)(<https://academic.oup.com/bioinformatics/article/25/16/2078/204688>)</td>
+     </tr>
       <td>BEDTools (version 2.29.0)(<https://academic.oup.com/bioinformatics/article/26/6/841/244688>)</td>
       <td>StringTie (version 1.3.4)(<https://www.nature.com/articles/nbt.3122>)</td>
       <td>Cufflinks (version 2.2.1)(<https://www.nature.com/articles/nbt.1621>)</td>
