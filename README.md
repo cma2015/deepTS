@@ -9,7 +9,7 @@
 
 ## How to use deepTS
 
-- Tutorials for deepTS: XXX
+- Tutorials for deepTS: https://github.com/chenzhuod/deepTS/blob/master/Tutorials/User_mannual.md
 - Test datasets referred in the tutorials for deepTS: XXX
 
 ## News and updates
