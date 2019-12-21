@@ -19,7 +19,7 @@
 - deepTS source codes, web server and Docker image were released for the first time.
 
 ## How to access help
-* For any bugs/issues, please feel free to leave a message at Github [issues](<https://github.com/cma2015/deepTS/issues>). We will try our best to deal with all issues as soon as possible.
+* For any bugs/issues, please feel free to leave a message at Github [issues](<https://github.com/chenzhuod/deepTS/issues>). We will try our best to deal with all issues as soon as possible.
 * For any suggestions/comments, please send emails to: __Siyuan Chen__ <chenzhuod@gmail.com> or __Zhixu Qiu__ <zhixuqiu2015@gmail.com>
 
 ## How to cite this work
