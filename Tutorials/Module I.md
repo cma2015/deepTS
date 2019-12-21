@@ -13,7 +13,7 @@
       <td>Upload or retrieve raw RNA-Seq data and trim low-quality reads and sequencing adapters</td>
       <td>Raw RNA-Seq data or accession IDs/ftp address of data</td>
       <td>High-quality RNA-Seq data</td>
-      <td>[fastp](<https://academic.oup.com/bioinformatics/article/34/17/i884/5093234>) (version 0.20.0)</td>
+      <td>[fastp](https://academic.oup.com/bioinformatics/article/34/17/i884/5093234) (version 0.20.0)</td>
      </tr>
      <tr>
       <td rowspan="9">Construction of the transcriptome map</td>
