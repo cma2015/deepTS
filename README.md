@@ -6,6 +6,10 @@
     ![deepTS](https://github.com/chenzhuod/deepTS/blob/master/Tutorials/deepTS_images/Figure_1_Overview_20191218.png)
 
 ## Overview of functional modules in deepTS
+- [**Module I: Generation of transcript expression matrix**](XXX)
+- [**Module II: Identification of TS events**]
+- [**Module III: Exploration of TS events**]
+
 
 ## How to use deepTS
 
