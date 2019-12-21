@@ -10,7 +10,7 @@
 ## How to use deepTS
 
 - Tutorials for deepTS: https://github.com/chenzhuod/deepTS/blob/master/Tutorials/User_mannual.md
-- Test datasets referred in the tutorials for deepTS: XXX
+- Test datasets referred in the tutorials for deepTS: https://github.com/chenzhuod/deepTS/blob/master/Test_data/README.md
 
 ## News and updates
 
@@ -23,4 +23,4 @@
 * For any suggestions/comments, please send emails to: __Siyuan Chen__ <chenzhuod@gmail.com> or __Zhixu Qiu__ <zhixuqiu2015@gmail.com>
 
 ## How to cite this work
-Zhixu Qiu, Siyuan Chen, Yuhong Qi,  Chunni Liu, Xiaorong Zhang, Shang Xie, Jingjing Zhai, Chuang Ma, Exploring transcriptional switch events from large-scale RNA sequencing data using deepTS (submitted)
+Zhixu Qiu, Siyuan Chen, Yuhong Qi,  Chunni Liu, Xiaorong Zhang, Shang Xie, Jingjing Zhai, Chuang Ma, Exploring transcriptional switch events from large-scale RNA sequencing data using deepTS (Submitted)
