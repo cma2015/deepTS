@@ -3,7 +3,7 @@
 - deepTS consists of three main functional modules, covering the processes of read cleaning and mapping; transcriptome map construction; expression abundance estimation; and TS identification, visualization, and exploration. In addition, deepTS provides a series of mutually independent, end-to-end functions, including multiple-algorithm expression abundance estimation (e.g., StringTie, salmon), multiple-condition TS analysis pipelines, multiple-level TS characterization, and multiple-form visualization, to allow users to perform TS analysis using either raw RNA-Seq data or expression abundance matrices directly.
 - deepTS project is hosted on GitHub (https://github.com/cma2015/deepTS), and can be accessed from http://deepTS.nwafu.edu.cn. The deepTS Docker images is available at XXX.
 
-    ![deepTS](https://github.com/chenzhuod/deepTS/Tutorials/deepTS_images/Figure 1_Overview_20191218.png)
+    ![deepTS](https://github.com/chenzhuod/deepTS/blob/master/Tutorials/deepTS_images/Figure_1_Overview_20191218.png)
 
 ## Overview of functional modules in deepTS
 
