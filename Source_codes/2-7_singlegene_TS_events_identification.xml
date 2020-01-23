@@ -1,0 +1,161 @@
+<tool id="singlegene_TS_identify" name="Single gene TS events identification" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		#if $identification.TStype == "time_series"
+			Rscript ${__tool_directory__}/timeSeries_TS/01_gene_timeSeries_TS.R --tooldir ${__tool_directory__} --sqlitedb $sqlitedb 
+				--geneID $geneID
+				#if $identification.timeSeries_TS.num_set.interval1 and $identification.timeSeries_TS.num_set.interval2 
+					--num_set_I1 $identification.timeSeries_TS.num_set.interval1 --num_set_I2 $identification.timeSeries_TS.num_set.interval2
+				#end if
+				#if $identification.timeSeries_TS.cor_set		
+					--cor_set $identification.timeSeries_TS.cor_set
+				#end if
+				#if $identification.timeSeries_TS.freq_set
+					--freq_set $identification.timeSeries_TS.freq_set 
+				#end if
+				#if $identification.timeSeries_TS.diff_pvalue_set.interval1 and $identification.timeSeries_TS.diff_pvalue_set.interval2
+					--diff_pvalue_I1 $identification.timeSeries_TS.diff_pvalue_set.interval1 --diff_pvalue_I2 $identification.timeSeries_TS.diff_pvalue_set.interval2
+				#end if
+				#if $identification.timeSeries_TS.diff_ra_set.interval1 and $identification.timeSeries_TS.diff_ra_set.interval2
+					--diff_ra_I1 $identification.timeSeries_TS.diff_ra_set.interval1 --diff_ra_I2 $identification.timeSeries_TS.diff_ra_set.interval2
+				#end if
+				#if $identification.timeSeries_TS.change_ra_set.iso1 and $identification.timeSeries_TS.change_ra_set.iso2
+					--change_ra_iso1 $identification.timeSeries_TS.change_ra_set.iso1 --change_ra_iso2 $identification.timeSeries_TS.change_ra_set.iso2
+				#end if
+				#if $identification.timeSeries_TS.diff_exp_set.interval1 and $identification.timeSeries_TS.diff_exp_set.interval2
+					--diff_exp_I1 $identification.timeSeries_TS.diff_exp_set.interval1 --diff_exp_I2 $identification.timeSeries_TS.diff_exp_set.interval2
+				#end if
+				#if $identification.timeSeries_TS.change_exp_set.iso1 and $identification.timeSeries_TS.change_exp_set.iso2
+					--change_exp_iso1 $identification.timeSeries_TS.change_exp_set.iso1 --change_exp_iso2 $identification.timeSeries_TS.change_exp_set.iso2
+				#end if
+					--out_report $out_timeSeriesTS_report
+		#elif $identification.TStype == "population"
+			Rscript ${__tool_directory__}/population_TS/02_main_genesqtl_ana.R --tooldir ${__tool_directory__} --sqlitedb $sqlitedb 
+				--geneID $geneID --hmpfile $identification.popTS.hmpfile 
+				--pvalue $identification.popTS.pvalue --cpuNum $identification.popTS.cpuNum
+				--ld_threold $identification.popTS.ld_threold --diff_Ratio $identification.popTS.diff_Ratio_set							
+				
+				--out_report $out_popTS_report
+		#end if
+	</command>
+	
+	<inputs>
+		<param name="sqlitedb" type="data" label="Sqlite database" />
+		<param name="tsRes" type="data" optional="True" label="TS events Matrix" />	
+		<param name="geneID" type="select" optional="true" multiple="false" label="Gene ID">
+			<options from_dataset="tsRes">
+				<column name="name" index="1"/>
+				<column name="value" index="1"/>
+				<filter type="unique_value" name="unique_group" column="1"/>
+				<filter type="sort_by" name="sorted_group" column="1"/>
+			</options>
+			<sanitizer>
+				<valid initial="default">
+					<add preset="string.printable"/>
+					<add value=";"/>
+					<remove value="&quot;"/>
+					<remove value="&apos;"/>
+				</valid>
+			</sanitizer>
+		</param>
+		<conditional name="identification">
+			<param name="TStype" type="select" label="Select TS event types?">				
+				<option value="time_series">Time-series TS events</option>
+				<option value="population">Popultaion TS events</option>
+			</param>
+			<when value="time_series">
+				<section name="timeSeries_TS" title="Time-series TS event parameters" expanded="True">	
+					<param name="cor_set" type="float" optional="True" label="cor"  
+					help="The Pearson's correlation coefficient between the expression values of the paired transcripts across time series in intervals I1 and I2. Example: -0.2" />
+					<param name="freq_set" type="float" optional="True" label="freq"  
+					help="The frequencies of samples of one transcript is greater than the other in interval I1 and is less than the other in interval I2. Example: 0.5" />
+					<section name="num_set"  title="num_set" expanded="False">
+						<param name="interval1" type="float" optional="True" label="Interval I1"
+						help="The least number of consecutive time points in interval I1. Example: 1"/>
+						<param name="interval2" type="float" optional="True" label="Interval I2"
+						help="The least number of consecutive time points in interval I2. Example: 1"/>
+					</section>
+					<section name="diff_pvalue_set" title="diff_pvalue" expanded="False">
+						<param name="interval1" type="float"  optional="True" label="Interval I1"
+						help="The significance level of the difference between the relative abundance of two transcripts in interval I1. Example: 0.05"/>
+						<param name="interval2" type="float" optional="True" label="Interval I2"
+						help="The significance level of the difference between the relative abundance of two transcripts in interval I2. Example: 0.05"/>
+					</section>
+					<section name="diff_ra_set" title="diff_ra" expanded="False">
+						<param name="interval1" type="float" optional="True" value="0.3" label="Interval I1"
+						help="The mean difference of two transcripts in terms of relative abundance in interval I1. Default:0.3"/>
+						<param name="interval2" type="float" optional="True" value="0.3" label="Interval I2"
+						help="The mean difference of two transcripts in terms of relative abundance in intervas I2. Default:0.3"/>
+					</section>
+					<section name="change_ra_set" title="change_ra" expanded="False">
+						<param name="iso1" type="float" optional="True" value="0.2" label="Transcript 1"
+						help="The difference in the relative abundance of transript 1 between interval I1 and I2. Default:0.2"/>
+						<param name="iso2" type="float" optional="True" value="0.2" label="Transcript 2"
+						help="The difference in the relative abundance of transript 2 between interval I1 and I2. Default:0.2"/>
+					</section>
+					<section name="diff_exp_set" title="diff_exp" expanded="False" >
+						<param name="interval1" type="float" optional="True" value="3" label="Interval I1"
+						help="The mean difference of two transcripts in terms of expression values in interval I1. Default:3"/>
+						<param name="interval2" type="float" optional="True" value="3" label="Interval I2"
+						help="The mean difference of two transcripts in terms of expression values in interval I2. Default:3"/>
+					</section>
+					<section name="change_exp_set" title="change_exp" expanded="False">
+						<param name="iso1" type="float" optional="True" value="3" label="Transcript 1"
+						help="The difference in the average expression value of transript 1 between interval I1 and I2. Default:3"/>
+						<param name="iso2" type="float" optional="True" value="3" label="Transcript 2"
+						help="The difference in the average expression value of transript 2 between interval I1 and I2. Default:3"/>
+					</section>
+				</section>	
+			</when>
+			<when value="population">
+				<section name="popTS" title="Population TS event parameters" expanded="True">	
+					<param name="hmpfile" type="data" optional="True" label="The genotype file" />
+					<param name="pvalue" type="float" label="Pvalue for significant association" value="0.000000743" />
+					<param name="cpuNum" type="integer" label="CPU number" value="1" />									
+					<param name="ld_threold" type="float" label="Linkage Disequilibrium value" value="0.1" />			
+					<param name="diff_Ratio_set" type="float" label="The relative abundance difference of two transripts between two genotype" value="0.2" />				
+				</section>	
+			</when>			
+		</conditional>
+
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running single gene TS events" />
+	</stdio>	
+	<outputs>
+	  	<data name="out_timeSeriesTS_report" label="Singe gene time-series TS events report" format="tar.gz">
+			<filter>identification['TStype'] == "time_series"</filter>
+		</data>		
+		<data name="out_popTS_report" label="Singe gene popultaion TS events report" format="tar.gz">
+			<filter>identification['TStype'] == "population"</filter>
+		</data>
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+     This function can be used to identify TS events for time-series and population transcriptome comparison in single gene level.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **Sqlite database**: a SQLite file created by **Creat SQLite file** in other tools.	
+
+	* **TS events Matrix**: TS events Matrix in **Sqlite database**.		
+
+	* **Gene ID**: Gene ID from TS events Matrix.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **single_report**: single gene time-series or  population TS events report.
+
+	</help>
+</tool>
+

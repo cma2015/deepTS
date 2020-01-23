@@ -1,0 +1,191 @@
+<tool id="TS_filteration" name="User-defined filtering" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		#if $filteration.TStype == "pairwise"
+			Rscript ${__tool_directory__}/pairwise_TS/00_filter_pairwiseTS.R --rawTS $rawTS 
+				#if $filteration.pairwiseTS.ifswitchPoint.name  == "yes"
+					--ifswitchPoint yes
+				#elif $filteration.pairwiseTS.name  == "no"
+					--ifswitchPoint no
+				#elif $filteration.pairwiseTS.name  == "both"
+					--ifswitchPoint both
+				#end if 	
+
+				--max_Exp_iso1 $filteration.pairwiseTS.max_Exp.iso1  --max_Exp_iso2 $filteration.pairwiseTS.max_Exp.iso2
+				--max_FC $filteration.pairwiseTS.max_FC --min_Ratiodif $filteration.pairwiseTS.min_Ratiodiff					
+				
+				--final_TS $out_pairwiseTS
+
+		#elif $filteration.TStype == "time_series"
+
+			Rscript ${__tool_directory__}/timeSeries_TS/00_filter_time_seriesTS.R --rawTS $rawTS 
+				#if $filteration.timeSeries_TS.num_set.interval1 and $filteration.timeSeries_TS.num_set.interval2 
+					--num_set_I1 $filteration.timeSeries_TS.num_set.interval1 --num_set_I2 $filteration.timeSeries_TS.num_set.interval2
+				#end if
+				#if $filteration.timeSeries_TS.cor_set		
+					--cor_set $filteration.timeSeries_TS.cor_set
+				#end if
+				#if $filteration.timeSeries_TS.freq_set
+					--freq_set $filteration.timeSeries_TS.freq_set 
+				#end if
+				#if $filteration.timeSeries_TS.diff_pvalue_set.interval1 and $filteration.timeSeries_TS.diff_pvalue_set.interval2
+					--diff_pvalue_I1 $filteration.timeSeries_TS.diff_pvalue_set.interval1 --diff_pvalue_I2 $filteration.timeSeries_TS.diff_pvalue_set.interval2
+				#end if
+				#if $filteration.timeSeries_TS.diff_ra_set.interval1 and $filteration.timeSeries_TS.diff_ra_set.interval2
+					--diff_ra_I1 $filteration.timeSeries_TS.diff_ra_set.interval1 --diff_ra_I2 $filteration.timeSeries_TS.diff_ra_set.interval2
+				#end if
+				#if $filteration.timeSeries_TS.change_ra_set.iso1 and $filteration.timeSeries_TS.change_ra_set.iso2
+					--change_ra_iso1 $filteration.timeSeries_TS.change_ra_set.iso1 --change_ra_iso2 $filteration.timeSeries_TS.change_ra_set.iso2
+				#end if
+				#if $filteration.timeSeries_TS.diff_exp_set.interval1 and $filteration.timeSeries_TS.diff_exp_set.interval2
+					--diff_exp_I1 $filteration.timeSeries_TS.diff_exp_set.interval1 --diff_exp_I2 $filteration.timeSeries_TS.diff_exp_set.interval2
+				#end if
+				#if $filteration.timeSeries_TS.change_exp_set.iso1 and $filteration.timeSeries_TS.change_exp_set.iso2
+					--change_exp_iso1 $filteration.timeSeries_TS.change_exp_set.iso1 --change_exp_iso2 $filteration.timeSeries_TS.change_exp_set.iso2
+				#end if
+					--final_TS $out_timeSeries_TS
+		
+		#elif $filteration.TStype == "population"
+			Rscript ${__tool_directory__}/population_TS/01_popTS_filter.R --tooldir ${__tool_directory__} --raw_sigSNP $rawTS --hmpfile $filteration.popTS.hmpfile 
+				--expMat $filteration.popTS.expMat --idFile $filteration.popTS.idFile
+				--ld_threold $filteration.popTS.ld_threold --diff_Ratio $filteration.popTS.diff_Ratio_set				
+				--out_sqtlTSfile $out_sqtlTSfile
+		#end if
+			
+	</command>
+	
+	<inputs>		
+		<conditional name="filteration">
+			<param name="TStype" type="select" label="Select TS event types?">
+				<option value="pairwise" selected="true"> pairwise TS events</option>
+				<option value="time_series">time-series TS events</option>
+				<option value="population">popultaion TS events</option>
+			</param>
+			<when value="pairwise">
+				<param name="rawTS" type="data" optional="True"  label="Initial TS events matrix" />
+				<section name="pairwiseTS" title="Parameters of pairwise TS events filtration" expanded="True">								
+					<conditional name="ifswitchPoint">
+						<param name="name" type="select" label="Whether exit switch point">
+							<option value="yes">yes</option>
+							<option value="no">no</option>
+							<option value="both">both</option>
+						</param>
+						<when value="yes">
+						</when>
+						<when value="no">
+						</when>
+						<when value="both">
+						</when>
+					</conditional>
+					<section name="max_Exp" title="max_Exp" expanded="True">
+						<param name="iso1" type="float" value="1" label="Transcript 1" 
+						help="The maximum mean expression expression level of transcript1.Default: 1"/>
+						<param name="iso2" type="float" value="1" label="Transcript 2"
+						help="The maximum mean expression expression level of transcript2.Default: 1"/>
+					</section>
+					<param name="max_FC" type="float" label="max_FC" value="1"
+					help="The log2 of maximum fold change of transcripts between two conditions. Default: 1" />
+					<param name="min_Ratiodiff" type="float" label="min_Ratiodiff" value="0.15" 
+					help="The relative abundance difference of two transcripts between two conditions. Default: 0.15" />
+
+				</section>
+			</when>
+			<when value="time_series">
+				<param name="rawTS" type="data" optional="True"  label="Initial TS events matrix" />	
+				<section name="timeSeries_TS" title="Parameters of time-series TS events filtration" expanded="True">					
+					<param name="cor_set" type="float" optional="True" label="cor"  
+					help="The Pearson's correlation coefficient between the expression values of the paired transcritpts across time series in intervals I1 and I2. Example: -0.2" />
+					<param name="freq_set" type="float" optional="True" label="freq"  
+					help="The frequencies of samples of one transcript is greater than the other in interval I1 and is less than the other in interval I2. Example: 0.5" />
+					<section name="num_set"  title="num_set" expanded="False">
+						<param name="interval1" type="float" optional="True" label="Interval I1"
+						help="The least number of consecutive time points in interval I1. Example: 1"/>
+						<param name="interval2" type="float" optional="True" label="Interval I2"
+						help="The least number of consecutive time points in interval I2. Example: 1"/>
+					</section>
+					<section name="diff_pvalue_set" title="diff_pvalue" expanded="False">
+						<param name="interval1" type="float"  optional="True" label="Interval I1"
+						help="The significance level of the difference between the relative abundance of two transcripts in interval I1. Example: 0.05"/>
+						<param name="interval2" type="float" optional="True" label="Interval I2"
+						help="The significance level of the difference between the relative abundance of two transcripts in interval I2. Example: 0.05"/>
+					</section>
+					<section name="diff_ra_set" title="diff_ra" expanded="False">
+						<param name="interval1" type="float" optional="True" value="0.3" label="Interval I1"
+						help="The mean difference of two transcripts in terms of relative abundance in interval I1. Default:0.3"/>
+						<param name="interval2" type="float" optional="True" value="0.3" label="Interval I2"
+						help="The mean difference of two transcripts in terms of relative abundance in intervas I2. Default:0.3"/>
+					</section>
+					<section name="change_ra_set" title="change_ra" expanded="False">
+						<param name="iso1" type="float" optional="True" value="0.2" label="Transcript 1"
+						help="The difference in the relative abundance of transript 1 between interval I1 and I2. Default:0.2"/>
+						<param name="iso2" type="float" optional="True" value="0.2" label="Transcript 2"
+						help="The difference in the relative abundance of transript 2 between interval I1 and I2. Default:0.2"/>
+					</section>
+					<section name="diff_exp_set" title="diff_exp" expanded="False" >
+						<param name="interval1" type="float" optional="True" value="3" label="Interval I1"
+						help="The mean difference of two transcripts in terms of expression values in interval I1. Default:3"/>
+						<param name="interval2" type="float" optional="True" value="3" label="Interval I2"
+						help="The mean difference of two transcripts in terms of expression values in interval I2. Default:3"/>
+					</section>
+					<section name="change_exp_set" title="change_exp" expanded="False">
+						<param name="iso1" type="float" optional="True" value="3" label="Transcript 1"
+						help="The difference in the average expression value of transript 1 between interval I1 and I2. Default:3"/>
+						<param name="iso2" type="float" optional="True" value="3" label="Transcript 2"
+						help="The difference in the average expression value of transript 2 between interval I1 and I2. Default:3"/>
+					</section>
+				</section>	
+			</when>
+			<when value="population">
+				<param name="rawTS" type="data" optional="True"  label="Inital significant association SNP matrix" />
+				<section name="popTS" title="Parameters of population TS events filtration" expanded="True">						
+					<param name="hmpfile" type="data" optional="True" label="Genotype matrix" />
+					<param name="expMat" type="data" optional="True" label="Transcript expression matrix" />
+					<param name="idFile" type="data" optional="True" label="Gene-transcript ID matrix" />					
+					<param name="ld_threold" type="float" label="The LD value" value="0.1" />			
+					<param name="diff_Ratio_set" type="float" label="The relative abundance difference of two transcripts between two genotypes" value="0.2" />				
+				</section>	
+			</when>
+			
+		</conditional>		
+		
+		
+
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Filtering  TS event" />
+	</stdio>	
+	<outputs>	
+		<data name="out_pairwiseTS" label="Filtered pairwise TS events" format="tsv">
+			<filter>filteration['TStype'] == "pairwise"</filter>
+		</data>
+	  	<data name="out_timeSeries_TS" label="Filtered time-series TS events" format="tsv">
+			<filter>filteration['TStype'] == "time_series"</filter>
+		</data>
+		<data name="out_sqtlTSfile" label="Filtered population TS events" format="tsv">
+			<filter>filteration['TStype'] == "population"</filter>
+		</data>
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to filter TS events for pairwise, time-series and popultaion transcriptome comparison.
+
+	.. class:: infomark
+
+	**Inputs**
+	
+	* **Inital TS events or significant association SNP matrix in tsv format**
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Filtered TS events**: The TS events matrix in **tsv** format filtered by selecting parameters.
+	</help>
+</tool>
+

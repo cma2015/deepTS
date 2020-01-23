@@ -1,0 +1,51 @@
+<tool id="CPC2" name="CPC2" version="17.09">
+	<description>
+	</description>
+	
+	<command>
+		${__tool_directory__}/cufflinks-2.2.1.Linux_x86_64/gffread -w ${transcript_sequence} -g ${genome_sequence} ${genome_annotation} ;
+		python ${__tool_directory__}/CPC2-beta/bin/CPC2.py -i ${tranSeq} -o ${CPC2_result} ;
+	</command>
+	
+	<inputs>
+		<param name="genome_sequence" type="data" optional="True" label="Reference genome sequence" />
+		<param name="genome_annotation" type="data" optional="True" label="Reference genome annotation" />
+	</inputs>
+
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running CPC2" />
+	</stdio>
+	
+	<outputs>
+		<data name="transcript_sequence" label="Transcript sequence"/>
+		<data name="CPC2_result" format="tsv" label="CPC2 result" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to extract transcript sequences and estimate transcript coding potential.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **Reference genome sequence**: Reference genome sequence as *fasta* format.
+
+	* **Reference genome annotation**: Reference genome annotation as *GTF* format.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Transcript sequence**: Transcript sequence as *fasta* format.
+
+	* **CPC2 result**: CPC2 result for each transcritpt
+    </help>
+    <citations>
+		<citation type="doi">10.1093/nar/gkx428</citation>
+    </citations>
+</tool>
+

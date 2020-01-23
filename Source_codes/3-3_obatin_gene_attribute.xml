@@ -1,0 +1,102 @@
+<tool id="obtain_featurefile" name="Obtain feature file" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/annotateTS/07_get_featurefile.R --tooldir ${__tool_directory__}
+		--species $database.species --species_type $database.data_type 
+		#if $specific.ifspecific == "gene"	
+				--tsRes $specific.tsRes
+		#end if
+		#if $ifdomain == "yes"	
+				--out_domain $out_domain
+		#end if
+		#if $ifdomain == "yes"	
+				--out_domain $out_domain
+		#end if
+		#if $ifisoGeneID == "yes"	
+				--out_isogeneID $out_isogeneID
+		#end if
+		#if $iftermID == "yes"	
+				--out_termID $out_termID
+		#end if
+	</command>	
+	<inputs>
+			
+			<conditional name="specific">
+				<param name="ifspecific" type="select" label="Download type">				
+					<option value="all">Obatin feature matrix of all transcripts in genome</option>
+					<option value="gene">Obatin feature matrix of transcripts of TS-related genes</option>
+				</param>
+				<when value="gene">
+					<param name="tsRes" type="data" optional="true" label="TS events matrix"  />
+				</when>
+			</conditional>
+
+			<param name="ifdomain" type="select" label="Whether output protein domain file?">				
+				<option value="yes">Yes</option>
+				<option value="no">NO</option>
+			</param>
+			<param name="ifisoGeneID" type="select" label="Whether output Gene-transcript ID?">				
+				<option value="yes">Yes</option>
+				<option value="no">NO</option>
+			</param>
+			<param name="iftermID" type="select" label="Whether output GO term ID of genes?">				
+				<option value="yes">Yes</option>
+				<option value="no">NO</option>
+			</param>
+			<conditional name="database">
+				<param name="data_type" type="select" label="Select an specie of Ensembl database" display="radio">
+					<option value="plant" selected="True">Ensembl Plants</option>
+					<option value="animal">Ensembl Animals</option>						
+				</param>
+				<when value="plant">
+					<param name="species" type="select" value="Choose" label="Select a species"
+						help="">
+							<options from_data_table="Ensembl_Plants" >
+								<column name="name" index="0"/>
+								<column name="value" index="1"/>
+								<filter type="sort_by" column="1"/>
+								<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+							</options>
+					</param>
+				</when>
+				<when value="animal">
+					<param name="species" type="select" value="Choose" label="Select a species"
+						help="">
+							<options from_data_table="Ensembl_animals" >
+								<column name="name" index="0"/>
+								<column name="value" index="1"/>
+								<filter type="sort_by" column="1"/>
+								<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+							</options>
+					</param>
+				</when>
+			</conditional>
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running cds annotation" />
+	</stdio>	
+	<outputs>
+	  	<data name="out_domain" label=" Obtain protein domain" format="tsv">
+			<filter>ifdomain == "yes"</filter>
+		</data>	
+	  	<data name="out_isogeneID" label=" Obtain Gene-transcript ID mapping" format="tsv">
+			<filter>ifisoGeneID == "yes"</filter>
+		</data>	
+	  	<data name="out_termID" label=" Obtain gene GO term ID" format="tsv">
+			<filter>iftermID == "yes"</filter>
+		</data>	
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to Obtain feature file from ensemble database for TS events analysis.
+
+
+	</help>
+</tool>
+

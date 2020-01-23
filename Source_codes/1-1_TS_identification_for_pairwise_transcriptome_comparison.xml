@@ -1,0 +1,116 @@
+<tool id="TS_identification_for_pairwise_transcriptome_comparison" name="Pairwise transcriptome comparison" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/pairwise_TS/00_identify_pairwiseTS.R --tooldir ${__tool_directory__} --gtf $gtf --expMat $expMat --designFile $designFile 
+			--idFile $idFile
+			--dtu_pvalue $identifyTS.dtu_pvalue
+			
+			#if $identifyTS.if_allgene.name == "yes"
+				--if_allgene yes
+			#elif $identifyTS.if_allgene.name == "no"
+				--if_allgene no
+			#end if
+
+			#if $filterTS.ifswitchPoint.name  == "yes"
+				--ifswitchPoint yes
+			#elif $filterTS.ifswitchPoint.name  == "no"
+				--ifswitchPoint no
+			#elif $filterTS.ifswitchPoint.name  == "both"
+				--ifswitchPoint both
+			#end if 	
+
+			--max_Exp_iso1 $filterTS.max_Exp.iso1 --max_Exp_iso2 $filterTS.max_Exp.iso2 --max_FC $filterTS.max_FC --min_Ratiodiff $filterTS.min_Ratiodiff					
+			
+			--rawTS $rawTS --finalTS $final_TS
+			
+			
+	</command>
+	
+	<inputs>
+		<param name="gtf" type="data" optional="True" label="Genome annotation file" />
+		<param name="expMat" type="data" optional="True" label="Transcript expression abundance matrix" />
+		<param name="designFile" type="data" optional="True" label="Experiment design matrix" />
+		<param name="idFile" type="data" optional="True" label="Gene-transcript ID matrix" />
+		<section name="identifyTS" title="Parameters of TS events identification" expanded="True">
+			<param name="dtu_pvalue" type="float" label="DTU significant p-value" value="0.05" />
+			<conditional name="if_allgene">
+				<param name="name" type="select" label="Whether the number of transcripts in the input expression matrix is ​​equal to the number in the input annotation file?">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+					
+				</param>
+				<when value="yes">
+				</when>
+				<when value="no">
+				</when>
+			</conditional>
+		</section>
+		<section name="filterTS" title="Parameters of TS events filtration" expanded="True">			
+			<conditional name="ifswitchPoint">
+				<param name="name" type="select" label="Whether exit switch point?">
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+					<option value="both">both</option>
+				</param>
+				<when value="yes">
+				</when>
+				<when value="no">
+				</when>
+				<when value="both">
+				</when>
+			</conditional>			
+			<section name="max_Exp" title="max_Exp" expanded="True">
+				<param name="iso1" type="float" value="1" label="Transcript 1" 
+				help="The maximum mean expression expression level of transcript1. Default: 1"/>
+				<param name="iso2" type="float" value="1" label="Transcript 2"
+				help="The maximum mean expression expression level of transcript2. Default: 1"/>
+			</section>
+			<param name="max_FC" type="float" label="max_FC" value="1"
+			help="The log2 of maximum fold change of transcripts between two conditions. Default: 1" />
+			<param name="min_Ratiodiff" type="float" label="min_Ratiodiff" value="0.15" 
+			help="The relative abundance difference of two transcripts between two conditions. Default: 0.15" />
+		</section>
+
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error running pairwise TS identify" />
+	</stdio>	
+	<outputs>
+		<data name="rawTS"  format="tsv" label="Inital pairwise TS events" />
+		<data name="final_TS"  format="tsv" label="Filtered pairwise TS events" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to identify TS events for pairwise transcriptome comparison.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **Genome annotation file**: Genome annotation file in **GTF** format.
+
+	* **Transcript expression abundance matrix**: The transcript expression matrix in **tsv** format, the first row and the first column are the transcript name and sample ID, respectively.
+
+	* **Design matrix**: The RNA-Seq experiments design matrix in **tsv** format, the first to third columns are the sample ID, group, and replication information, respectively.
+
+	* **Gene-transcript ID matrix**: The gene and transcript ID matrix in **tsv** format, The first to third columns are the genes, transcript IDs and digitally encoded chromosome numbers, respectively.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Initial pairwise TS events**: The initial TS events matrix in **tsv** format.
+
+	* **Filtered pairwise TS events**: The TS events matrix in **tsv** format filtered by selecting parameters.
+	</help>
+    <citations>
+		<citation type="doi">10.1186/s13059-018-1417-1</citation>
+    </citations>
+</tool>
+

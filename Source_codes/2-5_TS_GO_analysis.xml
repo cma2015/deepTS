@@ -1,0 +1,108 @@
+<tool id="go_ana" name="GO enrichment analysis" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/annotateTS/05_GO_plot.R --tooldir ${__tool_directory__} --tsRes $tsRes 
+			--group $group 
+			#if $goAna.ifupload == "yes"
+					--termfile $goAna.termfile 
+			#end if 
+			#if $goAna.ifupload == "no"
+					--species $goAna.specie_list.species --species_type $goAna.specie_list.data_type
+			#end if 
+			--goRes $goRes  --imagefile $out_go_image
+
+	</command>
+	
+	<inputs>
+		<param name="tsRes" type="data" optional="true" label="TS events matrix" />	
+		<param name="group" type="select" optional="true" multiple="false" label="group">
+			<options from_dataset="tsRes">
+				<column name="name" index="0"/>
+				<column name="value" index="0"/>
+				<filter type="unique_value" name="unique_group" column="0"/>
+				<filter type="sort_by" name="sorted_group" column="0"/>
+			</options>
+			<sanitizer>
+				<valid initial="default">
+					<add preset="string.printable"/>
+					<add value=";"/>
+					<remove value="&quot;"/>
+					<remove value="&apos;"/>
+				</valid>
+			</sanitizer>
+		</param>
+		<conditional name="goAna">
+			<param name="ifupload" type="select" label="Whether upload gene and GO term ID?">				
+				<option value="no">no</option>
+				<option value="yes">yes</option>
+			</param>
+			<when value="yes">
+				<param name="termfile" type="data" optional="True" label="GO terms ID" />
+			</when>
+			<when value="no">
+				<conditional name="specie_list">
+					<param name="data_type" type="select" label="Select an specie of Ensembl database" display="radio">
+						<option value="plant" selected="True">Ensembl Plants</option>
+						<option value="animal">Ensembl Animals</option>						
+					</param>
+					<when value="plant">
+						<param name="species" type="select" value="Choose" label="Select a species"
+							help="">
+								<options from_data_table="Ensembl_Plants" >
+									<column name="name" index="0"/>
+									<column name="value" index="1"/>
+									<filter type="sort_by" column="1"/>
+									<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+								</options>
+						</param>
+					</when>
+					<when value="animal">
+						<param name="species" type="select" value="Choose" label="Select a species"
+							help="">
+								<options from_data_table="Ensembl_animals" >
+									<column name="name" index="0"/>
+									<column name="value" index="1"/>
+									<filter type="sort_by" column="1"/>
+									<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+								</options>
+						</param>
+					</when>
+				</conditional>
+			</when>
+		</conditional>
+		
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Exploration of TS events" />
+	</stdio>	
+	<outputs>
+	  	<data name="out_go_image" label="Visualization of GO enrichment analysis" format="pdf" />
+		<data name="goRes" label="GO enrichment analysis result" format="txt" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+     This function can be used to identify TS events for time-series and population transcriptome comparison in single gene.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **TS events matrix**: Pairwise, time-series or population TS events matrix, The first column is the group or SNP ID, the second to fourth columns are genes, transcript 1 and transcript 2 IDs respectively.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **GO enrichment analysis result**
+
+	* **Visualization of GO enrichment analysis**
+	</help>
+
+</tool>
+

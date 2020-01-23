@@ -1,0 +1,129 @@
+<tool id="TS_identification_for_time_series_transcriptome_comparison" name="Time-series transcriptome comparison" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/timeSeries_TS/00_identity_time_seriesTS.R --tooldir ${__tool_directory__} --expMat $expMat --designFile $designFile  
+			--idFile $idFile --lowExp $identifyTS.lowExp_threshold --min_isoratio $identifyTS.min_isoratio 
+			--min_t_points $identifyTS.min_t_points --threads $identifyTS.threads
+			#if $filterTS.num_set.interval1 and $filterTS.num_set.interval2 
+				--num_set_I1 $filterTS.num_set.interval1 --num_set_I2 $filterTS.num_set.interval2
+			#end if
+			#if $filterTS.cor_set		
+		 		--cor_set $filterTS.cor_set
+			#end if
+			#if $filterTS.freq_set
+				--freq_set $filterTS.freq_set 
+			#end if
+			#if $filterTS.diff_pvalue_set.interval1 and $filterTS.diff_pvalue_set.interval2
+				--diff_pvalue_I1 $filterTS.diff_pvalue_set.interval1 --diff_pvalue_I2 $filterTS.diff_pvalue_set.interval2
+			#end if
+			#if $filterTS.diff_ra_set.interval1 and $filterTS.diff_ra_set.interval2
+				--diff_ra_I1 $filterTS.diff_ra_set.interval1 --diff_ra_I2 $filterTS.diff_ra_set.interval2
+			#end if
+			#if $filterTS.change_ra_set.iso1 and $filterTS.change_ra_set.iso2
+				--change_ra_iso1 $filterTS.change_ra_set.iso1 --change_ra_iso2 $filterTS.change_ra_set.iso2
+			#end if
+			#if $filterTS.diff_exp_set.interval1 and $filterTS.diff_exp_set.interval2
+				--diff_exp_I1 $filterTS.diff_exp_set.interval1 --diff_exp_I2 $filterTS.diff_exp_set.interval2
+			#end if
+			#if $filterTS.change_exp_set.iso1 and $filterTS.change_exp_set.iso2
+				--change_exp_iso1 $filterTS.change_exp_set.iso1 --change_exp_iso2 $filterTS.change_exp_set.iso2
+			#end if
+			--rawTS $rawTS
+			--final_TS $final_TS
+	</command>
+	
+	<inputs>
+		<param name="expMat" type="data" optional="True" label="Transcript expression abundance matrix" />
+		<param name="designFile" type="data" optional="True" label="Experiment design matrix" />
+		<param name="idFile" type="data" optional="True" label="Gene-transcript ID matrix" />
+		<section name="identifyTS" title="Parameters of TS events identification" expanded="True">
+			<param name="lowExp_threshold" type="float" label="Minimum expression abundance" value="1" />
+			<param name="min_isoratio" type="float" label="Minimum Relative abundance" value="0.1" />
+			<param name="min_t_points" type="integer" label="Minimum time points" value="1" />
+			<param name="threads" type="integer" label="Threads" value="1" />
+		</section>
+		
+		<section name="filterTS" title="Parameters of TS events filtration" expanded="True">
+			<param name="cor_set" type="float" optional="True" label="cor"  
+			help="The Pearson's correlation coefficient between the expression values of the paired transcripts across time series in intervals I1 and I2. Example: -0.2" />
+			<param name="freq_set" type="float" optional="True" label="freq"  
+			help="The frequencies of samples of one transcript is greater than the other in interval I1 and is less than the other in interval I2. Example: 0.5" />
+			<section name="num_set"  title="num_set" expanded="False">
+				<param name="interval1" type="float" optional="True" label="Interval I1"
+				help="The least number of consecutive time points in interval I1. Example: 1"/>
+				<param name="interval2" type="float" optional="True" label="Interval I2"
+				help="The least number of consecutive time points in interval I2. Example: 1"/>
+			</section>
+			<section name="diff_pvalue_set" title="diff_pvalue" expanded="False">
+				<param name="interval1" type="float"  optional="True" label="Interval I1"
+				help="The significance level of the difference between the relative abundance of two transcripts in interval I1. Example: 0.05"/>
+				<param name="interval2" type="float" optional="True" label="Interval I2"
+				help="The significance level of the difference between the relative abundance of two transcripts in interval I2. Example: 0.05"/>
+			</section>
+			<section name="diff_ra_set" title="diff_ra" expanded="False">
+				<param name="interval1" type="float" optional="True" value="0.3" label="Interval I1"
+				help="The mean difference of two transcripts in terms of relative abundance in interval I1. Default:0.3"/>
+				<param name="interval2" type="float" optional="True" value="0.3" label="Interval I2"
+				help="The mean difference of two transcripts in terms of relative abundance in intervas I2. Default:0.3"/>
+			</section>
+			<section name="change_ra_set" title="change_ra" expanded="False">
+				<param name="iso1" type="float" optional="True" value="0.2" label="Transcript 1"
+				help="The difference in the relative abundance of transript 1 between interval I1 and I2. Default:0.2"/>
+				<param name="iso2" type="float" optional="True" value="0.2" label="Transcript 2"
+				help="The difference in the relative abundance of transript 2 between interval I1 and I2. Default:0.2"/>
+			</section>
+			<section name="diff_exp_set" title="diff_exp" expanded="False" >
+				<param name="interval1" type="float" optional="True" value="3" label="Interval I1"
+				help="The mean difference of two transcripts in terms of expression values in interval I1. Default:3"/>
+				<param name="interval2" type="float" optional="True" value="3" label="Interval I2"
+				help="The mean difference of two transcripts in terms of expression values in interval I2. Default:3"/>
+			</section>
+			<section name="change_exp_set" title="change_exp" expanded="False">
+				<param name="iso1" type="float" optional="True" value="3" label="Transcript 1"
+				help="The difference in the average expression value of transript 1 between interval I1 and I2. Default:3"/>
+				<param name="iso2" type="float" optional="True" value="3" label="Transcript 2"
+				help="The difference in the average expression value of transript 2 between interval I1 and I2. Default:3"/>
+			</section>
+		</section>
+
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running pairwise TS identify" />
+	</stdio>	
+	<outputs>		
+		<data name="rawTS"  format="tsv" label="Inital time-series TS events" />
+		<data name="final_TS"  format="tsv" label="Filtered time-series TS events" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to identify TS events for time-series transcriptome comparison.
+
+	.. class:: infomark
+
+	**Inputs**
+	
+	* **Transcript expression abundance matrix**: The transcript expression matrix in **tsv** format, the first row and the first column are the transcript name and sample ID.
+
+	* **Experiment design matrix**: The RNA-Seq experiments design matrix in **tsv** format, the first to third columns are the sample ID, group, and replication information, respectively.
+
+	* **Gene-transcript ID matrix**:  The gene and transcript ID matrix in **tsv** format, The first to third columns are the genes, transcript IDs and digitally encoded chromosome numbers.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Initial time-series TS events**: The initial TS events matrix in **tsv** format.
+
+	* **Filtered time-series TS events**: The TS events matrix in **tsv** format filtered by selecting parameters.
+	</help>
+    <citations>
+		<citation type="doi">10.1093/bioinformatics/btx411</citation>
+    </citations>
+</tool>
+

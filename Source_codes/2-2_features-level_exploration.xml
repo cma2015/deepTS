@@ -1,0 +1,158 @@
+<tool id="annotation_of_TS_events" name="Characteristics analysis" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/annotateTS/00_main_report.R --tooldir ${__tool_directory__} --tsRes $tsRes 
+		    #if $groupSet.TStype != "population"
+				--group $groupSet.group 
+			#end if
+			--genomefile $genomefile --chrlen $chrlenfile 
+			--genefile $genefile --isofile $isofile --prepfile $prepfile
+			#if $goAna.ifupload == "yes"
+					--termfile $goAna.termfile 
+			#end if 
+			#if $goAna.ifupload == "no"
+					--species $goAna.specie_list.species --species_type $goAna.specie_list.data_type
+			#end if 						
+			--annoRes $annoRes --reporthtml $reporthtml		
+
+			
+	</command>
+	
+	<inputs>
+		<param name="tsRes" type="data" optional="true" label="TS events matrix" />	
+		<conditional name="groupSet">
+			<param name="TStype" type="select" label="Select TS event types?">
+			    <option value="pairwise">pairwise TS event</option>				
+				<option value="time_series">time-series TS event</option>
+				<option value="population">popultaion TS event</option>
+			</param>
+			<when value="pairwise" >
+				<param name="group" type="select" optional="true" multiple="false" label="Group ID">
+					<options from_dataset="tsRes">
+						<column name="name" index="0"/>
+						<column name="value" index="0"/>
+						<filter type="unique_value" name="unique_group" column="0"/>
+						<filter type="sort_by" name="sorted_group" column="0"/>
+					</options>
+					<sanitizer>
+						<valid initial="default">
+							<add preset="string.printable"/>
+							<add value=";"/>
+							<remove value="&quot;"/>
+							<remove value="&apos;"/>
+						</valid>
+					</sanitizer>
+				</param>	
+			</when>
+			<when value="time_series">
+				<param name="group" type="select" optional="true" multiple="false" label="Group ID">
+					<options from_dataset="tsRes">
+						<column name="name" index="0"/>
+						<column name="value" index="0"/>
+						<filter type="unique_value" name="unique_group" column="0"/>
+						<filter type="sort_by" name="sorted_group" column="0"/>
+					</options>
+					<sanitizer>
+						<valid initial="default">
+							<add preset="string.printable"/>
+							<add value=";"/>
+							<remove value="&quot;"/>
+							<remove value="&apos;"/>
+						</valid>
+					</sanitizer>
+				</param>	
+			</when>
+			<when value="population">
+			</when>			
+		</conditional>
+		<param name="genomefile" type="data" optional="True" label="Genome feature matrix" />
+		<param name="chrlenfile" type="data" optional="True" label="Chromosome length matrix" />
+		<param name="genefile" type="data" optional="True" label="Gene feature matrix" />
+		<param name="isofile" type="data" optional="True" label="Transcript feature matrix" />
+		<param name="prepfile" type="data" optional="True" label="Protein feature matrix" />
+		<conditional name="goAna">
+			<param name="ifupload" type="select" label="Whether upload gene and GO term ID file?">				
+				<option value="no">no</option>
+				<option value="yes">yes</option>
+			</param>
+			<when value="yes">
+				<param name="termfile" type="data" optional="True" label="GO terms ID" />
+			</when>
+			<when value="no">
+				<conditional name="specie_list">
+					<param name="data_type" type="select" label="Select an specie of Ensembl database" display="radio">
+						<option value="plant" selected="True">Ensembl Plants</option>
+						<option value="animal">Ensembl Animals</option>						
+					</param>
+					<when value="plant">
+						<param name="species" type="select" value="Choose" label="Select a species"
+							help="">
+								<options from_data_table="Ensembl_Plants" >
+									<column name="name" index="0"/>
+									<column name="value" index="1"/>
+									<filter type="sort_by" column="1"/>
+									<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+								</options>
+						</param>
+					</when>
+					<when value="animal">
+						<param name="species" type="select" value="Choose" label="Select a species"
+							help="">
+								<options from_data_table="Ensembl_animals" >
+									<column name="name" index="0"/>
+									<column name="value" index="1"/>
+									<filter type="sort_by" column="1"/>
+									<validator type="no_options" message="No indexes are available for the selected input dataset"/>
+								</options>
+						</param>
+					</when>
+				</conditional>
+			</when>
+		</conditional>
+
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Exploration of TS events" />
+	</stdio>	
+	<outputs>
+		<data name="annoRes"  format="tsv" label="Feature annotation matrix for TS events" />
+		<data name="reporthtml"  format="html" label="The summary report of characteristics" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+    This function can be used to explore the characteristics of TS events at genome, gene, transcript, and protein level.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **TS events matrix**: Pairwise, time-series or population TS events matrix, the first column is the group or SNP ID,the second to fourth columns are genes, transcript 1 and transcript 2 IDs respectively.	
+
+	* **Group**: a group ID from the first column of TS events matrix.
+
+	* **Genome feature matrix**: The genome feature matrix in **tsv** format,the first to third columns are genomic coordinates, other columns are different characteristics..
+
+	* **Chromosome length matrix**: The chromosome length matrix in **tsv** format, the first and second columns are digitally encoded chromosome numbers and chromosome length, respectively.
+
+	* **Gene feature matrix**: The Gene feature matrix in **tsv** format, the first column are gene IDs, the other columns are different characteristics. Features with the suffix ".den" will be plotted in the density diagram. Features with the suffix ".pie" will be plotted in the piechart diagram.
+
+	* **Transcript feature matrix**: The Transcript feature matrix in **tsv** format, the first column are transcript IDs, the other columns are different characteristics. Features with the suffix ".den" will be plotted in the density diagram. Features with the suffix ".pie" will be plotted in the piechart diagram.
+
+	* **Protein feature matrix**: The Protein feature matrix in **tsv** format, the first column are transcript IDs, the other columns are different characteristics. Features with the suffix ".den" will be plotted in the density diagram. Features with the suffix ".pie" will be plotted in the piechart diagram.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Feature annotation matrix for TS events**
+
+	* **The summary report for feature annotation matrix**
+	</help>
+</tool>
+

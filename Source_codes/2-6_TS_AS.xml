@@ -1,0 +1,48 @@
+<tool id="AS_ana" name="Alternative splicing" version="19.09">
+	<description>
+	</description>
+	
+	<command>
+		Rscript ${__tool_directory__}/annotateTS/06_AS_anno.R --tooldir ${__tool_directory__} --tsRes $tsRes 
+			--gtf $gtf 	
+			--sumAS $out_AS_sum  --pairAS $out_AS_detail
+
+	</command>
+	
+	<inputs>
+		<param name="tsRes" type="data" optional="true" label="TS events matrix"  />	
+		<param name="gtf" type="data" label="Genome annotation file"/>		
+	</inputs>
+	<stdio>
+		<exit_code range="1:"  level="fatal" description="Error Running Exploration of TS events" />
+	</stdio>	
+	<outputs>
+	  	<data name="out_AS_sum" label="Summary matrix on alternative splicing" format="tsv" />
+		<data name="out_AS_detail" label="Detail matrix on alternative splicing" format="tsv" />
+	</outputs>
+	
+	<help>
+	.. class:: infomark
+
+    **What it does**
+
+     This function can be used to detect alternative splicing in transcript pairs of TS events.
+
+	.. class:: infomark
+
+	**Inputs**
+
+	* **TS events matrix**: Pairwise, time-series or population TS events matrix, the first column is the group or SNP ID,the second to fourth columns are genes, transcript 1 and transcript 2 IDs respectively.	
+
+	* **Genome annotation file**: Genome annotation file in *GTF* format which include CDS region.
+
+	.. class:: infomark
+
+	**Outputs**
+
+	* **Summary matrix on alternative splicing**: The summary information on alternative splicing for all transcript pairs in TS events.
+
+	* **Detail matrix on alternative splicing**: Changes in alternative splicing types for each transcript pair in a TS event.
+	</help>
+</tool>
+
