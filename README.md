@@ -13,10 +13,6 @@
 - [**Module III: Exploration of TS events**](https://github.com/cma2015/DeepTS/blob/master/Tutorials/Module3.md)
 
 
-## How to use DeepTS
-
-- Test datasets referred in the tutorials for DeepTS: https://github.com/chenzhuod/deepTS/blob/master/Test_data/
-
 ## News and updates
 
 ### Jan 23, 2020
