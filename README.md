@@ -19,13 +19,13 @@
 
 ## News and updates
 
-### DeepTS released on Jan 23, 2020
+### Jan 23, 2020
 
 - Docker image of DeepTS were released for the first time.
 
-### DeepTS released on Dec 25, 2019
+### Dec 25, 2019
 
-- Source codes, web server and Docker image of DeepTS were released for the first time.
+- Source codes, web server of DeepTS were released for the first time.
 
 ## How to access help
 * For any bugs/issues, please feel free to leave a message at Github [issues](<https://github.com/chenzhuod/deepTS/issues>). We will try our best to deal with all issues as soon as possible.
