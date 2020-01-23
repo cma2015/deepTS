@@ -9,7 +9,7 @@
 
 ## Overview of functional modules in DeepTS
 - [**Module I: Generation of transcript expression matrix**](https://github.com/chenzhuod/deepTS/blob/master/Tutorials/Module%20I.md)
-- [**Module II: Identification of TS events**]
+- [**Module II: Identification of TS events**](https://github.com/cma2015/DeepTS/blob/master/Tutorials/Module2.md)
 - [**Module III: Exploration of TS events**]
 
 
