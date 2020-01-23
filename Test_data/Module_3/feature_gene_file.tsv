@@ -1,0 +1,1150 @@
+geneID	chr	start	end	strand	gene.symbiol	description	TF_family	isoNum.den	if_methlation.pie	if_diffgene.pie
+Zm00001d000023	B73V4_ctg150	1548548	1563325	-		Polyadenylation and cleavage factor homolog 5		11	yes	Up-regulation
+Zm00001d000112	B73V4_ctg52	346913	349561	-	NAC-transcription factor 125	NAC domain-containing protein 2	NAC 	6	no	Up-regulation
+Zm00001d000150	B73V4_ctg75	115778	127279	-		Transducin/WD40 repeat-like superfamily protein		2	no	Down-regulation
+Zm00001d000191	B73V4_ctg72	95773	118440	-		E3 ubiquitin-protein ligase UPL6		44	no	none
+Zm00001d000257	B73V4_ctg77	1	3900	+		Transmembrane CLPTM1 family protein		6	yes	none
+Zm00001d000719	3	226596128	226624150	+	NA	NA	NA	6	no	none
+Zm00001d001884	2	2349516	2354941	+		Trypsin family protein		10	no	none
+Zm00001d001980	2	3876007	3880702	+		Protein kinase-like  		3	no	none
+Zm00001d002080	2	5508384	5514971	-		E3 ubiquitin-protein ligase MBR2		5	no	none
+Zm00001d002089	2	5787176	5800531	-		Tetratricopeptide repeat (TPR)-like superfamily protein		56	no	none
+Zm00001d002169	2	7094303	7100353	+		Eukaryotic translation initiation factor 3 subunit C		19	yes	none
+Zm00001d002325	2	10315824	10324930	-				6	no	Down-regulation
+Zm00001d002332	2	10488890	10496373	-	MADS-transcription factor 9	NAD(P)-binding Rossmann-fold superfamily protein	MADS 	15	no	Down-regulation
+Zm00001d002340	2	10598321	10603491	+		Cell differentiation Rcd1-like protein		6	no	none
+Zm00001d002504	2	14173717	14179836	-		Transducin/WD40 repeat-like superfamily protein		5	no	none
+Zm00001d002580	2	15969358	15979838	-		Mechanosensitive ion channel protein 1 mitochondrial		8	yes	Down-regulation
+Zm00001d002631	2	17552472	17558357	+		Probable methyltransferase PMT13		8	no	none
+Zm00001d002654	2	18312495	18320006	-	naked endosperm1	 naked endosperm1	C2H2 	23	yes	none
+Zm00001d002715	2	20189768	20229132	+		BEACH domain-containing protein C2		19	no	none
+Zm00001d002758	2	21813079	21818936	-		DeSI-like protein 		5	yes	none
+Zm00001d003112	2	32662030	32670568	+		Leucine-rich repeat family protein		22	yes	none
+Zm00001d003119	2	32817680	32825886	-		Trafficking protein particle complex II-specific subunit 120 homolog		5	no	none
+Zm00001d003166	2	34247761	34278227	+		LETM1-like protein		17	no	none
+Zm00001d003203	2	35515788	35545097	-		DNA-directed RNA polymerase III subunit 1		13	no	Down-regulation
+Zm00001d003224	2	36774907	36779481	+		OJ991113_30.19 protein		2	yes	none
+Zm00001d003309	2	39693129	39700373	+		Copper amine oxidase family protein		3	no	Up-regulation
+Zm00001d003649	2	51951526	51956734	+		OSJNBa0088K19.7 protein		6	yes	none
+Zm00001d003911	2	66815688	66820607	+		Protein AUXIN SIGNALING F-BOX 3		25	no	none
+Zm00001d003922	2	68237405	68248009	+		Zinc finger CCCH domain-containing protein 41		6	no	none
+Zm00001d003923	2	68465595	68483377	-		Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex  		7	no	Down-regulation
+Zm00001d004119	2	83933935	83945839	-		DnaJ protein ERDJ2A		4	yes	none
+Zm00001d004139	2	85783948	85803502	-		E3 ubiquitin-protein ligase UPL3		15	no	none
+Zm00001d004361	2	106288025	106297142	+		ABC transporter C family member 4		3	no	Down-regulation
+Zm00001d004561	2	118161372	118171192	+	uncoupling protein2	Mitochondrial uncoupling protein 2  		9	no	none
+Zm00001d004586	2	120064675	120068677	+		Expansin-B4		8	yes	none
+Zm00001d004707	2	132433054	132465319	-	thylakoid assembly1	 thylakoid assembly1		12	yes	none
+Zm00001d004739	2	135107481	135114390	+		F-box/WD-40 repeat-containing protein 		6	yes	none
+Zm00001d004855	2	144882980	144890396	-		Actin-7		12	no	none
+Zm00001d004856	2	145082873	145087393	+	autophagy13f	Autophagy-related protein 13b		2	no	none
+Zm00001d004868	2	145454892	145460926	-		Transcription factor LHW	LHW 	11	no	Down-regulation
+Zm00001d005127	2	159740502	159770336	+		E3 ubiquitin-protein ligase UPL1		18	no	none
+Zm00001d005144	2	160874292	160889881	-		NAD-dependent dyhydrogenase%2C Gfo/Idh/MocA family  		12	yes	Down-regulation
+Zm00001d005157	2	161572788	161593818	-		Glutamine-dependent NAD(+) synthetase		30	no	none
+Zm00001d005248	2	165633997	165638983	+		Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 48 kDa subunit		7	no	none
+Zm00001d005343	2	170142296	170146252	+		Nucleoside N-ribohydrolase 3%3B Pyrimidine-specific ribonucleoside hydrolase rihB  		7	yes	Down-regulation
+Zm00001d005370	2	171125479	171128890	+		GPI mannosyltransferase 1		7	yes	none
+Zm00001d005451	2	174589103	174595166	+		Cellulose synthase A catalytic subunit 5 [UDP-forming]		40	no	none
+Zm00001d005497	2	175971908	175976659	-		UDP-Glycosyltransferase superfamily protein		7	yes	none
+Zm00001d005579	2	179323021	179329228	-		Lipid phosphate phosphatase 2		15	no	none
+Zm00001d005976	2	194515524	194519448	+		Serine/threonine-protein kinase D6PKL1		10	yes	none
+Zm00001d006033	2	195811241	195819078	+		Inactive LRR receptor-like serine/threonine-protein kinase BIR2		37	yes	none
+Zm00001d006481	2	209648715	209654677	+		BNR/Asp-box repeat family protein		3	yes	none
+Zm00001d006593	2	211765435	211776074	-		Myosin-2		21	no	none
+Zm00001d006681	2	214205144	214217344	+				20	no	none
+Zm00001d007090	2	222096488	222100048	-		RNA pseudouridine synthase 6 chloroplastic		4	no	none
+Zm00001d007226	2	225140960	225147590	+				3	no	none
+Zm00001d007446	2	231918559	231921582	-		14-3-3-like protein  		8	no	Down-regulation
+Zm00001d007718	2	238143557	238145188	-	benzoxazinone synthesis13	 benzoxazinone synthesis13		5	no	none
+Zm00001d007889	2	241874596	241880785	-		ATP binding protein  		13	no	Up-regulation
+Zm00001d008310	8	4832726	4841611	+		Inositol-1-monophosphatase  		4	no	none
+Zm00001d008467	8	9610502	9621277	-		Cysteine-rich receptor-like protein kinase 37		3	yes	none
+Zm00001d008488	8	9999360	10008150	-		Cysteine-rich receptor-like protein kinase 37		10	no	none
+Zm00001d008623	8	15005456	15014804	+		Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase PASTICCINO 2		2	no	none
+Zm00001d008692	8	17293619	17301792	+		O-fucosyltransferase family protein		2	yes	none
+Zm00001d008693	8	17302671	17304249	-		alpha/beta-Hydrolases superfamily protein		2	no	Down-regulation
+Zm00001d008805	8	21004224	21007918	+				4	no	none
+Zm00001d008874	8	23543542	23549832	+				6	no	Down-regulation
+Zm00001d008904	8	24559394	24563053	-				10	no	none
+Zm00001d008993	8	29091809	29099278	-		DUF4378 domain protein		21	no	none
+Zm00001d009017	8	30237363	30243290	-	NLP-transcription factor 4	Protein NLP6	NLP 	9	no	none
+Zm00001d009212	8	43471863	43480271	-		dihydrolipoyl dehydrogenases		9	no	none
+Zm00001d009631	8	73926123	73932511	-		CTP synthase family protein		9	yes	none
+Zm00001d009795	8	81764683	81771357	+	cellulose synthase1	Cellulose synthase1  		9	no	Down-regulation
+Zm00001d009859	8	85575018	85579656	+		Ankyrin like protein  		5	yes	none
+Zm00001d010523	8	119143166	119149436	-	sucrose-phosphatase1	Sucrose-phosphatase 1  		12	yes	none
+Zm00001d010646	8	122870635	122881039	-	set domain gene105	Putative histone-lysine N-methyltransferase family protein  		3	yes	Down-regulation
+Zm00001d010653	8	122978480	122981760	-				2	no	none
+Zm00001d010698	8	124955538	124970635	-		NAD(P)H dehydrogenase (quinone) FQR1		5	yes	none
+Zm00001d010719	8	125575872	125588157	-		Protein RNA-directed DNA methylation 3		16	no	none
+Zm00001d010950	8	134829668	134841732	-		Glutamate--cysteine ligase chloroplastic		6	no	none
+Zm00001d010970	8	135473700	135484287	+		Isovaleryl-CoA dehydrogenase mitochondrial		6	yes	Down-regulation
+Zm00001d011177	8	141824631	141849920	-		Vacuolar protein-sorting protein 33  		9	no	Up-regulation
+Zm00001d011233	8	144110777	144127837	+		SIT4 phosphatase-associated family protein		36	yes	none
+Zm00001d011309	8	146353906	146364466	-		Transcriptional corepressor LEUNIG		30	no	Up-regulation
+Zm00001d011357	8	148193529	148200051	-		CTP synthase family protein		5	no	Down-regulation
+Zm00001d011454	8	150927153	150935291	+	carbonic anhydrase6	 carbonic anhydrase6		3	no	Up-regulation
+Zm00001d011560	8	154457261	154486289	+	Homeobox-transcription factor 113	Homeobox-DDT domain protein RLT1	Homeobox 	31	no	none
+Zm00001d011890	8	164045195	164049503	-	cytokinin oxidase 3	 cytokinin oxidase 3		2	no	Down-regulation
+Zm00001d011984	8	165880817	165889059	-	autophagy6b	Beclin-1-like protein		8	no	none
+Zm00001d012067	8	167566134	167569229	+	bHLH-transcription factor 55	Transcription factor bHLH62	bHLH 	6	no	Up-regulation
+Zm00001d012159	8	169165296	169173792	-		Beta-glucosidase 42		8	no	Up-regulation
+Zm00001d012167	8	169382520	169386497	-		SF16 protein  		2	yes	Down-regulation
+Zm00001d012307	8	172160772	172166114	-		Nucleobase-ascorbate transporter 12		3	no	Up-regulation
+Zm00001d012407	8	173978411	173987430	+	triose phosphate isomerase5	 triose phosphate isomerase5		7	no	none
+Zm00001d012515	8	175898933	175903845	-		proline-rich family protein		5	yes	none
+Zm00001d012620	8	177298702	177308389	-		Transducin/WD40 repeat-like superfamily protein		27	no	Down-regulation
+Zm00001d012702	8	178935008	178947931	+		Phosphoenolpyruvate carboxylase 3		7	no	none
+Zm00001d012892	5	1642983	1653549	+		Acyl-CoA-binding domain-containing protein 4		8	no	Down-regulation
+Zm00001d012972	5	2582261	2584012	+	chalcone flavanone isomerase3	 chalcone flavanone isomerase3		6	no	Down-regulation
+Zm00001d013344	5	8977120	8980910	-		methyltransferases		3	yes	Up-regulation
+Zm00001d013496	5	12780039	12785325	+		Alkaline phytoceramidase (aPHC)		11	no	Up-regulation
+Zm00001d013652	5	16248550	16257893	+		Cationic amino acid transporter 4 vacuolar		14	no	none
+Zm00001d013797	5	20398025	20418365	-		Endoribonuclease Dicer homolog 2		8	yes	none
+Zm00001d013836	5	21955305	21983392	-		Protein kinase superfamily protein		17	yes	none
+Zm00001d013985	5	27475158	27485373	+				8	no	Down-regulation
+Zm00001d014093	5	32109604	32113606	-		3-ketoacyl-CoA thiolase 2 peroxisomal		4	no	none
+Zm00001d014189	5	35716843	35723923	+				7	no	Up-regulation
+Zm00001d014258	5	38466701	38476589	-	alanine aminotransferase5	 alanine aminotransferase5		9	no	Up-regulation
+Zm00001d014340	5	41543863	41566854	-		Whole genome shotgun sequence of line PN40024 scaffold_7.assembly12x (Fragment)		13	yes	Down-regulation
+Zm00001d014367	5	43171694	43195795	+		Decaprenyl-diphosphate synthase subunit 1  		7	no	none
+Zm00001d014516	5	51276376	51298440	+		Probable mitochondrial intermediate peptidase mitochondrial		7	no	Down-regulation
+Zm00001d014550	5	52806371	52810404	+		O-fucosyltransferase family protein		10	no	none
+Zm00001d014658	5	57812695	57818142	+		Mitogen-activated protein kinase 1		5	no	Down-regulation
+Zm00001d014726	5	60843523	60848876	+		Mitogen-activated protein kinase 17		13	no	Down-regulation
+Zm00001d014911	5	67870239	67878285	-		Phosphatidylinositol-4-phosphate 5-kinase 9  		21	no	none
+Zm00001d015060	5	73779553	73787141	-	multidrug and toxic compound extrusion6	 multidrug and toxic compound extrusion6		2	yes	Up-regulation
+Zm00001d015115	5	76220204	76227831	-		Ribose-phosphate pyrophosphokinase  		8	no	none
+Zm00001d015200	5	78979001	78984635	+		5'-AMP-activated protein kinase-related		5	no	Down-regulation
+Zm00001d015327	5	84629629	84634232	-	ubiquitin1	 ubiquitin1		12	yes	none
+Zm00001d015569	5	98404993	98412468	-		Vacuolar H+-translocating inorganic pyrophosphatase  		6	yes	none
+Zm00001d016034	5	140715515	140719221	+	cell division cycle202	 cell division cycle202		3	no	none
+Zm00001d016070	5	142715769	142723741	-	phosphate regulatory homolog1	 phosphate regulatory homolog1		7	no	none
+Zm00001d016365	5	159330634	159338014	-	dihydrolipoamide S-acetyltransferase1	 dihydrolipoamide S-acetyltransferase1		8	no	Up-regulation
+Zm00001d016374	5	159956880	159962674	-		NOL1R  		4	no	Up-regulation
+Zm00001d016446	5	162603153	162606550	-	cysteine protease1	Cysteine proteinase 1  		6	no	Up-regulation
+Zm00001d016615	5	170196639	170218410	+		Protein BONZAI 2		7	yes	Up-regulation
+Zm00001d016687	5	172500873	172503214	-		Putative glycosyltransferase  		2	no	Up-regulation
+Zm00001d016811	5	176930281	176936129	-		ACT domain-containing protein ACR3		4	yes	none
+Zm00001d016933	5	180362110	180366608	+		loricrin-related		4	no	Down-regulation
+Zm00001d016938	5	180472879	180476445	+	sucrose transporter5	 sucrose transporter GRMZM2G081589		2	no	Down-regulation
+Zm00001d017036	5	183328274	183333509	+		Glycerophosphodiester phosphodiesterase GDPDL3		7	yes	none
+Zm00001d017252	5	190434800	190451192	-		E3 ubiquitin-protein ligase PRT1		11	no	Down-regulation
+Zm00001d017261	5	190811612	190819034	+		Casein kinase 1-like protein 6		15	no	none
+Zm00001d017347	5	193474515	193476410	-		SufE-like protein 1 chloroplastic/mitochondrial		2	yes	none
+Zm00001d017374	5	193776413	193778741	-		Protein kinase superfamily protein		2	yes	Down-regulation
+Zm00001d017392	5	194378573	194385434	-		Cyclin-T1-3		11	yes	Up-regulation
+Zm00001d017480	5	197251186	197252268	+	AP2-EREBP-transcription factor 104	Ethylene-responsive transcription factor ERF035	AP2 	2	no	none
+Zm00001d017583	5	200655722	200658897	-		Generic methyltransferase		4	no	none
+Zm00001d017595	5	201207642	201214016	+	C3H-transcription factor 334	Zinc finger CCCH domain-containing protein 48	C3H 	7	yes	none
+Zm00001d017711	5	204910391	204912528	+		Phosphoribulokinase  		3	no	Down-regulation
+Zm00001d017866	5	209132458	209141140	+		Aspartyl protease AED1		5	no	none
+Zm00001d017885	5	209614260	209620254	+	C2C2-CO-like-transcription factor 5	Zinc finger protein CONSTANS-LIKE 9	C2C2 	6	no	Up-regulation
+Zm00001d017888	5	209640646	209644166	+		Calcium-dependent protein kinase 14		5	yes	Up-regulation
+Zm00001d017977	5	211161703	211171924	+	histidine kinase1	 histidine kinase1		10	no	none
+Zm00001d017987	5	211412495	211416317	-		Microtubule-associated protein TORTIFOLIA1  		4	no	none
+Zm00001d018199	5	216404525	216421412	+		PHD finger family protein		39	yes	none
+Zm00001d018377	5	219513929	219518215	+		Diphosphomevalonate decarboxylase MVD2		11	yes	Down-regulation
+Zm00001d018489	5	221702963	221706664	-		Tumor-related protein  		7	no	none
+Zm00001d018535	5	222620978	222631155	-	brick1	 brick1		6	no	none
+Zm00001d018637	7	1406045	1411107	+		Transducin/WD40 repeat-like superfamily protein		7	no	none
+Zm00001d018787	7	5210755	5216700	-		DEAD-box ATP-dependent RNA helicase 53		5	no	Down-regulation
+Zm00001d018828	7	6673483	6680440	+		ubiquitin-specific protease 8		6	no	none
+Zm00001d019123	7	17937702	17949491	-		Survival protein SurE-like phosphatase/nucleotidase		9	no	none
+Zm00001d019311	7	26986086	26993698	+		IAA-amino acid hydrolase ILR1		3	no	none
+Zm00001d019314	7	27315603	27322631	-		mRNA-decapping enzyme-like protein		10	no	none
+Zm00001d019317	7	27567008	27572633	+	cellulose synthase8	Cellulose synthase-8  		18	yes	none
+Zm00001d019534	7	40694224	40700176	-		Serine carboxypeptidase-like 19		5	yes	Up-regulation
+Zm00001d019670	7	49531543	49544334	-		Kinesin-like protein KIN-4A		17	no	Up-regulation
+Zm00001d019920	7	75825526	75839429	-		Protein SMG7		10	yes	none
+Zm00001d019976	7	81480388	81483493	+		phosphoglucosamine mutase family protein		3	yes	none
+Zm00001d020036	7	87375961	87448666	+		Embryonic flower 2%3B VEF family protein  		18	no	Down-regulation
+Zm00001d020414	7	112328680	112337673	-		Putative 1-phosphatidylinositol-3-phosphate 5-kinase FAB1C		3	no	Down-regulation
+Zm00001d020531	7	121208571	121213318	+	cellulose synthase 12	 cellulose synthase 12		6	no	Up-regulation
+Zm00001d020708	7	129524403	129529423	+		Remorin family protein		21	no	none
+Zm00001d020939	7	137260385	137266112	-	EIL-transcription factor 4	ETHYLENE INSENSITIVE 3-like 3 protein	EIL 	3	no	none
+Zm00001d020965	7	138116641	138122965	+		Proton pump-interactor 1		16	no	Up-regulation
+Zm00001d020974	7	138260144	138261759	+	pza01714	Chitinase-like protein 1		2	yes	none
+Zm00001d021015	7	140479942	140497099	+		DNA topoisomerase 3-alpha		9	no	none
+Zm00001d021127	7	143327655	143344805	+		ATP-dependent RNA helicase DRS1  		9	yes	Up-regulation
+Zm00001d021169	7	144827097	144831011	+		Ankyrin repeat family protein		10	no	none
+Zm00001d021196	7	145562443	145567534	+		DEAD-box ATP-dependent RNA helicase 7		18	no	none
+Zm00001d021376	7	150245910	150250848	-	mTERF-domain protein16	Mitochondrial transcription termination factor family protein		6	no	none
+Zm00001d021605	7	157873478	157875272	+				2	no	none
+Zm00001d021668	7	159573273	159576103	-	translation initiation factor1	Protein translation factor SUI1 homolog  		7	yes	none
+Zm00001d021906	7	165739906	165742961	+		Chlorophyll a-b binding protein  		4	no	none
+Zm00001d021930	7	166043401	166047307	-		UDP-galactose transporter 2		7	yes	Down-regulation
+Zm00001d021947	7	166771846	166782537	-	WRKY-transcription factor 1	Probable WRKY transcription factor 20	WRKY 	5	yes	none
+Zm00001d021966	7	167223074	167229995	+		SUMO-activating enzyme subunit 2		9	no	none
+Zm00001d022102	7	170347558	170350491	-		Expressed protein;  protein		2	no	none
+Zm00001d022132	7	170948336	170957911	+		inter-alpha-trypsin inhibitor heavy chain-related		13	yes	Down-regulation
+Zm00001d022180	7	171990566	172003904	+	ribosomal proteinS6	 ribosomal proteinS6		10	no	Down-regulation
+Zm00001d022273	7	174087333	174099903	-		Putative endonuclease or glycosyl hydrolase		15	yes	none
+Zm00001d022366	7	176169937	176179943	-	math-btb15	BTB/POZ and MATH domain-containing protein 2		3	no	none
+Zm00001d022421	7	177324035	177325796	-		hydroxyproline-rich glycoprotein family protein		25	no	none
+Zm00001d022425	7	177408003	177412319	-		Apyrase 1		10	no	none
+Zm00001d022427	7	177449434	177453594	+	C3H-transcription factor 320	Nucleic acid binding protein  	C3H 	10	no	Up-regulation
+Zm00001d022436	7	177672319	177694404	+		zinc ion binding;DNA binding;helicases;ATP binding;nucleic acid binding		28	yes	none
+Zm00001d022490	7	178663021	178667467	+		Xylose isomerase		4	no	Down-regulation
+Zm00001d022491	7	178668147	178683112	-		DNA polymerase zeta catalytic subunit		20	yes	Up-regulation
+Zm00001d022510	7	179105094	179113606	-		4-alpha-glucanotransferase DPE2		23	no	Down-regulation
+Zm00001d022518	7	179280394	179282068	+		Thioredoxin-like 1-1 chloroplastic		2	no	Down-regulation
+Zm00001d023260	10	1506335	1515689	-		RNA-binding (RRM/RBD/RNP motifs) family protein		6	no	none
+Zm00001d023658	10	13789308	13796140	+		aminopeptidases		13	no	none
+Zm00001d023867	10	25582979	25590172	+		Golgin candidate 6		18	no	Down-regulation
+Zm00001d023880	10	26191716	26194512	-		Cofactor-independent phosphoglycerate mutase		2	no	none
+Zm00001d024270	10	60598911	60606190	+		RNA-binding KH domain-containing protein		8	no	Up-regulation
+Zm00001d024300	10	62829800	62835007	+		Potassium transporter 10		8	yes	Up-regulation
+Zm00001d024386	10	68324451	68325959	-	xyloglucan endo-transglycosylase/hydrolase1	 xyloglucan endo-transglycosylase/hydrolase1		5	yes	none
+Zm00001d024430	10	70581048	70587119	-		Putative leucine-rich repeat receptor-like protein kinase family protein  		19	no	none
+Zm00001d024816	10	89407915	89426926	-		 chromatin complex subunit A		19	no	none
+Zm00001d024876	10	91818232	91825287	-		Coatomer subunit beta-1		2	no	none
+Zm00001d024937	10	95806908	95811042	+		OSJNBa0089E12.13 protein;  protein		11	no	Down-regulation
+Zm00001d025027	10	100381692	100393417	+		E3 ubiquitin-protein ligase MBR2		8	yes	none
+Zm00001d025031	10	100543845	100549482	-		ABC transporter G family member 24		6	yes	Down-regulation
+Zm00001d025111	10	104816932	104841697	-		Protein RAE1		42	no	Down-regulation
+Zm00001d025663	10	125363945	125369623	-		Protein FATTY ACID EXPORT 1 chloroplastic		4	yes	none
+Zm00001d025727	10	127668399	127678365	-	bHLH-transcription factor 133	U-box domain-containing protein 7	bHLH 	12	yes	none
+Zm00001d026139	10	139500504	139503230	+		Putative calcium-dependent protein kinase family protein  		4	no	none
+Zm00001d026147	10	139780968	139790276	+	colored1	 plant color component at R1	bHLH 	4	yes	none
+Zm00001d026240	10	141714589	141718409	-	GRF-transcription factor 5	Growth-regulating factor  	GRF 	6	no	none
+Zm00001d026291	10	142982967	142990366	-	DNA methyl transferase2	 DNA methyl transferase2		14	yes	none
+Zm00001d026319	10	143558820	143563786	-				5	yes	none
+Zm00001d026387	10	144881918	144892402	+		hAT transposon superfamily protein		7	no	none
+Zm00001d026528	10	147536447	147620708	-		Oligouridylate-binding protein 1C		3	no	none
+Zm00001d026587	10	148406795	148411190	-	C3H-transcription factor 314	Zinc finger C-x8-C-x5-C-x3-H type family protein  	C3H 	2	yes	none
+Zm00001d027317	1	2818955	2826611	+	rolled leaf2	 rolled leaf2	HD-ZIP 	20	yes	Down-regulation
+Zm00001d027320	1	2878535	2889452	-		CemA-like proton extrusion protein-related		2	no	none
+Zm00001d027344	1	3371324	3374866	+		Major facilitator superfamily protein		9	yes	none
+Zm00001d027355	1	3573479	3575207	+		RHOMBOID-like protein 3		2	no	none
+Zm00001d027362	1	3766282	3775082	+		F-box protein 		3	no	Down-regulation
+Zm00001d027454	1	5603127	5604467	+	GRMZM2G055704	Heavy metal transport/detoxification superfamily protein		3	yes	none
+Zm00001d027558	1	8152458	8164250	-		Aconitate hydratase 1		13	yes	none
+Zm00001d027630	1	9487894	9492140	+		Phosphatidylinositol N-acetyglucosaminlytransferase subunit P-related		9	no	none
+Zm00001d027694	1	11299372	11303716	+	GRMZM2G112728	Solanesyl diphosphate synthase 2 chloroplastic		6	yes	none
+Zm00001d027706	1	11584062	11590167	+		transducin family protein / WD-40 repeat family protein		6	yes	none
+Zm00001d027732	1	12364460	12374888	-		Subtilisin-like serine endopeptidase family protein		3	no	none
+Zm00001d027934	1	17945836	17961550	+	leucine-rich transmembrane protein kinase1	 leucine-rich transmembrane protein kinase1		8	yes	Down-regulation
+Zm00001d028022	1	20604440	20616280	+		nucleotidyltransferases		4	no	Up-regulation
+Zm00001d028086	1	22485343	22489643	+				2	yes	Down-regulation
+Zm00001d028177	1	25545505	25566335	-		Ubiquitin carboxyl-terminal hydrolase 26		15	yes	none
+Zm00001d028279	1	28996699	29002980	+				4	no	none
+Zm00001d028436	1	34959914	34966582	+		V-type proton ATPase subunit a3		5	no	Down-regulation
+Zm00001d028481	1	36474424	36485449	+	topless-related2	 topless-related2		18	no	Down-regulation
+Zm00001d028546	1	38903033	38914734	+		SH3 domain-containing protein		22	yes	none
+Zm00001d028571	1	39418149	39423804	-		Digalactosyldiacylglycerol synthase 2 chloroplastic		6	no	none
+Zm00001d028577	1	39676641	39682105	+		DNA-binding protein  		2	yes	none
+Zm00001d028662	1	42229599	42239557	-		Arginine biosynthesis bifunctional protein ArgJ%2C chloroplastic Glutamate N-acetyltransferase Amino-acid acetyltransferase Arginine biosynthesis bifunctional protein ArgJ alpha chain Arginine biosynthesis bifunctional protein ArgJ beta chain 		7	no	Down-regulation
+Zm00001d028687	1	43083200	43088852	-	calcium pump2	 calcium pump2		4	yes	Up-regulation
+Zm00001d028818	1	47566046	47589502	+	defective kernel1	Calpain-type cysteine protease DEK1		42	yes	Up-regulation
+Zm00001d028902	1	50201483	50230198	-		FIP1[III]-like protein		8	no	none
+Zm00001d028936	1	52167612	52173614	-	bZIP-transcription factor 52	Transcription factor TGA6	bZIP 	15	no	none
+Zm00001d028974	1	53366704	53370703	+	ethylene insensitive-like3	 ethylene insensitive-like3	EIL 	2	no	none
+Zm00001d029023	1	55108882	55115021	-		Probable galacturonosyltransferase 7		8	yes	none
+Zm00001d029025	1	55178515	55181462	+		23-bisphosphoglycerate-independent phosphoglycerate mutase 1		3	no	none
+Zm00001d029104	1	58176945	58182237	+		U3 ribonucleoprotein (Utp) family protein		5	no	none
+Zm00001d029129	1	59406751	59421124	+		Metal tolerance protein C1		6	no	Up-regulation
+Zm00001d029189	1	61571965	61574795	-		R3H domain protein		2	yes	none
+Zm00001d029331	1	66251597	66255370	+		Probable apyrase 5		7	no	Down-regulation
+Zm00001d029352	1	67038607	67043886	-		SAP domain-containing protein		8	no	none
+Zm00001d029391	1	68665582	68667909	+		Phospho-2-dehydro-3-deoxyheptonate aldolase 2 chloroplastic		2	yes	Up-regulation
+Zm00001d029462	1	71833704	71849566	-		inter-alpha-trypsin inhibitor heavy chain-related		8	yes	none
+Zm00001d029626	1	80234015	80259023	-		Xanthine dehydrogenase 1		10	no	Up-regulation
+Zm00001d029782	1	86636234	86641408	-		Ubiquitin domain-containing protein DSK2b		12	no	none
+Zm00001d029860	1	90857025	90869865	-		3-hydroxyisobutyryl-CoA hydrolase-like protein 2 mitochondrial		6	yes	none
+Zm00001d029910	1	93744347	93755050	+		ARF guanine-nucleotide exchange factor GNOM		4	yes	none
+Zm00001d029997	1	98382117	98384521	+		chloroplast chaperonin 10		2	no	Down-regulation
+Zm00001d030026	1	100613958	100647262	+		DnaJ homolog subfamily C GRV2		29	no	none
+Zm00001d030032	1	101087719	101089690	+	PLATZ-transcription factor 3	PLATZ transcription factor family protein	PLATZ 	2	no	none
+Zm00001d030034	1	101177296	101179297	+		glucose-inhibited division family A protein		3	yes	none
+Zm00001d030130	1	107993630	108004988	-		LrgB-like family protein  		4	yes	Up-regulation
+Zm00001d030133	1	108282883	108288962	-		CSC1-like protein 		5	no	none
+Zm00001d030285	1	119480815	119493835	-		Probable alpha-mannosidase 		6	no	none
+Zm00001d030526	1	141705734	141709496	+		Outer arm dynein light chain 1 protein		6	no	Down-regulation
+Zm00001d030683	1	152852720	152854605	+				3	no	none
+Zm00001d031217	1	182484848	182492517	-	pentatricopeptide repeat*-GRMZM2G475897	 pentatricopeptide repeat*-GRMZM2G475897		2	no	none
+Zm00001d031490	1	191819199	191824621	-		Chaperone protein dnaJ 10  		8	no	none
+Zm00001d031669	1	198137558	198141875	+		O-fucosyltransferase family protein		4	no	none
+Zm00001d031749	1	200686322	200689932	-		Pyridoxal phosphate (PLP)-dependent transferases superfamily protein		9	no	Up-regulation
+Zm00001d032096	1	212544489	212560730	+	ARID-transcription factor 9	AT-rich interactive domain-containing protein 4	ARID 	14	yes	none
+Zm00001d032101	1	212826023	212863599	-		Formin-like protein 14		5	no	none
+Zm00001d032114	1	213508794	213513171	+		D-3-phosphoglycerate dehydrogenase 2 chloroplastic		4	no	Up-regulation
+Zm00001d032245	1	218620388	218626698	-		DNA repair protein RAD4		3	yes	none
+Zm00001d032536	1	229864582	229868317	-		Calcium uniporter protein 4 mitochondrial		7	no	none
+Zm00001d032587	1	231348416	231372321	+		DNA-directed RNA polymerase I subunit 2		7	no	none
+Zm00001d032681	1	234066734	234078059	-	Homeobox-transcription factor 69	Homeobox-leucine zipper protein REVOLUTA	Homeobox 	5	no	Up-regulation
+Zm00001d032715	1	235877484	235885806	-		Casein kinase 1-like protein 6		10	no	none
+Zm00001d032781	1	237933326	237950976	+				5	no	none
+Zm00001d032950	1	244489885	244492952	+		GDP-mannose 35-epimerase		5	no	none
+Zm00001d033004	1	246673838	246679239	-		Protein kinase 2B chloroplastic		4	no	none
+Zm00001d033153	1	252246763	252255194	-	FHA-transcription factor 3	SMAD/FHA domain-containing protein	FHA 	8	no	none
+Zm00001d033278	1	257223604	257232102	+		Protein NETWORKED 1A		13	no	none
+Zm00001d033303	1	258164182	258177505	+	roothair defective1	Roothairless 1  		7	yes	none
+Zm00001d033338	1	259497730	259504323	-	rz403	NAD(P)-linked oxidoreductase superfamily protein		4	yes	Down-regulation
+Zm00001d033367	1	260532563	260535314	+		Metal transporter Nramp3		2	yes	Up-regulation
+Zm00001d033402	1	261930159	261931759	-		Os03g0673100 protein		2	yes	none
+Zm00001d033502	1	264617690	264642218	+		Rhomboid-like protein 15		8	no	none
+Zm00001d033555	1	267028868	267032375	-		Fumarylacetoacetate (FAA) hydrolase family		3	no	Down-regulation
+Zm00001d033585	1	267905764	267909700	+	leaf permease1	 leaf permease1		3	no	none
+Zm00001d033623	1	269047817	269052912	+	lipoxygenase3	Lipoxygenase  		16	no	none
+Zm00001d033624	1	269056560	269072120	+	lipoxygenase4	 lipoxygenase4		16	no	none
+Zm00001d033632	1	269308395	269321829	+		ARM repeat superfamily protein		7	no	none
+Zm00001d033847	1	275685215	275689769	+				11	no	Down-regulation
+Zm00001d033887	1	277539395	277546843	-		Retrovirus-related Pol polyprotein LINE-1		4	no	Down-regulation
+Zm00001d033932	1	278898437	278901893	-				6	no	none
+Zm00001d034015	1	281226731	281232131	+	exoglucanase1	 exoglucanase1		3	yes	Up-regulation
+Zm00001d034217	1	286973591	286981238	+		Lectin-like receptor kinase 7  		5	yes	Down-regulation
+Zm00001d034319	1	289129916	289132683	-		Dihydroceramide fatty acyl 2-hydroxylase FAH1		2	no	Down-regulation
+Zm00001d034345	1	290272584	290276056	-	ferredoxin NADP reductase1	Ferredoxin--NADP reductase root isozyme 1 chloroplastic		2	no	none
+Zm00001d034406	1	292049250	292053203	+		25.3 kDa vesicle transport protein		10	no	Down-regulation
+Zm00001d034460	1	293598156	293621281	-	tryptophan synthase A homolog1	 tryptophan synthase A homolog1		20	no	none
+Zm00001d034522	1	295612799	295617698	-		plant adhesion molecule 1		6	no	none
+Zm00001d034616	1	297863276	297877089	+		Protein SCAR2		7	no	none
+Zm00001d034650	1	298808277	298816782	-		SEC14 cytosolic factor family protein / phosphoglyceride transfer family protein		19	no	none
+Zm00001d034674	1	299550049	299552583	-		Protein NRT1/ PTR FAMILY 5.6		2	no	none
+Zm00001d034799	1	302426741	302443706	+		RNA-binding ASCH domain protein		8	no	none
+Zm00001d035065	6	3644758	3653000	-		EMBRYO DEFECTIVE 140		18	yes	none
+Zm00001d035817	6	52256067	52289829	+		Protein kinase superfamily protein with octicosapeptide/Phox/Bem1p domain		3	no	none
+Zm00001d036247	6	79796450	79805142	+		Transport protein particle (TRAPP) component		3	no	none
+Zm00001d036280	6	81597933	81614342	+				10	yes	none
+Zm00001d036296	6	82463657	82474161	-	enhancer of zeste1	Histone-lysine N-methyltransferase EZ1  		15	no	Down-regulation
+Zm00001d036475	6	89536271	89544837	+		ABC1 family protein		8	no	none
+Zm00001d036575	6	93366049	93375799	+		Putative ribosomal protein S4 (RPS4A) family protein  		2	no	Down-regulation
+Zm00001d036629	6	95622534	95642405	-		Nucleotidyltransferase family protein		17	no	Down-regulation
+Zm00001d036759	6	99946589	99956871	+		Phox (PX) domain-containing protein		9	yes	none
+Zm00001d036790	6	100942359	100948393	-	ARID-transcription factor 8	AT-rich interactive domain-containing protein 3	ARID 	18	no	Down-regulation
+Zm00001d036827	6	102933269	102943005	-		Microtubule-associated protein MAP65-1a  		6	yes	none
+Zm00001d037354	6	122602767	122607485	+		alpha/beta-Hydrolases superfamily protein		4	yes	none
+Zm00001d037377	6	123566898	123595849	-		binding		38	no	none
+Zm00001d037465	6	126141682	126151958	-		Putative phospholipid-transporting ATPase 9		13	no	Down-regulation
+Zm00001d037734	6	135562503	135576889	-		Serine/threonine-protein phosphatase 5		9	no	none
+Zm00001d037777	6	137318220	137325773	+		alpha/beta-Hydrolases superfamily protein		10	yes	none
+Zm00001d037784	6	137680490	137684176	+	salmon silks1	 salmon silks1		3	no	none
+Zm00001d037818	6	138768114	138775058	-		phosphoribosylaminoimidazole carboxylase family protein / AIR carboxylase family protein		11	no	Down-regulation
+Zm00001d037875	6	140722761	140725801	-	elongation factor alpha2	 elongation factor alpha2		14	no	none
+Zm00001d037918	6	141972442	141976417	-		Non-cyanogenic beta-glucosidase  		3	no	Down-regulation
+Zm00001d038121	6	148612409	148616192	-	sugary4	 sugary4		2	no	none
+Zm00001d038128	6	148806666	148816056	-		Preprotein translocase subunit SCY2 chloroplastic		8	no	Down-regulation
+Zm00001d038224	6	151975768	151979800	+		F-box protein SKP2A		6	yes	none
+Zm00001d038367	6	155628842	155636644	+		Palmitoyltransferase PFA4  		4	no	none
+Zm00001d038460	6	157674149	157682569	-		Putative aminotransferase class III superfamily protein  		11	yes	Down-regulation
+Zm00001d038530	6	159360268	159371993	+		Putative inositol polyphosphate phosphatase (Synaptogenin-like) family protein  		12	no	none
+Zm00001d038576	6	160345574	160353313	+		Calcium-transporting ATPase 4 plasma membrane-type		3	no	none
+Zm00001d038589	6	160579671	160585683	-		Glyoxysomal processing protease glyoxysomal		8	no	none
+Zm00001d038688	6	162602604	162605160	+	Rho-related protein6	 Rho-related protein6		4	yes	none
+Zm00001d038709	6	163106824	163109751	+		Ras-related protein RABG3f		4	yes	Down-regulation
+Zm00001d038762	6	164016265	164027964	+	respiratory burst oxidase3	 respiratory burst oxidase3		14	no	none
+Zm00001d038773	6	164182716	164189864	-		Pentatricopeptide repeat-containing protein 		12	no	Down-regulation
+Zm00001d038812	6	164961642	164983809	-	Homeobox-transcription factor 92	 homeobox2	Homeobox 	9	yes	Up-regulation
+Zm00001d038944	6	167398430	167401428	+		Serine/threonine protein phosphatase 2A 57 kDa regulatory subunit B' iota isoform		8	yes	none
+Zm00001d039041	6	169128664	169140520	+		Putative DUF1296 domain containing family protein  		8	yes	none
+Zm00001d039105	6	170114771	170120452	+		Putative MAP kinase family protein  		5	yes	none
+Zm00001d039189	6	172192160	172210474	+		Structural maintenance of chromosomes protein 3		15	no	none
+Zm00001d039521	3	6773232	6777038	-		Zinc finger CCCH domain-containing protein 59		7	no	none
+Zm00001d039764	3	14220288	14222436	-	bHLH-transcription factor 104	Transcription factor bHLH51	bHLH 	2	no	none
+Zm00001d039931	3	19818598	19829600	+		LEAF RUST 10 DISEASE-RESISTANCE LOCUS RECEPTOR-LIKE PROTEIN KINASE-like 1.1		7	yes	none
+Zm00001d040342	3	39030953	39040580	+		Anaphase-promoting complex subunit 5		4	no	none
+Zm00001d040429	3	43101748	43117241	-		 argonaute105		14	yes	none
+Zm00001d040448	3	43803619	43810185	-		Glucosidase 2 subunit beta		3	no	none
+Zm00001d040456	3	44227038	44234125	-		Phospholipid-transporting ATPase 1		5	no	none
+Zm00001d040614	3	54002070	54005318	-		PIT1  		10	yes	Down-regulation
+Zm00001d040644	3	55831479	55834367	-		RING/U-box superfamily protein		2	yes	none
+Zm00001d040697	3	58919675	58922009	-		S-adenosylmethionine synthase 1		7	yes	none
+Zm00001d040717	3	59836378	59845920	+		CONTAINS InterPro DOMAIN/s: Craniofacial development protein 1/Bucentaur (InterPro:IPR011421); Has 333 Blast hits to 324 proteins in 149 species: Archae - 0; Bacteria - 18; Metazoa - 117; Fungi - 96; Plants - 49; Viruses - 0; Other Eukaryotes - 53 ( /.../: NCBI BLink).		6	yes	Down-regulation
+Zm00001d040735	3	60817984	60822374	+		Alkaline/neutral invertase A mitochondrial		4	yes	none
+Zm00001d040784	3	65852183	65858542	-		Glycine-rich domain-containing protein 1		11	no	none
+Zm00001d040795	3	66300601	66309143	-		Chaperone DnaJ-domain superfamily protein		2	no	Down-regulation
+Zm00001d040831	3	68533978	68545245	-		ISWI chromatin-remodeling complex ATPase CHR11		25	no	none
+Zm00001d040936	3	80811933	80815354	+		Cyclin-T1-2		2	yes	Up-regulation
+Zm00001d041246	3	108034647	108035518	-		Glycine-rich RNA-binding protein 7		4	no	Up-regulation
+Zm00001d041407	3	117384058	117395212	+		Pyridoxal kinase  		8	no	Down-regulation
+Zm00001d041415	3	118017601	118031255	+		P-loop containing nucleoside triphosphate hydrolases superfamily protein		7	no	none
+Zm00001d041475	3	122403180	122412791	+		Septin and tuftelin-interacting protein 1 homolog 1		5	no	none
+Zm00001d041777	3	137266061	137269605	+		Beta-glucosidase 17		2	no	Up-regulation
+Zm00001d041847	3	140452942	140459568	-	MYB-related-transcription factor 14	Switch/sucrose nonfermenting 3C  	MYB 	6	no	Down-regulation
+Zm00001d041993	3	146855534	146858397	-		Vacuolar protein sorting 55 (VPS55) family protein		2	no	none
+Zm00001d042050	3	148701826	148705208	-		Protein RETICULATA-RELATED 4 chloroplastic		2	no	none
+Zm00001d042344	3	162243684	162248792	+	stearoyl-acyl-carrier-protein desaturase1	 stearoyl-acyl-carrier-protein desaturase1		14	yes	Down-regulation
+Zm00001d042432	3	167033044	167043664	+		 dicer-like 104		43	yes	none
+Zm00001d042512	3	170272101	170276048	+		Ribonuclease 2		7	no	none
+Zm00001d042714	3	178074957	178082659	+		Protein S-acyltransferase 8		2	no	none
+Zm00001d042731	3	178454661	178457447	-		Actin-7		2	yes	none
+Zm00001d042762	3	179100555	179103315	+		Catalytic/ hydrolase  		3	no	Down-regulation
+Zm00001d042778	3	179397369	179404616	-		Dual specificity protein phosphatase Diacylglycerol kinase catalytic region		3	yes	Up-regulation
+Zm00001d042874	3	182592690	182595440	-		Mannose-1-phosphate guanylyltransferase 1		7	yes	Down-regulation
+Zm00001d042979	3	185649646	185654952	-		ATP binding protein  		8	no	Down-regulation
+Zm00001d043023	3	186815795	186820932	+		Protein RETICULATA-RELATED 6 chloroplastic		2	yes	none
+Zm00001d043129	3	189866442	189871921	-		Ulp1 protease family C-terminal catalytic domain containing protein expressed		2	yes	none
+Zm00001d043137	3	189988087	189993149	-		Proteasome subunit alpha type  		6	no	Up-regulation
+Zm00001d043430	3	199603946	199605109	-				2	no	none
+Zm00001d043473	3	201240323	201248398	+		Probable sugar phosphate/phosphate translocator 		26	yes	none
+Zm00001d043492	3	201682717	201691982	-		Probable lipid-A-disaccharide synthase mitochondrial		6	no	none
+Zm00001d043614	3	205241184	205246444	+		Probable sulfate transporter 3.5		3	no	none
+Zm00001d043907	3	213515706	213524591	-		Nucleotidyltransferase family protein		7	no	Up-regulation
+Zm00001d044033	3	217280349	217282156	+		TRICHOME BIREFRINGENCE-LIKE 20		3	no	none
+Zm00001d044157	3	220719672	220722019	+		cytochrome P450 family 72 subfamily A polypeptide 8		2	yes	none
+Zm00001d044254	3	223085735	223089594	-	gibberellin responsive1	ZmGR2c protein  		6	no	none
+Zm00001d044297	3	224484376	224492604	-		Peptidyl-prolyl cis-trans isomerase CYP57		5	no	none
+Zm00001d044555	3	231673708	231685394	+		Calcium permeable stress-gated cation channel 1		14	no	none
+Zm00001d044713	3	235584805	235589368	-		ACT domain-containing protein ACR12		5	yes	none
+Zm00001d044987	9	9410565	9415695	+		Putative DUF231 domain containing family protein  		4	no	Down-regulation
+Zm00001d045042	9	10906934	10912944	+	shrunken1	Sucrose synthase 1  		16	no	Down-regulation
+Zm00001d045183	9	15349884	15353799	+		Zinc finger CCCH domain-containing protein 4		3	no	none
+Zm00001d045233	9	16743641	16749848	-		2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein		4	no	none
+Zm00001d045295	9	18154086	18160890	-		ACS-like protein%3B Putative AMP-dependent synthetase and ligase superfamily protein  		2	yes	none
+Zm00001d045537	9	25841071	25846296	-		CYCLOPS		18	no	none
+Zm00001d045590	9	27537891	27546688	-		DExH-box ATP-dependent RNA helicase DExH9		19	yes	Up-regulation
+Zm00001d045606	9	28548471	28570138	-		Peroxisomal acyl-coenzyme A oxidase 1		10	yes	none
+Zm00001d045611	9	28673794	28679712	+		Protein MEI2-like 5		11	no	Up-regulation
+Zm00001d045665	9	32284202	32295054	+		Ubiquitin receptor RAD23c		8	no	none
+Zm00001d045864	9	44506873	44511952	-		65-kDa microtubule-associated protein 1		8	no	Down-regulation
+Zm00001d045993	9	53061463	53078356	-	poor homologous synapsis1	 poor homologous synapsis1		4	no	Down-regulation
+Zm00001d046277	9	77628402	77638335	+		ABC transporter G family member 29		15	no	Down-regulation
+Zm00001d046445	9	90220283	90227435	-		Transducin/WD40 repeat-like superfamily protein		7	no	none
+Zm00001d046449	9	90421940	90425069	+	elongation factor 1-alpha9	 elongation factor 1-alpha9		22	yes	none
+Zm00001d046531	9	94211896	94217210	-		Protein WVD2-like 5		9	no	none
+Zm00001d046549	9	95423368	95429217	-		110 kDa U5 small nuclear ribonucleoprotein component CLO		4	no	none
+Zm00001d046624	9	99409598	99416154	+		Probable E3 ubiquitin ligase SUD1		11	no	none
+Zm00001d046676	9	101910046	101919782	+		tryptophan synthase beta type 2		7	yes	none
+Zm00001d047191	9	121460581	121466033	-		Putative SAP DNA-binding domain family protein isoform 1%3B Putative SAP DNA-binding domain family protein isoform 2  		14	yes	none
+Zm00001d047204	9	121905287	121910624	+		Protein LNK1		13	yes	none
+Zm00001d047385	9	128358053	128362558	+		Probable protein phosphatase 2C 48		9	no	none
+Zm00001d047403	9	128995159	129000530	-		SNARE associated Golgi protein family		2	no	none
+Zm00001d047426	9	129702874	129718975	-		Peptidyl-prolyl cis-trans isomerase PASTICCINO1		14	no	none
+Zm00001d047519	9	133377512	133383097	-	bZIP-transcription factor 124	basic leucine-zipper 52	bZIP 	2	no	none
+Zm00001d047522	9	133460977	133469215	-	vacuolar sorting receptor homolog1	Vacuolar-sorting receptor 1		4	yes	Down-regulation
+Zm00001d047536	9	134139882	134147403	+				32	yes	Down-regulation
+Zm00001d047683	9	139193291	139198582	-		NAD(P)-binding Rossmann-fold superfamily protein		7	no	none
+Zm00001d047762	9	141201656	141214861	-		Ypt/Rab-GAP domain of gyp1p superfamily protein		26	no	none
+Zm00001d047769	9	141363314	141368940	+	calcium pump3	 calcium pump3		2	yes	Down-regulation
+Zm00001d047788	9	141790043	141790859	-		Histone H2B  		7	no	Up-regulation
+Zm00001d047910	9	144997539	145004862	-		V-type proton ATPase subunit a3		6	no	Down-regulation
+Zm00001d047965	9	146540635	146546312	+	translocon at outer membrane of chloroplast34	 translocon at outer membrane of chloroplast34		6	no	Down-regulation
+Zm00001d048115	9	150393785	150408118	+		nucleotidyltransferases		17	no	Up-regulation
+Zm00001d048218	9	152649224	152657220	+		Probable mitochondrial adenine nucleotide transporter BTL2		3	no	none
+Zm00001d048253	9	153255360	153257954	-		40S ribosomal protein Sa-1		6	no	Up-regulation
+Zm00001d048335	9	154618004	154622654	-		Major facilitator superfamily protein		3	no	none
+Zm00001d048385	9	155329191	155336967	+	PHD-transcription factor 14	PHD finger protein ING1	PHD 	4	no	Down-regulation
+Zm00001d048497	9	157237558	157241000	-				4	yes	none
+Zm00001d048511	9	157574208	157592508	-		AP-2 complex subunit alpha-2		31	no	none
+Zm00001d048531	9	157939026	157942646	-		DEAD-box ATP-dependent RNA helicase 50		7	no	Up-regulation
+Zm00001d048564	9	158839268	158844061	+		Putative glycogen synthase kinase family protein  		11	no	none
+Zm00001d048575	9	159480993	159515420	-		myosin heavy chain-related		25	no	Up-regulation
+Zm00001d049076	4	14931936	14946300	+		Putative phosphatidylinositol kinase  		20	no	Up-regulation
+Zm00001d049155	4	18226593	18236310	+		Sec23/Sec24 protein transport family protein		32	no	none
+Zm00001d049188	4	19758440	19765128	-		Bifunctional dihydrofolate reductase-thymidylate synthase  		12	yes	none
+Zm00001d049313	4	25972791	26039726	-		NOL1/NOP2/sun family protein		9	no	Up-regulation
+Zm00001d049326	4	26475602	26481894	+		Probable galacturonosyltransferase 4		9	no	none
+Zm00001d049708	4	40976511	40984580	-		Putative ARM repeat-containing protein containing family protein  		6	yes	none
+Zm00001d049826	4	46705236	46707933	-		 nuclear transport factor1		2	no	none
+Zm00001d050062	4	63285988	63292685	-				6	yes	none
+Zm00001d050220	4	74498853	74512180	-		Long chain base biosynthesis protein 1		2	no	none
+Zm00001d050253	4	76519506	76527274	+		Carrier protein CGI-69  		7	no	none
+Zm00001d050336	4	82004913	82010291	-		Methylcrotonoyl-CoA carboxylase beta chain mitochondrial		12	no	none
+Zm00001d050551	4	99642502	99668891	+		ubiquitin-associated (UBA)/TS-N domain-containing protein		11	no	none
+Zm00001d050584	4	102551161	102570725	+		Protein MEI2-like 1		27	no	none
+Zm00001d050606	4	103706600	103714666	-		TUDOR-SN protein 1		28	no	none
+Zm00001d051161	4	146706821	146710589	-	phenylalanine ammonia lyase3	 phenylalanine ammonia lyase3		7	no	none
+Zm00001d051329	4	154796970	154799734	-		Vesicle-associated protein 2-1		7	no	Down-regulation
+Zm00001d051399	4	157106497	157120550	+		U-box domain-containing protein 33		5	no	none
+Zm00001d051431	4	158375271	158380457	-		Serine/threonine-protein kinase WNK8		14	no	none
+Zm00001d051528	4	161585947	161594533	+		survival motor neuron protein		7	yes	none
+Zm00001d051629	4	165078230	165084517	-		Pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit alpha 2		12	yes	Up-regulation
+Zm00001d051688	4	166783445	166789500	+		 fimbrin homolog1		12	yes	none
+Zm00001d051840	4	171940831	171944289	+		RNA helicase 2  		3	no	none
+Zm00001d051879	4	173236782	173241171	-	NAC-transcription factor 26	NAC domain containing protein 71	NAC 	3	no	none
+Zm00001d052038	4	177039584	177043438	-	bHLH-transcription factor 12	Putative HLH DNA-binding domain superfamily protein  	bHLH 	2	no	Down-regulation
+Zm00001d052149	4	181208677	181231288	-		Putative PHD-finger domain containing protein family  		40	no	none
+Zm00001d052245	4	184611231	184665800	+		Exocyst complex component SEC6		9	yes	Up-regulation
+Zm00001d052276	4	185636179	185645200	+		RNA-processing Lsm domain		5	no	none
+Zm00001d052472	4	190781502	190787238	+		2-isopropylmalate synthase B  		12	no	Down-regulation
+Zm00001d052624	4	195157434	195163992	-		Regulator of chromosome condensation (RCC1) family protein		8	yes	none
+Zm00001d052632	4	195421971	195454136	+		ARM repeat superfamily protein		10	no	none
+Zm00001d052697	4	197821303	197841264	+		RING/U-box superfamily protein		12	no	none
+Zm00001d052851	4	202584989	202599532	+		Peroxisome biogenesis protein 5		23	no	Down-regulation
+Zm00001d052930	4	205243334	205248438	-		E3 ubiquitin-protein ligase RHF2A		6	yes	none
+Zm00001d053334	4	226583115	226590686	-		Metabolite transport protein csbC%3B Metabolite transport protein csbC isoform 1%3B Metabolite transport protein csbC isoform 2  		11	no	none
+Zm00001d053696	4	239308529	239315649	+		Glucomannan 4-beta-mannosyltransferase 2		3	yes	none
+Zm00001d053697	4	239382347	239406395	-	PHD-transcription factor 39	Methyl-CpG-binding domain-containing protein 9	PHD 	18	no	Down-regulation
+Zm00001d053928	4	243712603	243720508	-		Ubiquitin-like-specific protease 1D		8	no	none
+Zm00001d054016	4	245187634	245193569	-		Glutamate receptor 3.3		9	no	none
+Zm00001d054070	4	245864833	245876851	+	JUMONJI-transcription factor 12	Putative jumonji-like transcription factor family protein  	JUMONJI 	9	yes	none
+ZmNAGene0041	1	23975045	23982398	+	NA	NA	NA	25	yes	none
+ZmNAGene0075	1	56107530	56112002	-	NA	NA	NA	6	yes	Down-regulation
+ZmNAGene0200	1	191775178	191781020	-	NA	NA	NA	10	no	none
+ZmNAGene0240	1	223545268	223577431	-	NA	NA	NA	4	no	none
+ZmNAGene0312	1	279348660	279365014	-	NA	NA	NA	13	no	none
+ZmNAGene0321	1	284351047	284361278	+	NA	NA	NA	20	yes	none
+ZmNAGene0366	1	306883611	306921360	-	NA	NA	NA	7	no	none
+ZmNAGene0523	10	141475248	141490346	+	NA	NA	NA	5	yes	none
+ZmNAGene0579	2	5962826	5978995	-	NA	NA	NA	6	yes	none
+ZmNAGene0625	2	26329482	26342305	+	NA	NA	NA	6	no	none
+ZmNAGene0662	2	46044776	46059398	-	NA	NA	NA	13	no	none
+ZmNAGene0676	2	59469592	59500424	-	NA	NA	NA	4	no	none
+ZmNAGene0776	2	175506166	175511883	+	NA	NA	NA	20	no	none
+ZmNAGene0825	2	206597752	206617133	-	NA	NA	NA	6	yes	none
+ZmNAGene0841	2	216440947	216443099	+	NA	NA	NA	5	no	Down-regulation
+ZmNAGene0957	2	243169818	243173004	+	NA	NA	NA	3	no	none
+ZmNAGene0987	3	14110160	14141200	+	NA	NA	NA	13	no	none
+ZmNAGene1073	3	114244114	114251164	-	NA	NA	NA	13	no	none
+ZmNAGene1210	3	219820400	219824170	-	NA	NA	NA	2	no	none
+ZmNAGene1330	4	67726988	67745706	-	NA	NA	NA	22	no	Down-regulation
+ZmNAGene1458	4	190136423	190185316	-	NA	NA	NA	26	no	none
+ZmNAGene1524	4	243421265	243423274	-	NA	NA	NA	10	no	none
+ZmNAGene1599	5	22093503	22101320	-	NA	NA	NA	5	no	Down-regulation
+ZmNAGene1648	5	71085221	71092386	-	NA	NA	NA	9	no	none
+ZmNAGene1726	5	162231964	162250367	+	NA	NA	NA	5	no	none
+ZmNAGene1821	5	223260098	223277123	+	NA	NA	NA	6	yes	Down-regulation
+ZmNAGene1853	6	24794697	24812052	+	NA	NA	NA	5	no	Up-regulation
+ZmNAGene2016	6	156033277	156039204	-	NA	NA	NA	11	no	Up-regulation
+ZmNAGene2043	6	167317599	167326528	+	NA	NA	NA	3	no	Down-regulation
+ZmNAGene2123	7	50682569	50708320	+	NA	NA	NA	7	yes	none
+ZmNAGene2206	7	152283201	152284273	+	NA	NA	NA	3	no	none
+ZmNAGene2221	7	164376322	164418055	-	NA	NA	NA	23	no	Up-regulation
+ZmNAGene2317	8	29402682	29416751	+	NA	NA	NA	3	no	none
+ZmNAGene2416	8	130827197	130838912	-	NA	NA	NA	12	yes	none
+ZmNAGene2471	8	164238274	164251106	-	NA	NA	NA	8	no	none
+ZmNAGene2479	8	166861044	166902381	+	NA	NA	NA	3	no	Down-regulation
+ZmNAGene2505	8	175868303	175876540	-	NA	NA	NA	4	no	none
+ZmNAGene2567	9	28663249	28671875	+	NA	NA	NA	6	no	Up-regulation
+ZmNAGene2590	9	58107514	58194898	-	NA	NA	NA	44	no	none
+ZmNAGene2663	9	141370799	141379948	+	NA	NA	NA	8	no	Up-regulation
+ZmNAGene2668	9	145518101	145525765	-	NA	NA	NA	30	yes	none
+Zm00001d000005	B73V4_ctg150	272045	275576	-		myosin heavy chain-related		3	no	none
+Zm00001d000042	B73V4_ctg182	685917	757312	-		Protein ARABIDILLO 1		7	no	none
+Zm00001d000085	B73V4_ctg31	591995	597038	+		transferases transferring hexosyl groups		3	no	none
+Zm00001d000099	B73V4_ctg91	203934	209968	+		Beta-13-galactosyltransferase 7		6	yes	none
+Zm00001d000329	B73V4_ctg247	803	19894	+		DNA mismatch repair protein MSH5		3	no	none
+Zm00001d000396	B73V4_ctg173	7772	12723	-		Protein kinase superfamily protein		4	no	none
+Zm00001d001787	2	923036	933728	+		Pre-mRNA cleavage factor Im 25 kDa subunit 2		4	no	Up-regulation
+Zm00001d001850	2	1913937	1924409	-		Magnesium-chelatase subunit ChlH chloroplastic		4	yes	Up-regulation
+Zm00001d002122	2	6150635	6155146	+		RNA-binding (RRM/RBD/RNP motifs) family protein		7	no	none
+Zm00001d002149	2	6819751	6827540	-		Probable galacturonosyltransferase 10		8	yes	none
+Zm00001d002262	2	9128245	9132698	+				3	yes	none
+Zm00001d002278	2	9429326	9432013	-		OSJNBa0058K23.15 protein;  protein		2	no	none
+Zm00001d002292	2	9672073	9678050	-		NAD(P)-binding Rossmann-fold superfamily protein		8	no	none
+Zm00001d002333	2	10501219	10506639	+		Potassium transporter 10		7	no	none
+Zm00001d002338	2	10589276	10594877	+		UDP-N-acetylglucosamine diphosphorylase 2		6	no	none
+Zm00001d002440	2	12651592	12657446	-		Clathrin interactor EPSIN 1		6	no	none
+Zm00001d002534	2	14896272	14906202	+		Protein S-acyltransferase 21		7	no	Down-regulation
+Zm00001d002656	2	18450320	18475288	-		Protein CHROMATIN REMODELING 19		6	no	none
+Zm00001d002659	2	18564412	18572241	-	nucleosome/chromatin assembly factor D	 nucleosome/chromatin assembly factor D		6	no	Down-regulation
+Zm00001d002742	2	21198456	21202631	-		Growth regulator like protein  		6	no	Down-regulation
+Zm00001d002768	2	22071718	22072598	+	oleosin1	Oleosin Zm-I  		4	no	none
+Zm00001d002811	2	23362233	23364607	-	C2C2-GATA-transcription factor 11	GATA zinc finger family protein  	C2C2 	4	yes	none
+Zm00001d002873	2	25237629	25241162	-		UPF0426 protein  chloroplastic		4	no	Down-regulation
+Zm00001d002946	2	27826065	27829690	+		Probable magnesium transporter NIPA4		3	no	none
+Zm00001d003067	2	31067940	31072441	+		Protein root UVB sensitive 2 chloroplastic		2	no	none
+Zm00001d003089	2	31848132	31854253	+		Phosphatidylinositol N-acetyglucosaminlytransferase subunit P-related		6	no	none
+Zm00001d003101	2	32083280	32088714	+		Probable leucine-rich repeat receptor-like protein kinase 		8	no	none
+Zm00001d003123	2	32959428	32965922	+				4	no	none
+Zm00001d003124	2	33099050	33102379	-		DNA glycosylase superfamily protein		5	no	Down-regulation
+Zm00001d003129	2	33327376	33333457	-	hydroxycinnamoyltransferase5	 hydroxycinnamoyltransferase5		3	yes	Down-regulation
+Zm00001d003284	2	38744382	38756211	-	MYB-related-transcription factor 93	SWI/SNF complex subunit SWI3A	MYB 	4	no	Down-regulation
+Zm00001d003333	2	40554847	40561652	+		hapless 8		5	yes	none
+Zm00001d003584	2	49052848	49056045	+	12-oxo-phytodienoic acid reductase5	 12-oxo-phytodienoic acid reductase5		6	yes	Up-regulation
+Zm00001d003670	2	53322467	53329733	-		Protein kinase superfamily protein		8	no	none
+Zm00001d003725	2	56544405	56545569	-	H3C2	Histone H3.2  		2	no	none
+Zm00001d003730	2	56683255	56683907	-	H3C2	Histone H3.2  		4	no	Down-regulation
+Zm00001d003812	2	60529115	60533158	+		Serine/threonine-protein kinase KIPK		5	no	none
+Zm00001d003913	2	66963263	66969688	-	high chlorophyll fluorescence106	Sec-independent protein translocase protein TATB%2C chloroplastic  		3	no	none
+Zm00001d004022	2	76081377	76085776	-		RPM1-interacting protein 4		3	yes	Up-regulation
+Zm00001d004088	2	81499091	81501487	+				4	no	none
+Zm00001d004159	2	87723383	87750246	-		SNARE-interacting protein KEULE		6	no	none
+Zm00001d004620	2	122442335	122449085	+				2	no	Down-regulation
+Zm00001d005108	2	158564427	158572132	+		SNF1-related protein kinase catalytic alpha subunit KIN10  		8	no	Down-regulation
+Zm00001d005188	2	163001761	163011247	+		Cytochrome b5 domain-containing protein RLF		4	no	Down-regulation
+Zm00001d005241	2	165407124	165415550	-		Mediator of RNA polymerase II transcription subunit 33A		6	no	none
+Zm00001d005264	2	166202913	166215046	+		Tetratricopeptide repeat (TPR)-like superfamily protein		3	no	Down-regulation
+Zm00001d005498	2	175999839	176006292	-		Guanosine nucleotide diphosphate dissociation inhibitor 2		5	no	none
+Zm00001d005516	2	177061818	177071736	-		Enhancer of polycomb-like transcription factor protein		7	yes	Down-regulation
+Zm00001d005558	2	178429165	178436518	-		Putative leucyl-tRNA synthetase  		5	yes	none
+Zm00001d005650	2	181987311	181992325	+	set domain gene119	Histone-lysine N-methyltransferase H3 lysine-9 specific SUVH5		6	yes	Down-regulation
+Zm00001d005711	2	184164669	184174451	-		malonyl-CoA decarboxylase family protein		6	no	none
+Zm00001d005795	2	188910705	188919424	-		Protein binding protein  		2	yes	none
+Zm00001d005925	2	192991634	192996939	-		Glucose-6-phosphate isomerase 1 chloroplastic		5	no	none
+Zm00001d006212	2	201957643	201963956	-		Two-component response regulator-like APRR9		3	no	Up-regulation
+Zm00001d006238	2	202615728	202622663	-		Calcium lipid binding protein-like  		6	no	none
+Zm00001d006267	2	203274963	203284292	+		Serine/threonine-protein kinase STY46		6	yes	none
+Zm00001d006350	2	205337432	205343055	+		Serine/threonine-protein kinase/endoribonuclease IRE1a		8	no	Down-regulation
+Zm00001d006479	2	209563817	209568015	-	calcium dependent protein kinase3	 calcium dependent protein kinase3		7	yes	none
+Zm00001d006497	2	209870356	209873965	-		DEAD-box ATP-dependent RNA helicase 32		8	no	none
+Zm00001d006511	2	210204093	210207784	-		Glucose-6-phosphate/phosphate translocator 2 chloroplastic		7	no	Down-regulation
+Zm00001d006578	2	211375734	211378716	-	bHLH-transcription factor 80	Transcription factor bHLH130	bHLH 	3	yes	none
+Zm00001d006717	2	215049468	215062063	+		SUMO-activating enzyme subunit 2		8	no	none
+Zm00001d006787	2	216665671	216678749	+		Agenet domain-containing protein		3	yes	none
+Zm00001d006855	2	217965389	217972562	+		inter-alpha-trypsin inhibitor heavy chain-related		8	no	none
+Zm00001d007038	2	220640379	220648182	+		Proteasome subunit alpha type  		7	no	none
+Zm00001d007039	2	220650785	220653061	+		SWI/SNF complex component SNF12 homolog		2	no	Up-regulation
+Zm00001d007043	2	220739388	220744668	-		Tetratricopeptide repeat (TPR)-like superfamily protein		4	no	none
+Zm00001d007240	2	225508616	225525714	+	GRMZM2G033962	Two-component response regulator-like APRR3		6	yes	none
+Zm00001d007496	2	233248411	233252981	+		Lymphoid organ expressed yellow head virus receptor protein  		3	no	none
+Zm00001d007757	2	238996273	239001506	+		DEAD-box ATP-dependent RNA helicase 52		8	no	Down-regulation
+Zm00001d007762	2	239241846	239246689	+		Hydroxyproline O-galactosyltransferase GALT4		2	no	Down-regulation
+Zm00001d007810	2	240071374	240073496	+		40S ribosomal protein S15-4		8	yes	none
+Zm00001d007930	2	243173881	243177151	-		Tobamovirus multiplication protein 1		7	no	none
+Zm00001d008218	8	1585465	1591623	+		Coatomer subunit beta  		8	no	none
+Zm00001d008233	8	2062566	2071530	+		COP9 signalosome complex subunit 2		7	no	Down-regulation
+Zm00001d008271	8	3624572	3629269	+		Hydroxymethylglutaryl-CoA lyase mitochondrial		4	no	none
+Zm00001d008293	8	4309481	4314254	-		Probable splicing factor 3A subunit 1		7	yes	Down-regulation
+Zm00001d008342	8	5857214	5860199	+		Pollen-specific protein like%3B Pollen-specific protein like protein  		3	no	Down-regulation
+Zm00001d008357	8	6174454	6178469	-		Glycogen synthase kinase-3 MsK-3%3B Putative glycogen synthase kinase family protein  		8	no	none
+Zm00001d008369	8	6538825	6549503	-		Putative TCP-1/cpn60 chaperonin family protein  		7	yes	none
+Zm00001d008379	8	6803766	6807373	+	cysteine synthase1	 cysteine synthase1		5	no	none
+Zm00001d008388	8	6982988	6992859	+				4	no	none
+Zm00001d008389	8	7021742	7027571	+		Sphingosine-1-phosphate lyase		5	no	Up-regulation
+Zm00001d008406	8	7831591	7835921	-		pfkB-like carbohydrate kinase family protein		3	no	none
+Zm00001d008411	8	8047022	8050763	+		Mediator of RNA polymerase II transcription subunit 17		8	no	Down-regulation
+Zm00001d008433	8	8627115	8631237	-		Putative prolin-rich extensin-like receptor protein kinase family protein  		7	no	Up-regulation
+Zm00001d008439	8	8692989	8698744	-		Protein decapping 5		5	no	none
+Zm00001d008565	8	13138808	13143070	+				3	no	Down-regulation
+Zm00001d008613	8	14474708	14480932	+		CONTAINS InterPro DOMAIN/s: Vacuolar import/degradation protein Vid24 (InterPro:IPR018618); Has 318 Blast hits to 317 proteins in 131 species: Archae - 0; Bacteria - 0; Metazoa - 80; Fungi - 184; Plants - 51; Viruses - 0; Other Eukaryotes - 3 (sourc /.../I BLink).		3	no	none
+Zm00001d008940	8	26144396	26151066	-		ABC transporter D family member 2 chloroplastic		3	yes	Down-regulation
+Zm00001d009028	8	30677314	30681806	-		Triose phosphate/phosphate translocator%2C chloroplastic  		4	no	none
+Zm00001d009055	8	33490549	33496057	+		Shaggy-related protein kinase alpha		5	yes	none
+Zm00001d009077	8	34966351	34970260	-		Mono-/di-acylglycerol lipase N-terminal;Lipase class 3		4	yes	none
+Zm00001d009161	8	40267883	40274085	-		CONTAINS InterPro DOMAIN/s: Craniofacial development protein 1/Bucentaur (InterPro:IPR011421); Has 333 Blast hits to 324 proteins in 149 species: Archae - 0; Bacteria - 18; Metazoa - 117; Fungi - 96; Plants - 49; Viruses - 0; Other Eukaryotes - 53 ( /.../: NCBI BLink).		3	no	none
+Zm00001d009270	8	49685540	49721525	+		Protein HASTY 1		8	yes	none
+Zm00001d009436	8	64430332	64433696	-		DNAJ heat shock N-terminal domain-containing protein		4	yes	Down-regulation
+Zm00001d009555	8	70016455	70019912	+		Hydroxyproline-rich glycoprotein family protein		5	no	Up-regulation
+Zm00001d009714	8	77386882	77391865	+		Jasmonic acid-amido synthetase JAR1		3	yes	none
+Zm00001d009723	8	77904227	77909243	+	plastid transcriptionally active14	 plastid transcriptionally active14		4	no	none
+Zm00001d009731	8	78406103	78411071	+		Putative homeodomain-like transcription factor superfamily protein isoform 1%3B Putative homeodomain-like transcription factor superfamily protein isoform 2  	homeodomain 	4	no	none
+Zm00001d009750	8	79623875	79651205	-		Chromatin modification-related protein EAF1 B		6	no	none
+Zm00001d009771	8	80433878	80440706	+		Calcium permeable stress-gated cation channel 1		7	no	none
+Zm00001d009810	8	82399471	82420640	+		Core-2/I-branching beta-16-N-acetylglucosaminyltransferase family protein		3	no	Down-regulation
+Zm00001d010121	8	100027179	100031972	+		Pentatricopeptide repeat-containing protein 		3	no	none
+Zm00001d010216	8	104483932	104490884	+		Mediator of RNA polymerase II transcription subunit 27		5	yes	none
+Zm00001d010241	8	105685601	105692666	+	Alfin-like-transcription factor 11	PHD finger protein ALFIN-LIKE 6	ALF 	4	yes	Down-regulation
+Zm00001d010322	8	109537444	109549673	+	methyl binding domain101a	 methyl binding domain101a		3	no	none
+Zm00001d010340	8	110433716	110437308	-	mTERF-domain protein4	Putative mitochondrial transcription termination factor family protein%3B mTERF family protein  		3	no	none
+Zm00001d010491	8	117740344	117744264	+		Succinate dehydrogenase subunit 4 mitochondrial		4	yes	none
+Zm00001d010493	8	117899241	117903123	+		F-box domain containing protein  		2	no	Up-regulation
+Zm00001d010622	8	122164068	122168126	-		KH domain-containing protein		6	yes	Down-regulation
+Zm00001d010678	8	124068184	124073672	+		Putative E3 ubiquitin-protein ligase RING1a		6	no	none
+Zm00001d010792	8	127978477	127989757	+				4	no	Down-regulation
+Zm00001d010835	8	129351635	129358502	-		Arginine--tRNA ligase chloroplastic/mitochondrial		8	yes	none
+Zm00001d010920	8	133482823	133486240	-		S-adenosylmethionine synthase  		5	yes	Down-regulation
+Zm00001d010946	8	134633259	134637535	+		Tetratricopeptide repeat (TPR)-like superfamily protein		5	no	Down-regulation
+Zm00001d011108	8	139153111	139157427	-	variant in methylation102	 variant in methylation102		7	no	none
+Zm00001d011160	8	141328645	141333318	+		Tudor/PWWP/MBT superfamily protein		2	no	none
+Zm00001d011222	8	143429139	143442455	+		Calcium-binding EF hand family protein		6	no	none
+Zm00001d011334	8	147199565	147204907	+		GDSL esterase/lipase 		3	no	none
+Zm00001d011392	8	149387614	149392198	+		Calcium-dependent protein kinase%2C isoform 2%3B Putative calcium-dependent protein kinase family protein isoform 1%3B Putative calcium-dependent protein kinase family protein isoform 2  		7	no	none
+Zm00001d011478	8	151704998	151707238	+				6	no	Down-regulation
+Zm00001d011532	8	153672058	153703021	+		Protein VACUOLELESS1		4	yes	none
+Zm00001d011534	8	153717172	153718808	-		60S ribosomal protein L18a  		4	no	none
+Zm00001d011579	8	154889188	154895325	+		Pentatricopeptide repeat-containing protein  chloroplastic		3	no	Down-regulation
+Zm00001d011721	8	159898530	159902983	-	brassinosteroid insensitive1a	 brassinosteroid insensitive1a		3	no	none
+Zm00001d011835	8	162305807	162312492	-		NAD(H) kinase 1		5	no	none
+Zm00001d011898	8	164189762	164194581	+		zinc finger (C3HC4-type RING finger) family protein		2	yes	none
+Zm00001d011908	8	164306897	164318953	-		Protein kinase superfamily protein		5	yes	none
+Zm00001d012052	8	167250311	167252718	-		RNA-binding (RRM/RBD/RNP motifs) family protein		4	yes	none
+Zm00001d012060	8	167470863	167476562	+		WW domain-containing protein		5	no	Up-regulation
+Zm00001d012098	8	168223693	168226133	-		RNA-binding (RRM/RBD/RNP motifs) family protein		3	yes	none
+Zm00001d012198	8	169939479	169944694	-		Protein root UVB sensitive 6		6	yes	Up-regulation
+Zm00001d012245	8	170916913	170919259	-		Adenine nucleotide alpha hydrolases-like superfamily protein		5	yes	none
+Zm00001d012451	8	174780887	174784022	+		CTD small phosphatase-like protein%3B CTD small phosphatase-like protein isoform 1%3B CTD small phosphatase-like protein isoform 2  		5	no	Down-regulation
+Zm00001d012514	8	175887579	175893178	-		Probable inactive receptor kinase 		3	no	none
+Zm00001d012553	8	176514160	176521162	+	octopine synthase binding factor4	 octopine synthase binding factor4	bZIP 	6	no	Down-regulation
+Zm00001d012573	8	176814933	176819625	-		Probable inactive purple acid phosphatase 1		2	no	none
+Zm00001d012652	8	177983385	177989019	+		Signal recognition particle 54 kDa protein 3		5	no	none
+Zm00001d012662	8	178243990	178247079	-				2	no	none
+Zm00001d012750	8	179683029	179693484	-		MACPF domain-containing protein CAD1		7	no	Down-regulation
+Zm00001d012816	5	789953	792448	+		Probable carbohydrate esterase 		5	no	none
+Zm00001d012823	5	925235	928743	-	HSF-transcription factor 22	Heat stress transcription factor A-1a	HSF 	2	no	none
+Zm00001d012827	5	939545	943194	+		ADP-ribosylation factor GTPase-activating protein AGD10		5	no	Down-regulation
+Zm00001d012895	5	1713093	1718062	-		DUF4378 domain protein		6	yes	Up-regulation
+Zm00001d012931	5	2173189	2178440	-		Protein kinase protein with tetratricopeptide repeat domain		4	no	Down-regulation
+Zm00001d013031	5	3486306	3487932	-				2	no	none
+Zm00001d013150	5	5449442	5452280	+		Protein JASON		4	no	Up-regulation
+Zm00001d013159	5	5560201	5563194	-	alpha tubulin3	 alpha tubulin3		7	no	none
+Zm00001d013250	5	7116831	7125729	+		Glucan endo-1%2C3-beta-glucosidase 3  		7	yes	Up-regulation
+Zm00001d013251	5	7132095	7137265	+		LRR receptor-like serine/threonine-protein kinase RPK2		3	no	none
+Zm00001d013342	5	8966422	8969679	+	FHA-transcription factor 12	Kinetoplast-associated protein  	FHA 	3	yes	none
+Zm00001d013397	5	10347220	10350970	+		Fb27  		2	no	none
+Zm00001d013469	5	12350428	12355805	+		Putative phosphatidylinositol-4-phosphate-5-kinase  		6	yes	none
+Zm00001d013495	5	12771079	12774680	-		Cell division cycle protein cdt2  		4	no	Down-regulation
+Zm00001d013594	5	15048788	15050923	+		mRNA cap guanine-N7 methyltransferase 2		4	no	Up-regulation
+Zm00001d013964	5	26495725	26501623	-		ALG2-interacting protein X  		7	yes	Down-regulation
+Zm00001d013976	5	26945788	26950335	-	FHA-transcription factor 14	Nijmegen breakage syndrome 1 protein	FHA 	6	no	none
+Zm00001d014157	5	34361800	34364724	-		Flavoprotein wrbA  		2	no	none
+Zm00001d014161	5	34600156	34613797	+		Protein kinase superfamily protein		5	no	Up-regulation
+Zm00001d014715	5	60297071	60301044	-		Delta-aminolevulinic acid dehydratase 1 chloroplastic		4	no	none
+Zm00001d014879	5	66807869	66812006	-		Cgi-62		5	no	Down-regulation
+Zm00001d014991	5	71272462	71282929	+		Nucleic acid-binding OB-fold-like protein		5	no	none
+Zm00001d015014	5	72143579	72147422	+		Sialyltransferase-like protein 2		3	no	none
+Zm00001d015120	5	76339175	76344980	-		RuvB-like protein 1		4	no	none
+Zm00001d015148	5	76960980	76964643	-		Uncharacterised conserved protein (UCP030365)		3	no	none
+Zm00001d015308	5	83966631	83970675	-				3	no	none
+Zm00001d015326	5	84614161	84619449	+		Formin-like protein 5		8	no	none
+Zm00001d015329	5	84710588	84715868	-		FAD/NAD(P)-binding oxidoreductase family protein		8	no	none
+Zm00001d015366	5	86475220	86478975	+	camouflage1	Porphobilinogen deaminase chloroplastic		2	no	none
+Zm00001d015464	5	91773562	91778847	-		Calmodulin binding protein  		7	no	none
+Zm00001d015649	5	103214832	103229223	+		Protein STRUBBELIG-RECEPTOR FAMILY 8		8	no	none
+Zm00001d015721	5	112707895	112710879	+		Cytochrome P450 734A1		3	no	none
+Zm00001d015785	5	119215636	119226834	-		Sec14p-like phosphatidylinositol transfer family protein		6	no	Down-regulation
+Zm00001d015890	5	129466474	129557572	-		SNARE-interacting protein KEULE		8	yes	none
+Zm00001d015997	5	138120817	138128265	+				2	no	none
+Zm00001d016144	5	146540230	146555384	-		Chalcone isomerase 3  		6	no	none
+Zm00001d016443	5	162551303	162553340	+		Peroxidase 64		3	no	none
+Zm00001d016535	5	166640894	166650229	+		Ethylene-responsive transcription factor-like protein 	Ethylene 	3	yes	none
+Zm00001d016544	5	166731623	166735965	-		Glycosyltransferase family 61 protein		8	no	Up-regulation
+Zm00001d016559	5	167470616	167481059	+		Ubiquitin-activating enzyme E1 domain-containing protein 1  		6	no	Down-regulation
+Zm00001d016891	5	179458140	179464303	-		Beta-13-galactosyltransferase 7		5	yes	Down-regulation
+Zm00001d017106	5	185544849	185554402	+		Actin-related protein 3		8	no	none
+Zm00001d017113	5	185778368	185786205	+				8	no	none
+Zm00001d017125	5	186171790	186176962	+		Ankyrin repeat family protein		4	yes	none
+Zm00001d017128	5	186381934	186390082	+				7	no	none
+Zm00001d017129	5	186410436	186413913	-	GRAS-transcription factor 39		GRAS 	4	yes	none
+Zm00001d017145	5	186842727	186847322	-		Nicotinamidase 1		4	no	none
+Zm00001d017168	5	187805177	187809851	+		Acetolactate synthase small subunit 1 chloroplastic		5	no	none
+Zm00001d017222	5	189326810	189366871	+		DNA-directed RNA polymerases II IV and V subunit 11		5	yes	Up-regulation
+Zm00001d017241	5	190060998	190063941	+		Two-component response regulator-like APRR1		6	no	none
+Zm00001d017296	5	192042485	192048035	+				7	yes	none
+Zm00001d017330	5	193146467	193147942	+		ATP-dependent Clp protease proteolytic subunit  		2	yes	none
+Zm00001d017336	5	193245751	193254613	-		Proteasome subunit alpha type-2-B		6	no	Up-regulation
+Zm00001d017676	5	203880481	203884777	+		Acetylornithine deacetylase  		5	no	none
+Zm00001d017691	5	204333477	204344512	-	GNAT-transcription factor 25	Histone acetyltransferase MCC1	GNAT 	3	yes	none
+Zm00001d017783	5	206691760	206696301	+		AAA-type ATPase family protein		6	yes	none
+Zm00001d017793	5	206964940	206969086	-		Kinesin light chain  		7	no	none
+Zm00001d017832	5	208249380	208257275	+		Ribose-phosphate pyrophosphokinase 4		7	yes	none
+Zm00001d017860	5	209065470	209070347	+		Fimbrin-1		7	no	none
+Zm00001d017906	5	209944102	209948357	+		O-fucosyltransferase family protein		5	no	none
+Zm00001d017953	5	210785282	210790516	+		Probable peroxygenase 4		6	yes	none
+Zm00001d018005	5	211811435	211817914	-		Protease Do-like 9		8	no	none
+Zm00001d018032	5	212488570	212492036	-		Probable mannan synthase 7		4	no	none
+Zm00001d018033	5	212494508	212500703	-		Starch synthase IIb-2  		2	no	Up-regulation
+Zm00001d018090	5	214042708	214045954	-	annexin2	 annexin2		4	no	Down-regulation
+Zm00001d018127	5	214787648	214794114	-		SNW/SKI-interacting protein		5	no	none
+Zm00001d018144	5	215392664	215396576	-		ARM repeat superfamily protein		7	no	none
+Zm00001d018149	5	215542515	215544271	+	cyclin-dependent kinase inhibitor5	Cyclin-dependent kinase inhibitor 2  		2	no	Down-regulation
+Zm00001d018261	5	217575060	217588003	+		LRR receptor-like serine/threonine-protein kinase ERECTA		6	no	none
+Zm00001d018338	5	218812361	218814640	+				3	no	none
+Zm00001d018359	5	219158470	219161256	-		Serinc-domain containing serine and sphingolipid biosynthesis protein		3	no	none
+Zm00001d018391	5	219928248	219932581	-		RING/U-box superfamily protein		8	no	none
+Zm00001d018394	5	219962014	219970575	+	DBP-transcription factor 2	Probable protein phosphatase 2C 22	DBP 	3	yes	none
+Zm00001d018440	5	220896917	220900829	-		casein kinase I		3	no	none
+Zm00001d018567	5	223332113	223334662	-		Protein ELC-like		2	no	none
+Zm00001d018573	5	223568967	223577082	+	Rho-related protein from plants 4	 Rho-related protein from plants 4		3	no	none
+Zm00001d018664	7	2101851	2109738	+		Protein LEO1 homolog		7	yes	Down-regulation
+Zm00001d018693	7	2686440	2689082	-	pentatricopeptide repeat 2	 pentatricopeptide repeat 2		2	no	Down-regulation
+Zm00001d018742	7	3845026	3851209	+	rough sheath1	 rough sheath1		8	yes	none
+Zm00001d018770	7	4766434	4774321	+		GYF domain-containing protein		7	yes	none
+Zm00001d018798	7	5392478	5399337	-		IAP-like protein 1		4	yes	Up-regulation
+Zm00001d018904	7	8852939	8858814	+		protein kinase-related		5	yes	Down-regulation
+Zm00001d018907	7	8969455	8977244	+		Folate-biopterin transporter 1 chloroplastic		5	no	none
+Zm00001d018959	7	10645382	10650726	+		ABC transporter F family member 4		2	yes	none
+Zm00001d019184	7	20586893	20592591	+		KHG/KDPG aldolase		3	no	Down-regulation
+Zm00001d019234	7	23322287	23327390	-		THO complex subunit 4B		3	no	none
+Zm00001d019522	7	39731041	39735223	-		Ankyrin repeat family protein		3	yes	Down-regulation
+Zm00001d020011	7	85457503	85465315	+		THO complex subunit 3		6	no	none
+Zm00001d020178	7	97689997	97700287	-		Retinol dehydrogenase 13		7	yes	none
+Zm00001d020353	7	108629808	108634542	-		Cyclin-D1-1		4	no	none
+Zm00001d020396	7	111240634	111245796	+	trehalose-6-phosphate synthase13	 trehalose-6-phosphate synthase13		4	no	none
+Zm00001d020412	7	112203071	112204545	-		HMG-Y-related protein A		2	no	Down-regulation
+Zm00001d020560	7	122291284	122296621	-		Probable xyloglucan glycosyltransferase 8		3	no	none
+Zm00001d020622	7	125313788	125318122	+		BRCT domain-containing DNA repair protein		8	no	none
+Zm00001d020764	7	131557949	131561931	-	carbonic anhydrase5	 carbonic anhydrase5		5	yes	Up-regulation
+Zm00001d020840	7	134444853	134446243	+		Fasciclin-like arabinogalactan protein 8  		2	yes	Down-regulation
+Zm00001d020931	7	136913647	136915619	-		Polygalacturonase  		3	no	none
+Zm00001d020972	7	138223556	138229618	-	NAC-transcription factor 79	Pentatricopeptide repeat-containing protein  mitochondrial	NAC 	6	no	Down-regulation
+Zm00001d021032	7	140954748	140973725	-		RING/U-box superfamily protein		6	no	none
+Zm00001d021050	7	141287740	141292496	-		Ribulose-phosphate 3-epimerase  		5	no	none
+Zm00001d021071	7	142141971	142150220	+		hydroxyproline-rich glycoprotein family protein		7	no	Down-regulation
+Zm00001d021464	7	152793032	152797189	+		Rop guanine nucleotide exchange factor 1		8	yes	Up-regulation
+Zm00001d021486	7	153554768	153557927	-				8	no	none
+Zm00001d021507	7	154419410	154425081	+		Asparagine--tRNA ligase chloroplastic/mitochondrial		2	no	none
+Zm00001d021828	7	163880048	163887890	-		Exocyst complex component EXO84C		5	yes	none
+Zm00001d021875	7	165254269	165257566	+		Serine/threonine-protein kinase WNK2		8	yes	none
+Zm00001d021878	7	165282300	165287779	+		Protein FREE1		6	no	none
+Zm00001d022017	7	168160232	168162604	-		Probable indole-3-acetic acid-amido synthetase GH3.1		4	no	none
+Zm00001d022071	7	169428759	169434059	-		Nuclear transport factor 2 (NTF2) family protein with RNA binding (RRM-RBD-RNP motifs) domain		4	no	none
+Zm00001d022113	7	170587289	170597343	+				5	yes	none
+Zm00001d022160	7	171442295	171444896	+	caltractin1	 caltractin1		4	yes	Up-regulation
+Zm00001d022176	7	171740661	171751647	-		ATP-dependent RNA helicase DEAH12 chloroplastic		6	yes	Up-regulation
+Zm00001d022185	7	172183194	172190425	-		Calmodulin-binding transcription activator 2		7	yes	Down-regulation
+Zm00001d022198	7	172636337	172650673	+		SAP domain-containing protein		6	yes	Down-regulation
+Zm00001d022406	7	176977358	176982506	+		Probable mitochondrial adenine nucleotide transporter BTL1		7	no	none
+Zm00001d022434	7	177646176	177649708	-		Ribosomal protein S6 kinase  		2	no	none
+Zm00001d022461	7	178147096	178148306	+	AP2-EREBP-transcription factor 200	ERF-like protein  	AP2 	2	no	Down-regulation
+Zm00001d022551	7	179884643	179890183	+		ribonuclease Ps		6	no	none
+Zm00001d022554	7	179921907	179928103	-	umc168	BADH-like protein  		3	yes	none
+Zm00001d023235	10	1049718	1053027	+		Ubiquitin carboxyl-terminal hydrolase family protein		2	no	none
+Zm00001d023238	10	1102077	1122327	+		Long chain acyl-CoA synthetase 6 peroxisomal		8	no	Up-regulation
+Zm00001d023264	10	1600459	1605134	+		Aladin		7	no	Up-regulation
+Zm00001d023510	10	8017867	8030454	+		Serine/threonine-protein kinase STY46		5	no	Down-regulation
+Zm00001d023538	10	9347497	9371429	+		Long chain acyl-CoA synthetase 9 chloroplastic		7	no	Down-regulation
+Zm00001d023579	10	10649401	10652209	+		Aspartyl protease APCB1		2	yes	none
+Zm00001d023582	10	10762553	10767953	+		L-ascorbate peroxidase S chloroplastic/mitochondrial		3	yes	Down-regulation
+Zm00001d023735	10	17919269	17922752	+		Nitrilase-associated protein  		2	no	none
+Zm00001d023817	10	23332450	23345034	-		Dihydrofolate synthetase		8	no	none
+Zm00001d023841	10	24262540	24269530	+		P-loop nucleoside triphosphate hydrolases superfamily protein with CH (Calponin Homology) domain		8	no	none
+Zm00001d023846	10	24407590	24410264	-		ERAD-associated E3 ubiquitin-protein ligase HRD1A		7	no	none
+Zm00001d023896	10	26772380	26775750	+		DNA-directed RNA polymerases		5	no	none
+Zm00001d024525	10	76302295	76309059	-		Transmembrane 9 superfamily member 4		3	no	Up-regulation
+Zm00001d024572	10	78703892	78707138	-		Putative glycerol-3-phosphate transporter 1		4	no	Up-regulation
+Zm00001d024587	10	79465955	79472154	+	nitrate transporter/peptide transporter family1	Protein NRT1/ PTR FAMILY 6.3		4	yes	none
+Zm00001d024594	10	79726997	79731279	+		Monocopper oxidase  		3	no	none
+Zm00001d024625	10	80856442	80879275	+		Protein MICRORCHIDIA 1		5	yes	none
+Zm00001d024767	10	87218080	87221164	+		Aspartic proteinase A1		4	no	none
+Zm00001d024784	10	87962983	87976336	-	MYB-transcription factor 149	Transcription factor MYB86	MYB 	4	yes	Up-regulation
+Zm00001d024808	10	88844039	88846874	+		Probable GTP-binding protein OBGM mitochondrial		4	no	none
+Zm00001d025036	10	100773356	100775278	-		Indole-3-acetate beta-glucosyltransferase  		5	yes	none
+Zm00001d025208	10	109171803	109178741	-		myosin heavy chain-related		3	no	Up-regulation
+Zm00001d025407	10	117683503	117686883	-		COP9 signalosome complex subunit 8  		2	yes	none
+Zm00001d025526	10	121358998	121363801	+	serine carboxypeptidase1	 serine carboxypeptidase1		7	yes	none
+Zm00001d025651	10	125013169	125020527	-		Poly(A)-specific ribonuclease PARN		3	no	none
+Zm00001d025713	10	127154778	127159945	-	GNAT-transcription factor 42	Elongator complex protein 3	GNAT 	4	no	none
+Zm00001d025773	10	129105906	129115766	+	S-adenosylmethionine decarboxylase1	 S-adenosylmethionine decarboxylase1		4	no	none
+Zm00001d025799	10	129941666	129946475	+		Calmodulin-binding receptor-like cytoplasmic kinase 3		7	no	Down-regulation
+Zm00001d025862	10	131802108	131805205	+		L-allo-threonine aldolase%3B Putative threonine aldolase family protein  		7	no	Down-regulation
+Zm00001d025893	10	133218764	133222199	-		Phosphoenolpyruvate carboxylase family protein		7	no	none
+Zm00001d026064	10	137389956	137394809	-		Polyprenol reductase 2		6	no	none
+Zm00001d026258	10	142157661	142162299	-		Ubiquitin-specific protease family C19-related protein		8	no	Up-regulation
+Zm00001d026350	10	144090719	144097709	+		Pentatricopeptide repeat-containing protein 		5	no	Up-regulation
+Zm00001d026614	10	148995156	149000616	+		Probable protein arginine N-methyltransferase 6		5	no	none
+Zm00001d026641	10	149273828	149277821	-	autophagy4b	Cysteine protease ATG4a		5	no	none
+Zm00001d026651	10	149391944	149392877	+		Expressed protein;  protein		2	no	none
+Zm00001d027353	1	3494408	3497148	-		Retinol dehydrogenase 12  		2	no	none
+Zm00001d027366	1	3805094	3807603	-		 peroxisomal membrane protein homolog1		4	no	none
+Zm00001d027368	1	3811467	3812609	+		Xyloglucan endotransglucosylase/hydrolase protein 5  		2	no	none
+Zm00001d027510	1	7074438	7080019	-	NLP-transcription factor 7	Protein NLP2	NLP 	5	yes	none
+Zm00001d027527	1	7457235	7459538	-		40S ribosomal protein Sa-1		3	no	none
+Zm00001d027596	1	8666871	8671854	-		DUF3527 domain protein		6	no	none
+Zm00001d027613	1	9015345	9016646	-		Tetratricopeptide repeat (TPR)-like superfamily protein		2	no	none
+Zm00001d027805	1	13965284	13968673	+		Probable phosphopantothenoylcysteine decarboxylase		6	no	none
+Zm00001d027941	1	18019104	18021737	+		NAD(P)-binding Rossmann-fold superfamily protein		3	no	Down-regulation
+Zm00001d028093	1	22735266	22740925	-		Calcium-transporting ATPase 2 plasma membrane-type		4	yes	none
+Zm00001d028265	1	28609279	28614414	+	cytokinin response regulator8	Response regulator 8%3B Two-component response regulator ARR1  		7	no	none
+Zm00001d028303	1	29785411	29788053	-		Branched-chain-amino-acid aminotransferase  		4	yes	none
+Zm00001d028352	1	31683717	31688115	+		LisH and RanBPM domains containing protein		5	yes	none
+Zm00001d028568	1	39393998	39401889	+		Serine/threonine-protein phosphatase  		8	yes	none
+Zm00001d028641	1	41589278	41590864	-				2	no	none
+Zm00001d028690	1	43285358	43291990	-				6	yes	none
+Zm00001d028691	1	43312091	43316577	-		Expressed protein;  protein		2	yes	Down-regulation
+Zm00001d028760	1	45800846	45804468	+				2	no	none
+Zm00001d028827	1	47792436	47800509	+		Exonuclease DPD1 chloroplastic/mitochondrial		8	no	none
+Zm00001d028952	1	52672158	52680876	-		Alpha-L-arabinofuranosidase 1		7	no	none
+Zm00001d029044	1	55927611	55936044	+		ABC transporter E family member 2		6	no	none
+Zm00001d029118	1	58534344	58540001	-		Sentrin-specific protease 2  		5	yes	none
+Zm00001d029201	1	62065593	62069082	-		50S ribosomal protein L6  		2	no	none
+Zm00001d029461	1	71830422	71834236	+		Protein LAZ1 homolog 2		8	yes	none
+Zm00001d029516	1	74158475	74164313	-		Probable galacturonosyltransferase 11		7	no	none
+Zm00001d029525	1	74653797	74658730	-		Probable 6-phosphogluconolactonase 1		5	no	none
+Zm00001d029527	1	74787607	74790957	-		Protein SPIRAL1		7	no	none
+Zm00001d029530	1	75041778	75049211	-		binding		7	no	Down-regulation
+Zm00001d029719	1	84025717	84035807	+		C-terminal binding protein AN		7	yes	none
+Zm00001d029840	1	89587618	89589865	+		Short-chain dehydrogenase TIC 32 chloroplastic		4	no	none
+Zm00001d029846	1	89859907	89863565	-		Translocase of chloroplast 120 chloroplastic		2	no	Up-regulation
+Zm00001d030132	1	108199942	108209147	-		4-coumarate--CoA ligase-like 6		4	no	none
+Zm00001d030163	1	109741903	109745562	+				5	no	none
+Zm00001d030677	1	152629439	152642557	+		Diaminopimelate epimerase chloroplastic		7	no	Up-regulation
+Zm00001d030678	1	152667851	152669369	-	MYB-transcription factor 56	Transcription factor MYB48	MYB 	4	yes	none
+Zm00001d030954	1	168741575	168745774	+		PIG-X/PBN1 family protein		2	yes	none
+Zm00001d030982	1	171818548	171823296	+		ankyrin repeat family protein		7	yes	Up-regulation
+Zm00001d031041	1	174748246	174754584	+		Transducin/WD40 repeat-like superfamily protein		8	no	none
+Zm00001d031120	1	178020480	178025593	-		Cationic amino acid transporter 4 vacuolar		4	no	none
+Zm00001d031168	1	180447018	180448137	-	glycine-rich protein1	Glycine-rich RNA-binding protein 2  		6	no	none
+Zm00001d031554	1	194112650	194120343	+		Type II inositol polyphosphate 5-phosphatase 15		8	no	none
+Zm00001d031674	1	198267827	198271992	+		Glycine--tRNA ligase mitochondrial 1		5	no	none
+Zm00001d031705	1	199015599	199019826	+		Haloacid dehalogenase-like hydrolase (HAD) superfamily protein		6	no	none
+Zm00001d031764	1	201106050	201111798	-		IAA-alanine resistance protein 1		5	no	none
+Zm00001d031773	1	201397598	201398823	-		Protein HVA22  		5	yes	none
+Zm00001d031807	1	202456321	202462069	+				7	no	none
+Zm00001d031938	1	207473975	207480779	-		Probable UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase SPINDLY		8	yes	none
+Zm00001d031981	1	208507191	208517368	+		evolutionarily conserved C-terminal region 5		7	yes	none
+Zm00001d032238	1	218358529	218366044	+		Putative 1-phosphatidylinositol-3-phosphate 5-kinase FAB1C		4	no	none
+Zm00001d032304	1	221392194	221397307	+		zinc finger (C3HC4-type RING finger) family protein / BRCT domain-containing protein		6	no	none
+Zm00001d032428	1	226099640	226103990	-		Serinc-domain containing serine and sphingolipid biosynthesis protein		7	no	none
+Zm00001d032472	1	227853798	227862240	-		Prolyl carboxypeptidase like protein  		4	no	none
+Zm00001d032621	1	232348835	232353216	+		CDT1-like protein a chloroplastic		5	no	Up-regulation
+Zm00001d032632	1	232559757	232566736	+		DNA ligase  		6	no	none
+Zm00001d032633	1	232602005	232615275	-		Probable protein arginine N-methyltransferase 6		8	no	none
+Zm00001d032734	1	236583915	236593009	+		no pollen germination related 2		8	yes	none
+Zm00001d032766	1	237643188	237646839	+				4	no	Down-regulation
+Zm00001d032790	1	238206622	238227599	-		plastid transcriptionally active 3		3	yes	none
+Zm00001d032831	1	239609852	239611554	-		Ubiquitin-conjugating enzyme E2 4		3	yes	none
+Zm00001d032859	1	240510201	240515727	-		Cell division control protein 48 homolog D		7	no	Up-regulation
+Zm00001d033109	1	250346963	250360412	+		P-loop containing nucleoside triphosphate hydrolases superfamily protein		8	no	none
+Zm00001d033246	1	255864303	255869980	+	Homeobox-transcription factor 124	Homeobox-leucine zipper protein ATHB-14	Homeobox 	5	yes	none
+Zm00001d033366	1	260525028	260531288	-				7	no	none
+Zm00001d033511	1	265211799	265215971	-		Glycine-rich RNA-binding protein RZ1C		3	yes	Down-regulation
+Zm00001d033533	1	266045970	266061318	-		Tetratricopeptide repeat (TPR)-like superfamily protein		3	no	none
+Zm00001d033645	1	269525808	269533037	+		Phosphatidylinositol 4-phosphate 5-kinase 8		5	yes	Down-regulation
+Zm00001d033751	1	272898684	272912425	+		Dynamin-related protein 1C		4	no	none
+Zm00001d033780	1	273607369	273612057	+		RING/FYVE/PHD zinc finger superfamily protein		5	no	none
+Zm00001d033786	1	273671313	273678010	+		 histidine kinase4		6	no	none
+Zm00001d033837	1	275418564	275424220	+		Sec14p-like phosphatidylinositol transfer family protein		2	yes	none
+Zm00001d033895	1	277649984	277660006	+		metalloendopeptidases;zinc ion binding		6	no	none
+Zm00001d033910	1	278288268	278294463	-	ADP glucose pyrophosphorylase large subunit leaf1AGPL4	 ADP glucose pyrophosphorylase large subunit leaf1		5	no	none
+Zm00001d033995	1	280610045	280612130	-				6	no	none
+Zm00001d034001	1	280773582	280776901	+		Tryptophan RNA-binding attenuator protein-like		4	no	none
+Zm00001d034010	1	281125320	281129744	+		ser/arg-rich protein kinase 4		5	yes	none
+Zm00001d034050	1	282500016	282508569	+		Mitochondrial substrate carrier family protein		2	yes	none
+Zm00001d034072	1	283162141	283165077	+		UDP-glucose 6-dehydrogenase  		7	no	none
+Zm00001d034320	1	289178554	289182561	-		Inosine-5'-monophosphate dehydrogenase  		2	yes	none
+Zm00001d034337	1	290196971	290202180	-		AP-1 complex subunit sigma-2		7	no	Down-regulation
+Zm00001d034383	1	291472441	291480873	+	viviparous8	Putative membrane localized peptidase  		6	yes	Up-regulation
+Zm00001d034424	1	292625000	292631329	-		Folate-biopterin transporter 1 chloroplastic		4	yes	Up-regulation
+Zm00001d034480	1	294122557	294127795	+		Protein WVD2-like 3		7	no	Down-regulation
+Zm00001d034486	1	294249631	294254406	+		Small GTP-binding protein domain  		2	no	Down-regulation
+Zm00001d034531	1	295750532	295760489	+		Dihydrolipoyllysine-residue acetyltransferase component 1 of pyruvate dehydrogenase complex mitochondrial		8	yes	none
+Zm00001d034617	1	297877035	297882893	-		histidine acid phosphatase family protein		4	no	Up-regulation
+Zm00001d034665	1	299210501	299212684	-		NAD-dependent epimerase/dehydratase  		2	no	none
+Zm00001d034668	1	299311424	299320315	+		Chaperone DnaJ-domain superfamily protein		4	yes	none
+Zm00001d034678	1	299619441	299623771	-		Permease I  		8	no	none
+Zm00001d034713	1	300502986	300509397	-		Anthranilate synthase alpha subunit 2 chloroplastic		5	no	Down-regulation
+Zm00001d034759	1	301498813	301507653	+		Galactose oxidase/kelch repeat superfamily protein		7	yes	none
+Zm00001d034804	1	302468902	302475499	+				8	no	Down-regulation
+Zm00001d034832	1	303279392	303289233	-		Probable acyl-activating enzyme 16 chloroplastic		7	no	none
+Zm00001d034839	1	303573712	303576362	-		Purple acid phosphatase 15		6	yes	Up-regulation
+Zm00001d034842	1	303635040	303640977	-		Oligomeric Golgi complex subunit 2		8	yes	none
+Zm00001d034865	1	304196749	304203220	+		Pentatricopeptide repeat-containing protein  mitochondrial		2	no	none
+Zm00001d034915	1	305480111	305488179	+		Transducin/WD40 repeat-like superfamily protein		5	no	none
+Zm00001d035023	6	2023664	2029430	+		Chromatin assembly factor 1 subunit FAS2		2	yes	Down-regulation
+Zm00001d035030	6	2402490	2409609	+		Phosphoinositide phosphatase SAC1		8	yes	none
+Zm00001d035032	6	2454457	2462132	+		GroES-like zinc-binding alcohol dehydrogenase family protein		3	no	Up-regulation
+Zm00001d035139	6	6672824	6678782	-		MA3 domain-containing protein		8	yes	none
+Zm00001d035191	6	8695999	8700892	-	umc85a	Tetratricopeptide repeat (TPR)-like superfamily protein		8	yes	none
+Zm00001d035382	6	23831491	23852509	-	ZIM-transcription factor 9	Putative tify domain/CCT motif transcription factor family protein  	ZIM 	3	no	none
+Zm00001d035445	6	25930825	25936174	-	gamma-glutamylcysteine synthetase1	 gamma-glutamylcysteine synthetase1		6	yes	none
+Zm00001d035598	6	35987763	36000939	+		Beta-hexosaminidase beta chain  		2	yes	Down-regulation
+Zm00001d035649	6	38353078	38355906	+		embryo defective 2735		4	yes	none
+Zm00001d035765	6	46354121	46356647	+				3	yes	Up-regulation
+Zm00001d035925	6	60488904	60491983	-	6-phosphogluconate dehydrogenase1	 6-phosphogluconate dehydrogenase1		8	no	none
+Zm00001d036230	6	78253106	78258710	+		P-loop containing nucleoside triphosphate hydrolases superfamily protein		5	no	none
+Zm00001d036440	6	88669540	88672608	+	umc59a	WAT1-related protein 		6	yes	none
+Zm00001d036495	6	90589306	90596372	+		Putative SERRATE-related C2H2 zinc-finger family protein  		5	no	none
+Zm00001d036635	6	95844090	95865714	+		Molybdenum cofactor sulfurase		4	no	none
+Zm00001d036656	6	96573395	96579915	+		Protein kinase superfamily protein		5	yes	none
+Zm00001d036678	6	97425061	97433288	-		Protein STRUBBELIG-RECEPTOR FAMILY 1		8	no	Down-regulation
+Zm00001d036679	6	97446317	97450689	-		Ubiquitin-conjugating enzyme E2 22		3	yes	none
+Zm00001d036710	6	98375376	98380066	+		Probable protein phosphatase 2C 21		3	no	none
+Zm00001d036777	6	100491976	100495667	+		Nudix hydrolase 10		4	no	none
+Zm00001d036798	6	101221239	101231409	-		Tubulin binding cofactor C domain-containing protein		5	no	none
+Zm00001d036888	6	105645382	105658474	+		D-aminoacyl-tRNA deacylase		8	no	none
+Zm00001d036903	6	105991903	106002178	+		Plant Tudor-like RNA-binding protein		5	no	none
+Zm00001d037085	6	111709689	111715108	-				7	no	none
+Zm00001d037227	6	116698204	116706842	-		DCD (Development and Cell Death) domain protein		6	no	Down-regulation
+Zm00001d037233	6	117049092	117054838	+		Beta-13-galactosyltransferase GALT1		7	no	none
+Zm00001d037332	6	121763690	121772880	+		Putative 1-phosphatidylinositol-4-phosphate 5-kinase/ zinc ion binding family  		8	no	none
+Zm00001d037413	6	124872285	124877763	-		65-kDa microtubule-associated protein 1		5	no	none
+Zm00001d037803	6	138208458	138215851	-	JUMONJI-transcription factor 10	Probable lysine-specific demethylase JMJ14	JUMONJI 	4	yes	none
+Zm00001d037856	6	139897678	139901307	+		Rhodanese-like domain-containing protein 7		4	no	Down-regulation
+Zm00001d037871	6	140510019	140515127	-		RNA-binding protein BRN1		6	yes	none
+Zm00001d037939	6	142817150	142844642	-				5	no	none
+Zm00001d037946	6	143056934	143084576	+	phospholipase D13	 phospholipase D13		4	yes	Down-regulation
+Zm00001d037981	6	144086688	144129140	-		Anaphase-promoting complex subunit 1		4	no	Down-regulation
+Zm00001d038089	6	147426612	147430882	+		Major facilitator superfamily protein		3	yes	none
+Zm00001d038107	6	148214266	148220654	+		Decapping nuclease DXO homolog chloroplastic		8	no	none
+Zm00001d038158	6	149856525	149858539	-	mTERF-domain protein22	Mitochondrial transcription termination factor family protein		2	no	none
+Zm00001d038194	6	151182319	151192088	-		F-box/FBD/LRR-repeat protein 		3	no	Down-regulation
+Zm00001d038301	6	153933043	153935944	+				3	no	none
+Zm00001d038351	6	155009149	155011475	+		Adenine nucleotide alpha hydrolases-like superfamily protein		4	no	none
+Zm00001d038380	6	155926731	155930493	-		Ras-related protein RABE1c		6	yes	none
+Zm00001d038448	6	157417466	157420626	+				4	no	none
+Zm00001d038648	6	161702211	161706863	+		Calreticulin-3		7	no	none
+Zm00001d038804	6	164792289	164799307	+		Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3A		8	no	none
+Zm00001d038886	6	166382640	166385959	+				2	no	none
+Zm00001d038916	6	166888285	166895778	+		zinc finger protein-related		2	no	Down-regulation
+Zm00001d038988	6	168296702	168299778	+		hydroxyproline-rich glycoprotein family protein		4	no	none
+Zm00001d039012	6	168699352	168705946	-				5	no	none
+Zm00001d039091	6	169864685	169867294	-		GTP-binding nuclear protein Ran-2		3	no	none
+Zm00001d039276	3	916629	921348	-		Ubiquitin ligase SINAT3  		4	no	none
+Zm00001d039364	3	2629900	2632050	-				3	no	none
+Zm00001d039370	3	2692603	2696275	+		Isoamyl acetate-hydrolyzing esterase  		5	no	none
+Zm00001d039387	3	3142538	3149621	+	csu32a	SOUL heme-binding family protein		2	no	none
+Zm00001d039422	3	3904536	3910859	+		phosphoribosylaminoimidazole carboxylase family protein / AIR carboxylase family protein		8	yes	none
+Zm00001d039460	3	4951058	4954231	+		Translation initiation factor SUI1 family protein		4	no	Down-regulation
+Zm00001d039488	3	5706491	5709917	+		Pollen-specific protein SF21  		3	yes	Down-regulation
+Zm00001d039624	3	9366921	9370542	+	Aux/IAA-transcription factor 8	Auxin-responsive protein IAA15	Aux/IAA 	3	yes	Up-regulation
+Zm00001d039677	3	11686849	11691460	+				7	no	none
+Zm00001d039837	3	16287892	16290203	-		Spermidine hydroxycinnamoyl transferase		5	no	none
+Zm00001d039901	3	18645159	18650625	-				3	no	Up-regulation
+Zm00001d040117	3	28234373	28237092	-				5	no	Down-regulation
+Zm00001d040155	3	29580347	29584912	+		Protein EXECUTER 2 chloroplastic		7	no	none
+Zm00001d040191	3	31619279	31626394	-		zinc ion binding		7	yes	Down-regulation
+Zm00001d040203	3	31841673	31847295	-		Protein CHROMATIN REMODELING 8		7	no	Up-regulation
+Zm00001d040259	3	34373666	34378987	+		Protein TRIGALACTOSYLDIACYLGLYCEROL 4 chloroplastic		6	no	none
+Zm00001d040334	3	38519353	38522310	-		26S proteasome non-ATPase regulatory subunit 14 homolog		4	no	none
+Zm00001d040340	3	38778973	38786131	+		PQ-loop repeat family protein / transmembrane family protein		8	yes	Down-regulation
+Zm00001d040344	3	39045867	39048723	+		UBP1-associated protein 2A		2	no	Up-regulation
+Zm00001d040515	3	47731374	47739252	+		Gamma carbonic anhydrase 1 mitochondrial		4	no	none
+Zm00001d040519	3	47878960	47880339	-		Germin-like protein subfamily 2 member 1		2	no	none
+Zm00001d040651	3	56282555	56283711	+	AP2-EREBP-transcription factor 193	Ethylene-responsive transcription factor RAP2-2	AP2 	2	yes	Up-regulation
+Zm00001d041088	3	96602269	96606539	+		WEB family protein 		4	no	none
+Zm00001d041489	3	123607100	123613712	-	Homeobox-transcription factor 25	Homeobox-leucine zipper protein ATHB-14	Homeobox 	8	no	none
+Zm00001d041556	3	127112005	127121009	-		Importin subunit beta-1		6	no	none
+Zm00001d041582	3	128236186	128248639	-		zinc knuckle (CCHC-type) family protein		7	no	none
+Zm00001d041613	3	129688005	129694086	-		guanylyl cyclase 1		2	yes	Down-regulation
+Zm00001d041926	3	143901299	143907175	+		Transcription factor LHW	LHW 	8	yes	none
+Zm00001d041957	3	145604150	145607293	-		Fizzy-related protein  		6	no	none
+Zm00001d042033	3	147922889	147929851	-		Pentatricopeptide repeat-containing protein  mitochondrial		7	no	Down-regulation
+Zm00001d042040	3	148150195	148156394	-		Serine/arginine-rich splicing factor SR45		8	no	Up-regulation
+Zm00001d042055	3	148887904	148896632	-	Zea mays ARGOS6	 Zea mays ARGOS6		4	yes	none
+Zm00001d042093	3	150547662	150550343	+		Essential protein Yae1 N-terminal		2	yes	none
+Zm00001d042193	3	155542837	155548752	-		Putative cullin-like protein 2		6	yes	none
+Zm00001d042288	3	159141395	159142793	-	NAC-transcription factor 90	NAC domain-containing protein 68  	NAC 	4	no	none
+Zm00001d042400	3	164745457	164749045	-				5	no	none
+Zm00001d042450	3	168095894	168110772	+		tetratricopeptide repeat (TPR)-containing protein		5	no	none
+Zm00001d042464	3	168523026	168532465	+				4	no	none
+Zm00001d042478	3	169005227	169007835	-		GDP-L-galactose phosphorylase 1		3	yes	Down-regulation
+Zm00001d042598	3	173090614	173105622	+		TPX2 (targeting protein for Xklp2) protein family		7	no	none
+Zm00001d042621	3	174100666	174105367	-		Probable magnesium transporter NIPA4		8	no	Down-regulation
+Zm00001d042809	3	180800042	180806507	-	auxin transporter-like1	Auxin transporter-like protein 1  		7	no	none
+Zm00001d042842	3	181808569	181820628	+	starch phoshorylase2	 starch phoshorylase2		6	yes	none
+Zm00001d042863	3	182291473	182295897	-				4	no	Down-regulation
+Zm00001d042868	3	182501937	182508135	-		Aldo-keto reductase family 4 member C9		6	no	none
+Zm00001d043074	3	188383792	188388729	-		proline-rich family protein		6	no	Up-regulation
+Zm00001d043098	3	189164370	189168125	+	ferric-chelate reductase (NADH)1	Cytochrome b5 reductase  		7	no	Up-regulation
+Zm00001d043131	3	189941282	189945237	-	MYB-transcription factor 138	myb domain protein 81	MYB 	4	no	none
+Zm00001d043147	3	190146935	190151131	-		FAD-dependent oxidoreductase family protein		3	no	none
+Zm00001d043182	3	190807759	190813079	-	cytidine methyl kinase1	 cytidine methyl kinase1		2	no	none
+Zm00001d043401	3	198863394	198877772	+		Phosphatidate cytidylyltransferase  		2	no	none
+Zm00001d043500	3	201984577	201991160	-	VOZ-transcription factor 4	Transcription factor VOZ1	VOZ 	8	yes	Down-regulation
+Zm00001d043573	3	204250461	204255894	-				3	no	none
+Zm00001d043655	3	206109755	206114964	+		Protein IQ-DOMAIN 31		6	no	none
+Zm00001d043684	3	207335585	207359006	+		Protein kinase superfamily protein		8	no	none
+Zm00001d043726	3	208445884	208450729	-		AP-1 complex subunit mu-2		8	no	Up-regulation
+Zm00001d043743	3	208855278	208867678	-		Zinc finger BED domain-containing protein DAYSLEEPER		2	no	Down-regulation
+Zm00001d043764	3	209274409	209298189	-				6	no	none
+Zm00001d043943	3	214377542	214379505	+		Cytochrome b561 domain-containing protein 		3	yes	none
+Zm00001d044102	3	219197049	219201559	+		Zn-dependent exopeptidases superfamily protein		5	yes	none
+Zm00001d044159	3	220748190	220754600	+	cytochrome P450 11	 cytochrome P450 11		7	no	none
+Zm00001d044228	3	222461983	222482752	-	thiamine biosynthesis2	 thiamine biosynthesis2		5	no	Down-regulation
+Zm00001d044277	3	223829598	223834192	+		Elongation factor Ts%2C mitochondrial  		8	yes	none
+Zm00001d044307	3	224907548	224912849	+		integral membrane protein		2	no	none
+Zm00001d044366	3	226297420	226306150	-				6	yes	none
+Zm00001d044389	3	226830791	226834279	+	calcineurin B-like5	 calcineurin B-like5		3	yes	none
+Zm00001d044599	3	233046742	233055516	+	blue-light receptor phototropin 1	Nonphototropic hypocotyl 1  		5	no	none
+Zm00001d044620	3	233480561	233489829	+		DCD (Development and Cell Death) domain protein		4	yes	Up-regulation
+Zm00001d044673	3	234567054	234570919	-	cytochrome P450 homolog1	Sterol 14-demethylase		5	yes	none
+Zm00001d044674	3	234623184	234626205	+		Whole genome shotgun sequence of line PN40024 scaffold_56.assembly12x (Fragment)		6	no	none
+Zm00001d044754	9	1340766	1353747	-		Pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit beta 2		7	no	Down-regulation
+Zm00001d044766	9	1857759	1867122	-		O-fucosyltransferase family protein		7	yes	none
+Zm00001d044780	9	2209294	2213354	+		DNA polymerase lambda (POLL)		7	no	Down-regulation
+Zm00001d045024	9	10462721	10464984	-				2	no	none
+Zm00001d045112	9	13117991	13122682	-	ARR-B-transcription factor 2	Putative two-component response regulator family protein  	ARR 	5	no	none
+Zm00001d045133	9	13839542	13842312	-		ERAD-associated E3 ubiquitin-protein ligase HRD1A		7	no	none
+Zm00001d045139	9	14008653	14014626	-	vacuolar proton pump homolog1	 vacuolar proton pump homolog1		8	no	none
+Zm00001d045154	9	14550796	14559105	+		Putative clathrin assembly protein 		4	no	Down-regulation
+Zm00001d045230	9	16630745	16636390	+		U-box domain-containing protein 33		4	yes	none
+Zm00001d045431	9	21923443	21927986	+	enolase1	Enolase 1  		7	no	none
+Zm00001d045481	9	23988206	23995123	-		Putative leucine-rich repeat receptor-like protein kinase family protein  		5	no	none
+Zm00001d045728	9	35557580	35561282	+	brassinosteroid insensitive1-associated receptor kinase like1	Protein NSP-INTERACTING KINASE 1		7	no	none
+Zm00001d045927	9	47487131	47490925	+		Diacylglycerol O-acyltransferase 2		5	no	none
+Zm00001d045978	9	51358329	51394263	-		Protein MICRORCHIDIA 6		6	yes	none
+Zm00001d046202	9	71566932	71572490	+				4	no	none
+Zm00001d046472	9	91532959	91551695	+		Hemoglobin-like protein HbO  		5	yes	Down-regulation
+Zm00001d046506	9	92956668	92968296	+		Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A beta isoform		5	no	none
+Zm00001d046595	9	97761939	97780443	+		Putative sucrose-phosphate synthase family protein  		6	no	Down-regulation
+Zm00001d046691	9	102506577	102518770	-		Cellulose synthase A catalytic subunit 5 [UDP-forming]		5	no	none
+Zm00001d046948	9	112329325	112340443	+		Cell division control protein 50  		3	yes	none
+Zm00001d046979	9	113964897	113976963	+		Molybdenum cofactor sulfurase		5	no	none
+Zm00001d047401	9	128893506	128896643	+		Serine/arginine-rich SC35-like splicing factor SCL33		3	yes	Down-regulation
+Zm00001d047526	9	133629050	133634051	-		Lung seven transmembrane receptor family protein		5	no	none
+Zm00001d047534	9	134030557	134037342	-		ABC transporter E family member 2		8	no	none
+Zm00001d047581	9	136326165	136330736	-		30S ribosomal protein S1  		2	no	none
+Zm00001d047597	9	136691570	136695558	+		Calmodulin-7		2	no	Up-regulation
+Zm00001d047689	9	139363842	139370249	+		zinc finger (MYND type) family protein / programmed cell death 2 C-terminal domain-containing protein		5	yes	Down-regulation
+Zm00001d047723	9	140000414	140003136	-		Tetratricopeptide repeat (TPR)-like superfamily protein		3	no	Down-regulation
+Zm00001d047794	9	141969466	141978414	+		THO complex subunit 4B		6	no	Down-regulation
+Zm00001d047839	9	143011655	143016797	+		DUF3527 domain protein		4	yes	none
+Zm00001d047855	9	143524547	143530312	-		Probable UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase SEC		5	no	none
+Zm00001d047971	9	146688777	146694721	+		2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein		4	no	none
+Zm00001d048074	9	149392146	149398655	-		Protein OBERON 4		3	no	none
+Zm00001d048147	9	150853334	150869697	+		Syntaxin-61		4	no	Down-regulation
+Zm00001d048285	9	153885052	153889143	-		E3 ubiquitin-protein ligase SPL2		5	yes	none
+Zm00001d048292	9	154002038	154006592	-	carbon-nitrogen hydrolase homolog1	Omega-amidase chloroplastic		5	no	none
+Zm00001d048315	9	154450335	154453803	-		3-dehydroquinate synthase		4	no	none
+Zm00001d048358	9	154915042	154923673	-	aconitase3	 aconitase3		4	yes	none
+Zm00001d048409	9	155778427	155783053	-		Cell division control protein 48 homolog D		7	yes	Up-regulation
+Zm00001d048460	9	156719295	156724276	+		CBL-interacting serine/threonine-protein kinase 9		6	no	none
+Zm00001d048483	9	157065287	157067801	+		THO complex subunit 7B		3	no	none
+Zm00001d048514	9	157624300	157630253	+	brown midrib4	 brown midrib4		8	no	Up-regulation
+Zm00001d048632	4	1774405	1783238	-		DEAD-box ATP-dependent RNA helicase 40		6	no	Up-regulation
+Zm00001d048634	4	1846585	1848071	+	benzoxazinone synthesis6	DIBOA-glucoside dioxygenase BX6  		3	yes	none
+Zm00001d048643	4	2534586	2541828	+		Cyclopropane-fatty-acyl-phospholipid synthase		8	no	Down-regulation
+Zm00001d048812	4	5893570	5898875	+	22kD alpha zein4	 22kD alpha zein4		5	no	none
+Zm00001d048847	4	6292723	6293812	+	zein polypeptidesL2a	zein polypeptidesL2a		2	yes	none
+Zm00001d049171	4	19002050	19005140	-		Lipase/lipooxygenase PLAT/LH2 family protein		2	no	Up-regulation
+Zm00001d049191	4	19858184	19866000	+		Probable bifunctional methylthioribulose-1-phosphate dehydratase/enolase-phosphatase E1 Methylthioribulose-1-phosphate dehydratase Enolase-phosphatase E1 		2	no	none
+Zm00001d049375	4	28144753	28147754	-		Zinc transporter 3		3	no	Down-regulation
+Zm00001d049389	4	28690939	28693515	+		Ribosomal protein L27 family protein		3	no	none
+Zm00001d049490	4	32210474	32212545	-		Protein CHLORORESPIRATORY REDUCTION 6 chloroplastic		2	no	Down-regulation
+Zm00001d049718	4	41325126	41329646	-		Protein transporter%3B Putative VHS/GAT domain containing family protein isoform 1%3B Putative VHS/GAT domain containing family protein isoform 2  		8	no	none
+Zm00001d049798	4	45039440	45042830	-				6	no	none
+Zm00001d049830	4	46813744	46816659	+		Nascent polypeptide-associated complex subunit alpha-like protein 3		3	yes	Up-regulation
+Zm00001d050017	4	59929429	59934326	+		Remorin family protein		4	no	none
+Zm00001d050081	4	64819243	64825562	-		dentin sialophosphoprotein-related		7	no	Down-regulation
+Zm00001d050258	4	77041321	77044916	-		Signal recognition particle receptor beta subunit%3B Signal recognition particle receptor beta subunit isoform 1%3B Signal recognition particle receptor beta subunit isoform 2%3B Signal recognition particle receptor beta subunit isoform 3  		4	yes	none
+Zm00001d050359	4	83491443	83500858	+		F-box protein SKIP28		2	no	Up-regulation
+Zm00001d050575	4	101589397	101597227	+		Serine/threonine-protein kinase PBS1		3	no	none
+Zm00001d050610	4	104008719	104014187	-		Nuclear transport factor 2 (NTF2) family protein with RNA binding (RRM-RBD-RNP motifs) domain		5	no	none
+Zm00001d050851	4	126959985	126984791	-		CMP-sialic acid transporter 5		6	no	none
+Zm00001d050943	4	132886764	132891622	-		ARM-repeat/Tetratricopeptide repeat (TPR)-like protein		2	no	Down-regulation
+Zm00001d050981	4	134987117	134991660	+		Actin-related protein 3		4	yes	Down-regulation
+Zm00001d051062	4	140038366	140041673	+		GrpE protein homolog  		3	no	Down-regulation
+Zm00001d051375	4	156366550	156371654	+				6	yes	Down-regulation
+Zm00001d051498	4	160459350	160463818	+		Metal-dependent protein hydrolase		2	no	none
+Zm00001d051544	4	162017325	162021747	-				5	no	Down-regulation
+Zm00001d051796	4	169926219	169931181	+		SET domain containing protein  		5	no	none
+Zm00001d051901	4	173983536	173988094	+		P-loop NTPase domain-containing protein LPA1 homolog 1		7	no	none
+Zm00001d051910	4	174417077	174421569	+		TBC1 domain family member 22A  		5	no	none
+Zm00001d052093	4	179375071	179380872	+		Chaperone DnaJ-domain superfamily protein		8	yes	none
+Zm00001d052185	4	182579495	182583632	+		Cyclin-D2-1		4	no	none
+Zm00001d052493	4	191343386	191345393	-		Aluminium induced protein with YGL and LRDR motifs		5	no	none
+Zm00001d052525	4	192080883	192084967	-		Calmodulin binding protein%3B Putative calmodulin-binding family protein  		3	no	Up-regulation
+Zm00001d052622	4	195068477	195072679	-		Glutamyl-tRNA(Gln) amidotransferase subunit B chloroplastic/mitochondrial		4	no	Down-regulation
+Zm00001d053101	4	213756616	213759917	-				2	yes	none
+Zm00001d053107	4	214129873	214132827	-		Tyrosine aminotransferase		3	no	Up-regulation
+Zm00001d053196	4	219324704	219347025	+		Proline--tRNA ligase cytoplasmic		6	yes	Up-regulation
+Zm00001d053207	4	219937344	219943482	+		Pentatricopeptide repeat-containing protein 		3	no	Up-regulation
+Zm00001d053244	4	221727749	221733723	+		Disease resistance protein (TIR-NBS class)		2	yes	Down-regulation
+Zm00001d053595	4	235825666	235832657	-	RPD3 histone deacetylase homolog	 RPD3 histone deacetylase homolog		6	no	none
+Zm00001d053661	4	238372013	238372696	+		HrpN-interacting protein from malus protein		2	yes	none
+Zm00001d053749	4	240414100	240417560	+	knotted related homeobox7	 knotted related homeobox7		2	no	Up-regulation
+Zm00001d053807	4	241452992	241457434	+		Porphobilinogen deaminase chloroplastic		4	yes	none
+Zm00001d053857	4	242293269	242298482	-		T-complex protein 1 subunit eta		8	no	Up-regulation
+Zm00001d053861	4	242512382	242522531	+		Putative translation elongation factor family protein  		7	no	none
+Zm00001d053882	4	242946838	242952897	-		Splicing factor 3B subunit 1		4	no	none
+Zm00001d053886	4	242971944	242981496	+		L-arabinokinase		6	yes	none
+Zm00001d053968	4	244419437	244425157	-		RuvB-like protein 1		6	yes	none
+Zm00001d053981	4	244568037	244571526	-	small kernel2	Probable pyridoxal 5'-phosphate synthase subunit PDX2		7	no	none
+Zm00001d053987	4	244609103	244612754	-		Uncharacterised conserved protein (UCP030365)		5	no	none
+Zm00001d054072	4	245924924	245928505	-		Peptidase C78 ubiquitin fold modifier-specific peptidase 1/ 2		5	no	none
+ZmNAGene0091	1	68210181	68217594	-	NA	NA	NA	2	no	none
+ZmNAGene0151	1	148832111	148838079	+	NA	NA	NA	7	no	none
+ZmNAGene0152	1	150287615	150295914	+	NA	NA	NA	8	no	Up-regulation
+ZmNAGene0153	1	151227616	151234595	-	NA	NA	NA	4	yes	none
+ZmNAGene0164	1	163307954	163316579	+	NA	NA	NA	3	no	none
+ZmNAGene0341	1	293289707	293313786	-	NA	NA	NA	7	yes	none
+ZmNAGene0457	10	90998277	91013374	+	NA	NA	NA	6	yes	none
+ZmNAGene0497	10	124405320	124415115	-	NA	NA	NA	5	no	none
+ZmNAGene0601	2	11552290	11565885	-	NA	NA	NA	3	no	Down-regulation
+ZmNAGene0630	2	29817833	29830611	-	NA	NA	NA	7	yes	Down-regulation
+ZmNAGene0754	2	156818182	156822544	+	NA	NA	NA	3	no	Down-regulation
+ZmNAGene0927	2	232339849	232362918	-	NA	NA	NA	6	no	none
+ZmNAGene0941	2	237292678	237306396	-	NA	NA	NA	4	no	none
+ZmNAGene1143	3	178451178	178453402	-	NA	NA	NA	2	no	Up-regulation
+ZmNAGene1159	3	190374180	190395438	+	NA	NA	NA	8	no	none
+ZmNAGene1223	3	227745418	227755184	+	NA	NA	NA	5	yes	none
+ZmNAGene1422	4	173507581	173513457	-	NA	NA	NA	7	no	none
+ZmNAGene1469	4	199297725	199302965	-	NA	NA	NA	3	no	none
+ZmNAGene1475	4	209915947	209947775	-	NA	NA	NA	4	no	Up-regulation
+ZmNAGene1916	6	81291980	81297738	-	NA	NA	NA	4	no	Down-regulation
+ZmNAGene2199	7	146607498	146610451	-	NA	NA	NA	7	no	none
+ZmNAGene2326	8	34794995	34821542	+	NA	NA	NA	7	no	Up-regulation
+ZmNAGene2389	8	106443489	106449829	-	NA	NA	NA	5	yes	none
+ZmNAGene2401	8	121006820	121019579	+	NA	NA	NA	8	no	none
+ZmNAGene2442	8	148833239	148839951	+	NA	NA	NA	4	yes	none
+ZmNAGene2682	9	151092468	151104280	-	NA	NA	NA	6	yes	none
+Zm00001d002033	2	4807513	4809655	+				2	no	none
+Zm00001d002386	2	11638733	11646437	-		uncharacterized protein [Source:UniProtKB/TrEMBL;Acc:B4FDL3]		3	no	none
+Zm00001d005998	2	194954684	194956316	-		Caffeoyl-CoA O-methyltransferase 1		2	yes	Down-regulation
+Zm00001d027544	1	7978897	7991204	-		Ankyrin repeat protein  		2	no	none
+Zm00001d028102	1	23004511	23008536	+		Outer mitochondrial membrane protein porin  		2	yes	none
+Zm00001d039010	6	168690217	168691360	+		Fasciclin-like arabinogalactan protein 7  		2	yes	Up-regulation
+Zm00001d042826	3	181230425	181232373	-		AER  		2	yes	none
