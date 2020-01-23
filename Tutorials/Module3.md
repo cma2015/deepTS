@@ -1,4 +1,4 @@
-# **Module I: Generation of transcript expression matrix**
+# **Module III: Module III: Exploration of TS events**
    <table class="fl-table">
         <thead>
         <tr>
