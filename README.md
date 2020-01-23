@@ -1,7 +1,7 @@
 ## DeepTS
 - DeepTS is a powerful and flexible web-based Galaxy platform for identifying, visualizing and analyzing transcriptional switch events from pairwise, temporal and population transcriptome data.
 
-- DeepTS consists of three main functional modules, covering the processes of read cleaning and mapping; transcriptome map construction; expression abundance estimation; and TS identification, visualization, and exploration. In addition, DeepTS provides a series of mutually independent, end-to-end functions, including multiple-condition TS analysis pipelines, multiple-level TS characterization, and multiple-form visualization, to allow users to perform TS analysis using either raw RNA-Seq data or expression abundance matrices directly.
+- DeepTS consists of three main functional modules, covering the processes of read cleaning and mapping; transcriptome map construction; expression abundance estimation; multiple-condition TS analysis pipelines, multiple-level TS characterization, and multiple-form visualization to allow users to perform TS analysis using either raw RNA-Seq data or expression abundance matrices directly.
 
 - DeepTS project is hosted on GitHub (https://github.com/cma2015/DeepTS), and can be accessed from https://deepts.nwafu.edu.cn/. The deepTS Docker images is available at https://hub.docker.com/r/malab/deepts.
 
