@@ -3,7 +3,7 @@
 
 - deepTS consists of three main functional modules, covering the processes of read cleaning and mapping; transcriptome map construction; expression abundance estimation; multiple-condition TS analysis pipelines, multiple-level TS characterization, and multiple-form visualization to allow users to perform TS analysis using either raw RNA-Seq data or expression abundance matrices directly.
 
-- deepTS project is hosted on GitHub (https://github.com/cma2015/deepTS), and can be accessed from https://deepts.nwafu.edu.cn/. The deepTS Docker images is available at https://hub.docker.com/r/malab/deepts.
+- deepTS project is hosted on GitHub (https://github.com/cma2015/deepTS). A demo server is available at https://deepts.nwafu.edu.cn/ (Limit access from 8 PM to 9 AM during the Wuhan coronavirus outbreak). We suggest users to run deepTS locally using the Docker image (https://hub.docker.com/r/malab/deepts).
 
     ![deepTS](https://github.com/cma2015/DeepTS/blob/master/Tutorials/deepTS_images/Figure%201_Overview_of_deepTS.png)
 
