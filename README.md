@@ -8,9 +8,9 @@
     ![deepTS](https://github.com/cma2015/DeepTS/blob/master/Tutorials/deepTS_images/Figure%201_Overview_of_deepTS.png)
 
 ## Overview of functional modules in deepTS
-- [**Module I: Generation of transcript expression matrix**](https://github.com/chenzhuod/deepTS/blob/master/Tutorials/Module%20I.md)
-- [**Module II: Identification of TS events**](https://github.com/cma2015/DeepTS/blob/master/Tutorials/Module2.md)
-- [**Module III: Exploration of TS events**](https://github.com/cma2015/DeepTS/blob/master/Tutorials/Module3.md)
+- [**Module I: Generation of transcript expression matrix**](https://github.com/cma2015/deepTS/blob/master/Tutorials/Module%20I.md)
+- [**Module II: Identification of TS events**](https://github.com/cma2015/deepTS/blob/master/Tutorials/Module%20II.md)
+- [**Module III: Exploration of TS events**](https://github.com/cma2015/deepTS/blob/master/Tutorials/Module%20III.md)
 
 
 ## News and updates
