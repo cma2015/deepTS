@@ -28,4 +28,4 @@
 * For any suggestions/comments, please send emails to: __Siyuan Chen__ <chenzhuod@gmail.com> or __Zhixu Qiu__ <zhixuqiu2015@gmail.com>
 
 ## How to cite this work
-Zhixu Qiu, Siyuan Chen, Yuhong Qi, Chunni Liu, Jingjing Zhai, Shang Xie, Chuang Ma, Exploring transcriptional switch events from pairwise, temporal, and population transcriptome data using deepTS (Submitted)
+Zhixu Qiu, Siyuan Chen, Yuhong Qi, Chunni Liu, Jingjing Zhai, Shang Xie, Chuang Ma, Exploring transcriptional switch events from pairwise, temporal, and population transcriptome data using deepTS. Briefings in Bioinformatics (Accepted)
